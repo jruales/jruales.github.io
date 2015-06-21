@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>Joaquín Ruales</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,21 +12,52 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/webicons.css">
+        <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500" rel="stylesheet" type="text/css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <div id="main">
+<script id="page-template" type="text/x-handlebars-template">
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+            <!-- Add your site or application content here -->
+            <header>
+                <div><h1>Joaquín Ruales</h1></div>
+                <div>Columbia University Computer Science M.S. student</div>
+                <div>j.ruales _at_ columbia.edu</div>
+                <div>
+                    <a class="webicon googleplus" href="https://plus.google.com/u/0/108677809195090402050/posts">Google+</a>
+                    <a class="webicon twitter" href="https://twitter.com/JoaquinARuales">Twitter</a>
+                    <a class="webicon flickr" href="https://www.flickr.com/photos/46440167@N02">Flickr</a>
+                    <a class="webicon youtube" href="https://www.youtube.com/channel/UCSejsjO0ark_Xy3UEh2dDCg">YouTube</a>
+                    <a class="webicon linkedin" href="https://www.linkedin.com/in/jruales">LinkedIn</a>
+                    <a class="webicon github" href="https://github.com/jruales">Github</a>
+                </div>
+            </header>
+            <div id="projects" class="section">
+            <h2>Websites</h2>
+            {{#each projects as |project projectId|}}
+                <h3>{{project.title}}</h3>
+                <div>{{project.description}}</div>
+                <div>Uses: {{project.technologies}}</div>
+            {{/each}}
+            </div>
+
+        
+
+</script> <!-- page-template -->
+        </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="../js/vendor/handlebars-v3.0.3.js"></script>
         <script src="js/plugins.js"></script>
+        <script src="js/data.js"></script>
         <script src="js/main.js"></script>
-
+        
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
