@@ -25,9 +25,9 @@
 
             <!-- Add your site or application content here -->
             <header>
-                <div><h1>Joaquín Ruales</h1></div>
-                <div>Columbia University Computer Science M.S. student</div>
-                <div>j.ruales _at_ columbia.edu</div>
+                <div><h1>{{basics.name}}</h1></div>
+                <div>{{basics.label}}</div>
+                <div>{{basics.email}}</div>
                 <div>
                     <a class="webicon googleplus" href="https://plus.google.com/u/0/108677809195090402050/posts">Google+</a>
                     <a class="webicon twitter" href="https://twitter.com/JoaquinARuales">Twitter</a>
@@ -37,13 +37,22 @@
                     <a class="webicon github" href="https://github.com/jruales">Github</a>
                 </div>
             </header>
+            {{basics.summary}}
             <div id="projects" class="section">
-            <h2>Websites</h2>
-            {{#each projects as |project projectId|}}
-                <h3>{{project.title}}</h3>
-                <div>{{project.description}}</div>
-                <div>Uses: {{project.technologies}}</div>
-            {{/each}}
+                <h2>Websites</h2>
+                {{#each projects as |project projectId|}}
+                    <h3>{{project.title}}</h3>
+                    <div>{{project.description}}</div>
+                    <div>Uses: {{project.technologies}}</div>
+                {{/each}}
+            </div>
+            <div id="pre-prints" class="section">
+                <h2>Publication Pre-prints</h2>
+                {{#each prePrints as |prePrint prePrintId|}}
+                    <h3><a target="_blank" href="{{prePrint.website}}">{{prePrint.title}}</a></h3>
+                    <div>Authors: {{prePrint.authors}}</div>
+                    <div>Abstract: {{prePrint.abstract}}</div>
+                {{/each}}
             </div>
 
         

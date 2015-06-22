@@ -1,8 +1,9 @@
 basics = {
     name: "Joaquín Ruales",
-    label: "Student at Columbia University",
+    label: "Columbia University Computer Science M.S. student",
     picture: "https://media.licdn.com/mpr/mprx/0_vJv4JCCofLjlSRVCzMNIJhtwDhRASYVCBgTbJ3A9-Qf3tVDGJ05qBT54iDUaaMRmNVB69Q73CxcG",
-    email: "joaqo182@gmail.com",
+    email: "j.ruales _at_ columbia.edu",
+    summary: "I'm a software engineer and mathematician with interest and experience in web application development, machine learning, computer graphics, and applied math (calculus, linear algebra, Bayesian statistics).",
     phone: "",
     website: "",
     location: {
@@ -15,10 +16,14 @@ basics = {
     profiles: []
 }
 
+coursework = [
+
+];
+
 prePrints = [
   {
     title: "On left-orderability and double branched covers of Kanenobu's knots",
-    authors: "Fabian Doria Medina, Michael Jackson, Joaquín Ruales, Hadas Zeilberger",
+    authors: "Fabian Doria Medina, Michael Jackson, Joaquín Ruales, and Hadas Zeilberger",
     abstract: "We show that the fundamental group of the double branched cover of an infinite family of homologically thin, non-quasi-alternating knots is not left-orderable, giving further support for a conjecture of Boyer, Gordon, and Watson that an irreducible rational homology 3-sphere is an L-space if and only if its fundamental group is not left-orderable.",
     journal: "ArXiv",
     website: "http://arxiv.org/abs/1310.1877"
@@ -75,8 +80,9 @@ websites = [
 ];
 
 context = {
-  basics:basics,
-  projects:projects
+  basics: basics,
+  projects: projects,
+  prePrints: prePrints
 };
 
 
