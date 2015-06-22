@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -23,7 +23,7 @@
         <div id="main">
 <script id="page-template" type="text/x-handlebars-template">
 
-            <!-- Add your site or application content here -->
+            {{!-- Add your site or application content here --}}
             <header>
                 <div><h1>{{basics.name}}</h1></div>
                 <div>{{basics.label}}</div>
@@ -37,21 +37,46 @@
                     <a class="webicon github" href="https://github.com/jruales">Github</a>
                 </div>
             </header>
-            {{basics.summary}}
-            <div id="projects" class="section">
-                <h2>Websites</h2>
-                {{#each projects as |project projectId|}}
-                    <h3>{{project.title}}</h3>
-                    <div>{{project.description}}</div>
-                    <div>Uses: {{project.technologies}}</div>
+            <div id="summary" class="section">
+                <h2>Summary</h2>
+                {{basics.summary}}
+            </div>
+            <div id="timeEvents" class="section">
+                <h2>Timeline</h2>
+                <ul>
+                {{#each timeEvents as |timeEvent timeEventId|}}
+                    <li>
+                        <div>{{timeEvent.timeframe}}</div>
+                        <div>{{timeEvent.title}}</div>
+                        {{#if timeEvent.description}}
+                            <div>{{timeEvent.description}}</div>
+                        {{/if}}
+                    </li>
+                {{/each}}
+                </ul>
+            </div>
+            <div id="petProjects" class="section">
+                <h2>Pet Projects</h2>
+                {{#each petProjects as |petProject petProjectId|}}
+                    <h3>{{petProject.title}}</h3>
+                    <div>{{petProject.description}}</div>
+                    <div>Uses: {{petProject.technologies}}</div>
                 {{/each}}
             </div>
-            <div id="pre-prints" class="section">
-                <h2>Publication Pre-prints</h2>
-                {{#each prePrints as |prePrint prePrintId|}}
-                    <h3><a target="_blank" href="{{prePrint.website}}">{{prePrint.title}}</a></h3>
-                    <div>Authors: {{prePrint.authors}}</div>
-                    <div>Abstract: {{prePrint.abstract}}</div>
+            <div id="preprints" class="section">
+                <h2>Publication Preprints</h2>
+                {{#each preprints as |preprint preprintId|}}
+                    <h3><a target="_blank" href="{{preprint.website}}">{{preprint.title}}</a></h3>
+                    <div>Co-authors: {{preprint.authors}}</div>
+                    <div>Abstract: {{preprint.abstract}}</div>
+                {{/each}}
+            </div>
+            <div id="contests" class="section">
+                <h2>Contests</h2>
+                {{#each contests as |contest contestId|}}
+                    <h3>{{contest.honor}}, {{contest.name}}</h3>
+                    <div>{{contest.venue}}. {{contest.location}}.</div>
+                    <div>{{contest.description}}</div>
                 {{/each}}
             </div>
 

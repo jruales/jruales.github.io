@@ -3,7 +3,7 @@ basics = {
     label: "Columbia University Computer Science M.S. student",
     picture: "https://media.licdn.com/mpr/mprx/0_vJv4JCCofLjlSRVCzMNIJhtwDhRASYVCBgTbJ3A9-Qf3tVDGJ05qBT54iDUaaMRmNVB69Q73CxcG",
     email: "j.ruales _at_ columbia.edu",
-    summary: "I'm a software engineer and mathematician with interest and experience in web application development, machine learning, computer graphics, and applied math (in particular: calculus, linear algebra, Bayesian statistics, modeling/simulation).",
+    summary: "I'm a software engineer and mathematician interested in web application development, machine learning, computer graphics, and applied math (in particular: calculus, linear algebra, Bayesian statistics, modeling/simulation).",
     phone: "",
     website: "",
     location: {
@@ -16,11 +16,39 @@ basics = {
     profiles: []
 }
 
-coursework = [
+timeEvents = [
+  {
+    timeframe: "Summer 2015",
+    title: "Google Software Engineering Internship",
+    description: null
+  },
+  {
+    timeframe: "Fall 2014-",
+    title: "Columbia University Computer Science M.S.",
+    description: null
+  },
+  {
+    timeframe: "Summer 2014",
+    title: "Google Software Engineering Internship",
+    description: null
+  },
+  {
+    timeframe: "Fall 2012 - Spring 2014",
+    title: "Columbia University B.S. in Computer Science",
+    description: null
+  },
+  {
+    timeframe: "Fall 2009 - Spring 2012",
+    title: "Oberlin College B.A. in Mathematics",
+    description: "3-2 Engineering Program with Columbia University."
+  }
+]
+
+selectedCoursework = [
 
 ];
 
-prePrints = [
+preprints = [
   {
     title: "On left-orderability and double branched covers of Kanenobu's knots",
     authors: "Fabian Doria Medina, Michael Jackson, Joaquín Ruales, and Hadas Zeilberger",
@@ -30,7 +58,7 @@ prePrints = [
   }
 ];
 
-projects = [
+petProjects = [
   {
     title: "Ecua Cines",
     description: "Displays showtimes for all major movie theaters in Quito, Ecuador. Showtime information collected automatically from the respective movie theater websites.",
@@ -76,13 +104,39 @@ work: [
   }
 ]
 
-websites = [
-];
+websites = [];
+
+contests = [
+  {
+    name: "ACM-ICPC Regional Programming Contest, Greater New York Region",
+    venue: "St. Joseph's College",
+    location: "Patchogue, NY",
+    honor: "4th Place",
+    description: "Represented Columbia University on a team of three that solved 8 out of the 9 problems."
+  },
+  {
+    name: "HackMIT Hackathon",
+    venue: "Massachusetts Institute of Technology",
+    location: "Cambridge, MA",
+    honor: "1st Place",
+    description: "Our team of four programmed a head-movement-controlled web-messaging interface. I implemented the head tracking (in Flash) and integrated the real-time head position data with the user interface and database (HTML, JS, PHP, MySQL) that my teammates created. The user interface is now being used and improved upon by the Speak Your Mind Foundation."
+  },
+  {
+    name: "Denison Programming Contest",
+    venue: "Denison University",
+    location: "Granville, OH",
+    honor: "2nd Place",
+    description: "Represented Oberlin College on a team of three that solved 4 out of 6 ACM-ICPC-style problems in Java."
+  }
+]
+
 
 context = {
   basics: basics,
-  projects: projects,
-  prePrints: prePrints
+  timeEvents: timeEvents,
+  petProjects: petProjects,
+  preprints: preprints,
+  contests: contests,
 };
 
 
