@@ -25,7 +25,7 @@ timeEvents = [
   {
     timeframe: "Fall 2014-",
     title: "Columbia University Computer Science M.S.",
-    description: null
+    description: "Computer Vision and Graphics Track"
   },
   {
     timeframe: "Summer 2014",
@@ -35,7 +35,7 @@ timeEvents = [
   {
     timeframe: "Fall 2012 - Spring 2014",
     title: "Columbia University B.S. in Computer Science",
-    description: null
+    description: "Artificial Intelligence Track"
   },
   {
     timeframe: "Fall 2009 - Spring 2012",
