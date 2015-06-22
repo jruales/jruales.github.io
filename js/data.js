@@ -61,7 +61,7 @@ preprints = [
 petProjects = [
   {
     title: "Ecua Cines",
-    description: "Displays showtimes for all major movie theaters in Quito, Ecuador. Showtime information collected automatically from the respective movie theater websites.",
+    description: "Displays showtimes for all major movie theaters in Quito, Ecuador. Showtime information collected automatically from each movie theater's website.",
     year: "2013",
     technologies: "HTML + CSS + JS + PHP + MySQL"
   },
