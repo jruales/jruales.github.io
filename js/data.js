@@ -3,7 +3,7 @@ basics = {
     label: "Columbia University Computer Science M.S. student",
     picture: "https://media.licdn.com/mpr/mprx/0_vJv4JCCofLjlSRVCzMNIJhtwDhRASYVCBgTbJ3A9-Qf3tVDGJ05qBT54iDUaaMRmNVB69Q73CxcG",
     email: "j.ruales _at_ columbia.edu",
-    summary: "I'm a software engineer and mathematician with interest and experience in web application development, machine learning, computer graphics, and applied math (calculus, linear algebra, Bayesian statistics).",
+    summary: "I'm a software engineer and mathematician with interest and experience in web application development, machine learning, computer graphics, and applied math (in particular: calculus, linear algebra, Bayesian statistics, modeling/simulation).",
     phone: "",
     website: "",
     location: {
