@@ -146,8 +146,11 @@ header {
     margin-bottom: 20px;
 }
 
+#time-events ul {
+    list-style-type: none;
+}
 .time-event {
-    padding-bottom:30px;
+    padding-bottom:40px;
     padding-left:10px;
     margin-left:10px;
     border-left: 1px solid black;

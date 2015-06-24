@@ -23,7 +23,7 @@ timeEvents = [
     description: null
   },
   {
-    timeframe: "Fall 2014-Fall 2015",
+    timeframe: "Fall 2014 - Fall 2015",
     title: "Columbia University Computer Science M.S.",
     description: "Computer Vision and Graphics Track."
   },
