@@ -74,14 +74,14 @@
                             {{#each petProjects as |petProject petProjectId|}}
                                 <h3>{{petProject.title}}</h3>
                                 <div>{{petProject.description}}</div>
-                                <div>Uses: {{petProject.technologies}}</div>
+                                <div>Uses {{petProject.technologies}}</div>
                             {{/each}}
                         </div>
                         <div id="preprints" class="">
                             <h2>Publication Preprints</h2>
                             {{#each preprints as |preprint preprintId|}}
                                 <h3><a target="_blank" href="{{preprint.website}}">{{preprint.title}}</a></h3>
-                                <div>Co-authors: {{preprint.authors}}</div>
+                                <div>Authors: {{preprint.authors}}</div>
                                 <div>Abstract: {{preprint.abstract}}</div>
                             {{/each}}
                         </div>

@@ -109,10 +109,10 @@ textarea {
 
 body {
     font-family: Roboto, sans-serif;
-    /*
+    
     font-size: 18px;
     font-weight: 300;
-    */
+    
 }
 header {
     background-color: #333;
@@ -130,7 +130,7 @@ header {
     padding: 50px;*/
 }
 #basics #picture {
-    max-width: 200px;
+    max-width: 210px;
     padding-right: 40px;
 }
 
