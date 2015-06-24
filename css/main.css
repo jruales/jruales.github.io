@@ -131,7 +131,9 @@ header {
 }
 #basics #picture {
     max-width: 210px;
-    padding-right: 40px;
+    margin-right: 40px;
+    border-radius: 3%;
+    border: 3px solid black;
 }
 
 #basics #name-label-email-links {
