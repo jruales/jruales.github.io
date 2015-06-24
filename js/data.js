@@ -1,8 +1,8 @@
 basics = {
     name: "Joaquín Ruales",
     label: "Columbia University Computer Science M.S. student",
-    picture: "https://media.licdn.com/mpr/mprx/0_vJv4JCCofLjlSRVCzMNIJhtwDhRASYVCBgTbJ3A9-Qf3tVDGJ05qBT54iDUaaMRmNVB69Q73CxcG",
-    email: "j.ruales _at_ columbia.edu",
+    picture: "img/me.png",
+    email: "j.ruales [at] columbia.edu",
     summary: "I'm a software engineer and mathematician interested in web application development, machine learning, computer graphics, and applied math (in particular: calculus, linear algebra, Bayesian statistics, modeling/simulation).",
     phone: "",
     website: "",
@@ -19,27 +19,27 @@ basics = {
 timeEvents = [
   {
     timeframe: "Summer 2015",
-    title: "Google Software Engineering Internship",
+    title: "Google Software Engineering Intern",
     description: null
   },
   {
-    timeframe: "Fall 2014-",
+    timeframe: "Fall 2014-Fall 2015",
     title: "Columbia University Computer Science M.S.",
-    description: "Computer Vision and Graphics Track"
+    description: "Computer Vision and Graphics Track."
   },
   {
     timeframe: "Summer 2014",
-    title: "Google Software Engineering Internship",
+    title: "Google Software Engineering Intern",
     description: null
   },
   {
     timeframe: "Fall 2012 - Spring 2014",
-    title: "Columbia University B.S. in Computer Science",
-    description: "Artificial Intelligence Track"
+    title: "Columbia University Computer Science B.S.",
+    description: "Artificial Intelligence Track."
   },
   {
     timeframe: "Fall 2009 - Spring 2012",
-    title: "Oberlin College B.A. in Mathematics",
+    title: "Oberlin College Mathematics B.A.",
     description: "3-2 Engineering Program with Columbia University."
   }
 ]

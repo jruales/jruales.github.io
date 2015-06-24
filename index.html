@@ -11,9 +11,10 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/webicons.css">
-        <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500" rel="stylesheet" type="text/css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -25,60 +26,77 @@
 
             {{!-- Add your site or application content here --}}
             <header>
-                <div><h1>{{basics.name}}</h1></div>
-                <div>{{basics.label}}</div>
-                <div>{{basics.email}}</div>
-                <div>
-                    <a class="webicon googleplus" href="https://plus.google.com/u/0/108677809195090402050/posts">Google+</a>
-                    <a class="webicon twitter" href="https://twitter.com/JoaquinARuales">Twitter</a>
-                    <a class="webicon flickr" href="https://www.flickr.com/photos/46440167@N02">Flickr</a>
-                    <a class="webicon youtube" href="https://www.youtube.com/channel/UCSejsjO0ark_Xy3UEh2dDCg">YouTube</a>
-                    <a class="webicon linkedin" href="https://www.linkedin.com/in/jruales">LinkedIn</a>
-                    <a class="webicon github" href="https://github.com/jruales">Github</a>
+                <div class="container" id="basics">
+                    <img src="{{basics.picture}}" style="float:left" id="picture"/>
+                    <div id="name-label-email-links" style="float:left">
+                        <div id="name"><h1>{{basics.name}}</h1></div>
+                        <div id="label">{{basics.label}}</div>
+                        <div id="email">{{basics.email}}</div>
+                        <div>
+                            <a class="webicon googleplus" href="https://plus.google.com/u/0/108677809195090402050/posts">Google+</a>
+                            <a class="webicon twitter" href="https://twitter.com/JoaquinARuales">Twitter</a>
+                            <a class="webicon flickr" href="https://www.flickr.com/photos/46440167@N02">Flickr</a>
+                            <a class="webicon youtube" href="https://www.youtube.com/channel/UCSejsjO0ark_Xy3UEh2dDCg">YouTube</a>
+                            <a class="webicon linkedin" href="https://www.linkedin.com/in/jruales">LinkedIn</a>
+                            <a class="webicon github" href="https://github.com/jruales">Github</a>
+                        </div>
+                    </div>
                 </div>
+                <div style="clear:both"></div>
             </header>
-            <div id="summary" class="section">
-                <h2>Summary</h2>
-                {{basics.summary}}
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="timeEvents" class="">
+                            <!--h2>Timeline</h2-->
+                            <ul>
+                            {{#each timeEvents as |timeEvent timeEventId|}}
+                                <li class="time-event">
+                                    <div class="timeframe">{{timeEvent.timeframe}}</div>
+                                    <div class="title">{{timeEvent.title}}</div>
+                                    {{#if timeEvent.description}}
+                                        <div class="description">{{timeEvent.description}}</div>
+                                    {{/if}}
+                                </li>
+                            {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div id="summary" class="">
+                            <!--h2>Summary</h2-->
+                            {{basics.summary}}
+                        </div>
+                        <div id="petProjects" class="">
+                            <h2>Pet Projects</h2>
+                            {{#each petProjects as |petProject petProjectId|}}
+                                <h3>{{petProject.title}}</h3>
+                                <div>{{petProject.description}}</div>
+                                <div>Uses: {{petProject.technologies}}</div>
+                            {{/each}}
+                        </div>
+                        <div id="preprints" class="">
+                            <h2>Publication Preprints</h2>
+                            {{#each preprints as |preprint preprintId|}}
+                                <h3><a target="_blank" href="{{preprint.website}}">{{preprint.title}}</a></h3>
+                                <div>Co-authors: {{preprint.authors}}</div>
+                                <div>Abstract: {{preprint.abstract}}</div>
+                            {{/each}}
+                        </div>
+                        <div id="contests" class="">
+                            <h2>Contests</h2>
+                            {{#each contests as |contest contestId|}}
+                                <h3>{{contest.honor}}, {{contest.name}}</h3>
+                                <div>{{contest.venue}}. {{contest.location}}.</div>
+                                <div>{{contest.description}}</div>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="timeEvents" class="section">
-                <h2>Timeline</h2>
-                <ul>
-                {{#each timeEvents as |timeEvent timeEventId|}}
-                    <li>
-                        <div>{{timeEvent.timeframe}}</div>
-                        <div>{{timeEvent.title}}</div>
-                        {{#if timeEvent.description}}
-                            <div>{{timeEvent.description}}</div>
-                        {{/if}}
-                    </li>
-                {{/each}}
-                </ul>
-            </div>
-            <div id="petProjects" class="section">
-                <h2>Pet Projects</h2>
-                {{#each petProjects as |petProject petProjectId|}}
-                    <h3>{{petProject.title}}</h3>
-                    <div>{{petProject.description}}</div>
-                    <div>Uses: {{petProject.technologies}}</div>
-                {{/each}}
-            </div>
-            <div id="preprints" class="section">
-                <h2>Publication Preprints</h2>
-                {{#each preprints as |preprint preprintId|}}
-                    <h3><a target="_blank" href="{{preprint.website}}">{{preprint.title}}</a></h3>
-                    <div>Co-authors: {{preprint.authors}}</div>
-                    <div>Abstract: {{preprint.abstract}}</div>
-                {{/each}}
-            </div>
-            <div id="contests" class="section">
-                <h2>Contests</h2>
-                {{#each contests as |contest contestId|}}
-                    <h3>{{contest.honor}}, {{contest.name}}</h3>
-                    <div>{{contest.venue}}. {{contest.location}}.</div>
-                    <div>{{contest.description}}</div>
-                {{/each}}
-            </div>
+            
 
         
 
@@ -89,6 +107,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/vendor/handlebars-v3.0.3.js"></script>
         <script src="js/plugins.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/data.js"></script>
         <script src="js/main.js"></script>
         

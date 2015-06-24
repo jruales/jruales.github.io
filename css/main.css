@@ -103,14 +103,62 @@ textarea {
 
 
 
+.container {
 
+}
 
 body {
-    font-family: Roboto, sans-serif
+    font-family: Roboto, sans-serif;
+    /*
+    font-size: 18px;
+    font-weight: 300;
+    */
+}
+header {
+    background-color: #333;
+    background-image: url("../img/bg.png");
+    color:#fff;
+    padding:50px 0 50px 0;
+    margin-bottom:20px;
+    text-shadow: 1px 1px 2px black;
+}
+#basics #label {
+    font-weight: 500px;
 }
 #main {
-    max-width: 600px;
-    padding: 50px;
+    /*max-width: 600px;
+    padding: 50px;*/
+}
+#basics #picture {
+    max-width: 200px;
+    padding-right: 40px;
+}
+
+#basics #name-label-email-links {
+    
+}
+#basics #label {
+    font-weight: 500;
+}
+#basics #email {
+    margin-bottom: 20px;
+}
+
+.time-event {
+    padding-bottom:30px;
+    padding-left:10px;
+    margin-left:10px;
+    border-left: 1px solid black;
+}
+.time-event .timeframe {
+    /*font-weight: 500;*/
+    color:#888;
+}
+.time-event .title {
+    font-weight: 500;
+}
+.time-event .description {
+    font-size:0.9em;
 }
 
 
