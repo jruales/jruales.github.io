@@ -51,7 +51,7 @@ selectedCoursework = [
 preprints = [
   {
     title: "On left-orderability and double branched covers of Kanenobu's knots",
-    authors: "F. Doria Medina, M. Jackson, J. Ruales, and H. Zeilberger",
+    authors: "F Doria Medina, M Jackson, J Ruales, and H Zeilberger",
     abstract: "We show that the fundamental group of the double branched cover of an infinite family of homologically thin, non-quasi-alternating knots is not left-orderable, giving further support for a conjecture of Boyer, Gordon, and Watson that an irreducible rational homology 3-sphere is an L-space if and only if its fundamental group is not left-orderable.",
     journal: "ArXiv",
     website: "http://arxiv.org/abs/1310.1877"
