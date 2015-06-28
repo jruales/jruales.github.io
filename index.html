@@ -72,7 +72,16 @@
                         <div id="petProjects" class="">
                             <h2>Pet Projects</h2>
                             {{#each petProjects as |petProject petProjectId|}}
-                                <h3>{{petProject.title}}</h3>
+                                {{#if petProject.link}}
+                                    <h3><a target="_blank" href="{{petProject.link}}">{{petProject.title}}</a></h3>
+                                {{else}}
+                                    <h3>{{petProject.title}}</h3>
+                                {{/if}}
+                                {{#if petProject.image}}
+                                    <img src="img/pet_projects/{{petProject.image}}" style="max-width:150px"></img>
+                                {{else}}
+                                    <img src="img/placeholder/square.png" style="max-width:150px"></img>
+                                {{/if}}
                                 <div>{{petProject.description}}</div>
                                 <div>Uses {{petProject.technologies}}</div>
                             {{/each}}
@@ -81,16 +90,43 @@
                             <h2>Publication Preprints</h2>
                             {{#each preprints as |preprint preprintId|}}
                                 <h3><a target="_blank" href="{{preprint.website}}">{{preprint.title}}</a></h3>
+                                {{#if preprint.image}}
+                                    <img src="img/preprints/{{preprint.image}}" style="max-width:150px"></img>
+                                {{else}}
+                                    <img src="img/placeholder/square.png" style="max-width:150px"></img>
+                                {{/if}}
                                 <div>Authors: {{preprint.authors}}</div>
                                 <div>Abstract: {{preprint.abstract}}</div>
                             {{/each}}
                         </div>
                         <div id="contests" class="">
-                            <h2>Contests</h2>
+                            <h2>Programming Contests</h2>
                             {{#each contests as |contest contestId|}}
-                                <h3>{{contest.honor}}, {{contest.name}}</h3>
+                                {{#if contest.link}}
+                                    <h3><a target="_blank" href="{{contest.link}}">{{contest.name}}</a></h3>
+                                {{else}}
+                                    <h3>{{contest.name}}</h3>
+                                {{/if}}
+                                {{#if contest.image}}
+                                    <img src="img/contests/{{contest.image}}" style="max-width:150px"></img>
+                                {{else}}
+                                    <img src="img/placeholder/square.png" style="max-width:150px"></img>
+                                {{/if}}
                                 <div>{{contest.venue}}. {{contest.location}}.</div>
                                 <div>{{contest.description}}</div>
+                            {{/each}}
+                        </div>
+                        <div id="programmingExperiments" class="">
+                            <h2>Programming Experiments</h2>
+                            {{#each programmingExperiments as |programmingExperiment programmingExperimentId|}}
+                                <h3><a href="{{programmingExperiment.link}}" target="_blank">{{programmingExperiment.name}}</a></h3>
+                                <div>({{programmingExperiment.dateWhenMade}})</div>
+                                {{#if programmingExperiment.image}}
+                                    <img src="img/programming_experiments/{{programmingExperiment.image}}" style="max-width:150px"></img>
+                                {{else}}
+                                    <img src="img/placeholder/square.png" style="max-width:150px"></img>
+                                {{/if}}
+                                <div>{{{programmingExperiment.description}}}</div>
                             {{/each}}
                         </div>
                     </div>
@@ -108,7 +144,7 @@
         <script src="js/vendor/handlebars-v3.0.3.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/data.js"></script>
+        <script src="js/data/data.js"></script>
         <script src="js/main.js"></script>
         
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

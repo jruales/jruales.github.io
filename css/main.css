@@ -117,6 +117,7 @@ body {
 header {
     background-color: #333;
     background-image: url("../img/bg.jpg");
+    /*background-attachment: fixed;*/
     color:#fff;
     padding:50px 0 50px 0;
     margin-bottom:20px;
