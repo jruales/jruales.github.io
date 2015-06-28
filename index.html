@@ -103,9 +103,9 @@
                             <h2>Programming Contests</h2>
                             {{#each contests as |contest contestId|}}
                                 {{#if contest.link}}
-                                    <h3><a target="_blank" href="{{contest.link}}">{{contest.name}}</a></h3>
+                                    <h3><a target="_blank" href="{{contest.link}}">{{contest.honor}}, {{contest.name}}</a></h3>
                                 {{else}}
-                                    <h3>{{contest.name}}</h3>
+                                    <h3>{{contest.honor}}, {{contest.name}}</h3>
                                 {{/if}}
                                 {{#if contest.image}}
                                     <img src="img/contests/{{contest.image}}" style="max-width:150px"></img>
