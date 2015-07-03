@@ -27,7 +27,7 @@
             {{!-- Add your site or application content here --}}
             <header>
                 <div class="container" id="basics">
-                    <img src="{{basics.picture}}" style="float:left" id="picture"/>
+                    <img src="img/basics/{{basics.picture}}" style="float:left" id="picture"/>
                     <div id="name-label-email-links" style="float:left">
                         <div id="name"><h1>{{basics.name}}</h1></div>
                         <div id="label">{{basics.label}}</div>
@@ -144,6 +144,12 @@
         <script src="js/vendor/handlebars-v3.0.3.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/vendor/three.min.js"></script>
+        <script src="js/vendor/threejs/renderers/Projector.js"></script>
+        <script src="js/vendor/threejs/renderers/CanvasRenderer.js"></script>
+        <script src="js/vendor/threejs/libs/stats.min.js"></script>
+
         <script src="js/data/data.js"></script>
         <script src="js/main.js"></script>
         

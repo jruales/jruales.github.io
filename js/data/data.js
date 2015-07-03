@@ -9,8 +9,8 @@ function makeUrl(text, url) {
 basics = {
     name: "Joaquín Ruales",
     label: "Columbia University Computer Science M.S. student",
-    picture: "img/me.png",
-    email: "j.ruales [at] columbia.edu",
+    picture: "square_me3.jpg",
+    email: "jar2262 [at] columbia [dot] edu",
     summary: "I'm a software engineer and mathematician interested in web application development, machine learning, computer graphics, and applied math (in particular: calculus, linear algebra, Bayesian statistics, modeling/simulation).",
     phone: "",
     website: "",
@@ -60,8 +60,231 @@ timeEvents = [
 // SELECTED COURSEWORK
 //
 
-selectedCoursework = [
+columbiaMSCourses = [
+  {
+    name: "Fundamentals of Speech Recognition",
+    department_code: "COMS",
+    number: 6998.004
+  },
+  {
+    name: "Advanced Computer Graphics",
+    department_code: "COMS",
+    number: 4162
+  },
+  {
+    name: "Introduction to Computational Learning Theory",
+    department_code: "COMS",
+    number: 4162
+  },
+  {
+    name: "Computer Networks",
+    department_code: "COMS",
+    number: 4119
+  },
+  {
+    name: "Seminar in Animation and Geometry Processing",
+    department_code: "COMS",
+    number: 6998.002
+  },
+  {
+    name: "Deep Learning for Computer Vision and Natural Language Processing",
+    department_code: "EECS",
+    number: 6894
+  },
+  {
+    name: "Bayesian Statistics",
+    department_code: "STAT",
+    number: 4640
+  }
+]
 
+columbiaBSCourses = [
+  {
+    name: "Probability and Statistics",
+    department_code: "SIEO",
+    number: 4150
+  },
+  {
+    name: "Advanced Programming (C/C++)",
+    department_code: "COMS",
+    number: 3157
+  },
+  {
+    name: "Parallel Programming",
+    department_code: "COMS",
+    number: 4130
+  },
+  {
+    name: "Computer Graphics",
+    department_code: "COMS",
+    number: 4160
+  },
+  {
+    name: "Computer Vision",
+    department_code: "COMS",
+    number: 4731
+  },
+  {
+    name: "Machine Learning",
+    department_code: "COMS",
+    number: 4771
+  },
+  {
+    name: "Operating Systems",
+    department_code: "COMS",
+    number: 4118
+  },
+  {
+    name: "Quantum Computing",
+    department_code: "COMS",
+    number: 4281
+  },
+  {
+    name: "Number Theory & Cryptography",
+    department_code: "MATH",
+    number: 3020
+  },
+  {
+    name: "Programming Languages and Translators",
+    department_code: "COMS",
+    number: 4115
+  },
+  {
+    name: "Computational Aspects of Robotics",
+    department_code: "COMS",
+    number: 4733
+  },
+  {
+    name: "Natural Language Processing",
+    department_code: "COMS",
+    number: 4705
+  },
+  {
+    name: "Partial Differential Equations",
+    department_code: "MATH",
+    number: 3028
+  },
+  {
+    name: "Computer Animation",
+    department_code: "COMS",
+    number: 4167
+  },
+  {
+    name: "Digital Geometry Processing",
+    department_code: "COMS",
+    number: 4995
+  },
+  {
+    name: "Advanced Machine Learning",
+    department_code: "COMS",
+    number: 4772
+  }
+]
+
+oberlinBACourses = [
+  {
+    name: "Principles of Computer Science I",
+    department_code: "CSCI",
+    number: 150
+  },
+  {
+    name: "Principles of Computer Science II",
+    department_code: "CSCI",
+    number: 151
+  },
+  {
+    name: "Computer Organization",
+    department_code: "CSCI",
+    number: 210
+  },
+  {
+    name: "Programming Abstractions",
+    department_code: "CSCI",
+    number: 275
+  },
+  {
+    name: "Introduction to Algorithms",
+    department_code: "CSCI",
+    number: 280
+  },
+  {
+    name: "Theory of Computer Science",
+    department_code: "CSCI",
+    number: 383
+  },
+  {
+    name: "Discrete Mathematics",
+    department_code: "MATH",
+    number: 220
+  },
+  {
+    name: "Multivariable Calculus",
+    department_code: "MATH",
+    number: 231
+  },
+  {
+    name: "Linear Algebra",
+    department_code: "MATH",
+    number: 232
+  },
+  {
+    name: "Differential Equations",
+    department_code: "MATH",
+    number: 234
+  },
+  {
+    name: "Foundations of Analysis",
+    department_code: "MATH",
+    number: 301
+  },
+  {
+    name: "Group Theory",
+    department_code: "MATH",
+    number: 327
+  },
+  {
+    name: "Information Theory",
+    department_code: "MATH",
+    number: 345
+  },
+  {
+    name: "Seminar in Mathematical Modeling",
+    department_code: "MATH",
+    number: 397
+  }
+]
+
+degrees = [
+  {
+    title: "M.S.",
+    major: "Computer Science",
+    track: "Vision and Graphics",
+    gpa: null,
+    college_name: "Columbia University",
+    college_nickname: "Columbia",
+    college_subtitle:"School of Engineering and Applied Science",
+    courses: columbiaMSCourses
+  },
+  {
+    title: "B.S.",
+    major: "Computer Science",
+    track: "Artificial Intelligence",
+    gpa: "3.91/4.33",
+    college_name: "Columbia University",
+    college_nickname: "Columbia",
+    college_subtitle:"School of Engineering and Applied Science",
+    courses: oberlinBACourses
+  },
+  {
+    title: "B.A.",
+    major: "Mathematics",
+    track: null,
+    gpa: "3.92/4.33",
+    college_name:"Oberlin College",
+    college_nickname: "Oberlin",
+    college_subtitle:"College of Arts and Sciences",
+    courses: columbiaBSCourses
+  }
 ];
 
 //
@@ -154,6 +377,7 @@ contests = [
     name: "HackMIT Hackathon",
     venue: "Massachusetts Institute of Technology",
     location: "Cambridge, MA",
+    date: "",
     honor: "1st Place",
     image:"hackmit.png",
     description: "Our team of four programmed a head-movement-controlled web-messaging interface. I implemented the head tracking (in Flash) and integrated the real-time head position data with the user interface and database (HTML, JS, PHP, MySQL) that my teammates created. The user interface is now being used and improved upon by the Speak Your Mind Foundation."
@@ -162,6 +386,7 @@ contests = [
     name: "Denison Programming Contest",
     venue: "Denison University",
     location: "Granville, OH",
+    date: "",
     honor: "2nd Place",
     link: "http://personal.denison.edu/~lalla/DSPC/results10.html",
     description: "Represented Oberlin College on a team of three that solved 4 out of 6 ACM-ICPC-style problems in Java."
