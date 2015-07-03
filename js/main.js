@@ -1,6 +1,9 @@
-var source   = $("#page-template").html();
-var template = Handlebars.compile(source);
-$("#main").html(template(context))
+$(function() {
+  var source = $("#page-template").html();
+  var template = Handlebars.compile(source);
+  $("#main").html(template(context));
+  //$( "#accordion" ).accordion();
+});
 
 
 /*

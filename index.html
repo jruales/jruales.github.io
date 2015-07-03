@@ -46,6 +46,14 @@
             </header>
             <div class="container">
                 <div class="row">
+                    <div class="col-md-8">
+                        <div id="summary" class="">
+                            <!--h2>Summary</h2-->
+                            {{basics.summary}}
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top:40px; margin-bottom:20px;" class="row">
                     <div class="col-md-12">
                         <div id="time-events" class="">
                             <!--h2>Timeline</h2-->
@@ -64,11 +72,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-8">
-                        <div id="summary" class="">
-                            <!--h2>Summary</h2-->
-                            {{basics.summary}}
-                        </div>
+                    <div class="col-md-9">
                         <div id="petProjects" class="">
                             <h2>Pet Projects</h2>
                             {{#each petProjects as |petProject petProjectId|}}
@@ -77,26 +81,37 @@
                                 {{else}}
                                     <h3>{{petProject.title}}</h3>
                                 {{/if}}
-                                {{#if petProject.image}}
-                                    <img src="img/pet_projects/{{petProject.image}}" style="max-width:150px"></img>
-                                {{else}}
-                                    <img src="img/placeholder/square.png" style="max-width:150px"></img>
-                                {{/if}}
-                                <div>{{petProject.description}}</div>
-                                <div>Uses {{petProject.technologies}}</div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                    {{#if petProject.image}}
+                                        <img src="img/pet_projects/{{petProject.image}}" style="max-width:150px"></img>
+                                    {{else}}
+                                        <img src="img/placeholder/square.png" style="max-width:150px"></img>
+                                    {{/if}}
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div>{{petProject.description}}</div>
+                                        <div>Uses {{petProject.technologies}}</div>
+                                    </div>
+                                </div>
                             {{/each}}
                         </div>
                         <div id="preprints" class="">
                             <h2>Publication Preprints</h2>
                             {{#each preprints as |preprint preprintId|}}
                                 <h3><a target="_blank" href="{{preprint.website}}">{{preprint.title}}</a></h3>
-                                {{#if preprint.image}}
-                                    <img src="img/preprints/{{preprint.image}}" style="max-width:150px"></img>
-                                {{else}}
-                                    <img src="img/placeholder/square.png" style="max-width:150px"></img>
-                                {{/if}}
-                                <div>Authors: {{preprint.authors}}</div>
-                                <div>Abstract: {{preprint.abstract}}</div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                    {{#if preprint.image}}
+                                        <img src="img/preprints/{{preprint.image}}" style="max-width:150px"></img>
+                                    {{else}}
+                                        <img src="img/placeholder/square.png" style="max-width:150px"></img>
+                                    {{/if}}
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div>Authors: {{preprint.authors}}</div>
+                                        <div>Abstract: {{preprint.abstract}}</div>
+                                    </div>
                             {{/each}}
                         </div>
                         <div id="contests" class="">
@@ -107,27 +122,57 @@
                                 {{else}}
                                     <h3>{{contest.honor}}, {{contest.name}}</h3>
                                 {{/if}}
-                                {{#if contest.image}}
-                                    <img src="img/contests/{{contest.image}}" style="max-width:150px"></img>
-                                {{else}}
-                                    <img src="img/placeholder/square.png" style="max-width:150px"></img>
-                                {{/if}}
-                                <div>{{contest.venue}}. {{contest.location}}.</div>
-                                <div>{{contest.description}}</div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        {{#if contest.image}}
+                                            <img src="img/contests/{{contest.image}}" style="max-width:150px"></img>
+                                        {{else}}
+                                            <img src="img/placeholder/square.png" style="max-width:150px"></img>
+                                        {{/if}}
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div>{{contest.venue}}. {{contest.location}}.</div>
+                                        <div>{{contest.description}}</div>
+                                    </div>
+                                </div>
                             {{/each}}
                         </div>
                         <div id="programmingExperiments" class="">
                             <h2>Programming Experiments</h2>
                             {{#each programmingExperiments as |programmingExperiment programmingExperimentId|}}
-                                <h3><a href="{{programmingExperiment.link}}" target="_blank">{{programmingExperiment.name}}</a></h3>
-                                <div>({{programmingExperiment.dateWhenMade}})</div>
-                                {{#if programmingExperiment.image}}
-                                    <img src="img/programming_experiments/{{programmingExperiment.image}}" style="max-width:150px"></img>
-                                {{else}}
-                                    <img src="img/placeholder/square.png" style="max-width:150px"></img>
-                                {{/if}}
-                                <div>{{{programmingExperiment.description}}}</div>
+                                <h3><a href="{{programmingExperiment.link}}" target="_blank">{{programmingExperiment.name}} ({{programmingExperiment.dateYear}})</a></h3>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        {{#if programmingExperiment.image}}
+                                            <a href="{{programmingExperiment.link}}" target="_blank"><img src="img/programming_experiments/{{programmingExperiment.image}}" style="max-width:150px" /></a>
+                                        {{else}}
+                                            <img src="img/placeholder/square.png" style="max-width:150px"></img>
+                                        {{/if}}
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div>{{{programmingExperiment.description}}}</div>
+                                    </div>
+                                </div>
                             {{/each}}
+                        </div>
+                        <div id="degrees" class="">
+                            <h2>Coursework</h2>
+                            <div>
+                                <ul>
+                                {{#each degrees as |degree degreeId|}}
+                                    <li>
+                                        {{degree.collegeName}} {{degree.title}}{{#if degree.major}} in {{degree.major}}{{/if}}
+                                        <ul>
+                                        {{#each degree.courses as |course courseId|}}
+                                        <li>
+                                         {{course.name}} ({{course.departmentCode}} {{course.number}})
+                                        </li>
+                                        {{/each}}
+                                        </ul>
+                                    </li>
+                                {{/each}}
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -141,6 +186,7 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery-ui.min.js"></script>
         <script src="js/vendor/handlebars-v3.0.3.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>

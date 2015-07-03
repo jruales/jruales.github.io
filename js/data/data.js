@@ -11,7 +11,7 @@ basics = {
     label: "Columbia University Computer Science M.S. student",
     picture: "square_me3.jpg",
     email: "jar2262 [at] columbia [dot] edu",
-    summary: "I'm a software engineer and mathematician interested in web application development, machine learning, computer graphics, and applied math (in particular: calculus, linear algebra, Bayesian statistics, modeling/simulation).",
+    summary: "Hi, I'm a software engineer and mathematician interested in machine learning, computer graphics, web application development, and applied math.",
     phone: "",
     website: "",
     location: {
@@ -57,237 +57,6 @@ timeEvents = [
 ]
 
 //
-// SELECTED COURSEWORK
-//
-
-columbiaMSCourses = [
-  {
-    name: "Fundamentals of Speech Recognition",
-    department_code: "COMS",
-    number: 6998.004
-  },
-  {
-    name: "Advanced Computer Graphics",
-    department_code: "COMS",
-    number: 4162
-  },
-  {
-    name: "Introduction to Computational Learning Theory",
-    department_code: "COMS",
-    number: 4162
-  },
-  {
-    name: "Computer Networks",
-    department_code: "COMS",
-    number: 4119
-  },
-  {
-    name: "Seminar in Animation and Geometry Processing",
-    department_code: "COMS",
-    number: 6998.002
-  },
-  {
-    name: "Deep Learning for Computer Vision and Natural Language Processing",
-    department_code: "EECS",
-    number: 6894
-  },
-  {
-    name: "Bayesian Statistics",
-    department_code: "STAT",
-    number: 4640
-  }
-]
-
-columbiaBSCourses = [
-  {
-    name: "Probability and Statistics",
-    department_code: "SIEO",
-    number: 4150
-  },
-  {
-    name: "Advanced Programming (C/C++)",
-    department_code: "COMS",
-    number: 3157
-  },
-  {
-    name: "Parallel Programming",
-    department_code: "COMS",
-    number: 4130
-  },
-  {
-    name: "Computer Graphics",
-    department_code: "COMS",
-    number: 4160
-  },
-  {
-    name: "Computer Vision",
-    department_code: "COMS",
-    number: 4731
-  },
-  {
-    name: "Machine Learning",
-    department_code: "COMS",
-    number: 4771
-  },
-  {
-    name: "Operating Systems",
-    department_code: "COMS",
-    number: 4118
-  },
-  {
-    name: "Quantum Computing",
-    department_code: "COMS",
-    number: 4281
-  },
-  {
-    name: "Number Theory & Cryptography",
-    department_code: "MATH",
-    number: 3020
-  },
-  {
-    name: "Programming Languages and Translators",
-    department_code: "COMS",
-    number: 4115
-  },
-  {
-    name: "Computational Aspects of Robotics",
-    department_code: "COMS",
-    number: 4733
-  },
-  {
-    name: "Natural Language Processing",
-    department_code: "COMS",
-    number: 4705
-  },
-  {
-    name: "Partial Differential Equations",
-    department_code: "MATH",
-    number: 3028
-  },
-  {
-    name: "Computer Animation",
-    department_code: "COMS",
-    number: 4167
-  },
-  {
-    name: "Digital Geometry Processing",
-    department_code: "COMS",
-    number: 4995
-  },
-  {
-    name: "Advanced Machine Learning",
-    department_code: "COMS",
-    number: 4772
-  }
-]
-
-oberlinBACourses = [
-  {
-    name: "Principles of Computer Science I",
-    department_code: "CSCI",
-    number: 150
-  },
-  {
-    name: "Principles of Computer Science II",
-    department_code: "CSCI",
-    number: 151
-  },
-  {
-    name: "Computer Organization",
-    department_code: "CSCI",
-    number: 210
-  },
-  {
-    name: "Programming Abstractions",
-    department_code: "CSCI",
-    number: 275
-  },
-  {
-    name: "Introduction to Algorithms",
-    department_code: "CSCI",
-    number: 280
-  },
-  {
-    name: "Theory of Computer Science",
-    department_code: "CSCI",
-    number: 383
-  },
-  {
-    name: "Discrete Mathematics",
-    department_code: "MATH",
-    number: 220
-  },
-  {
-    name: "Multivariable Calculus",
-    department_code: "MATH",
-    number: 231
-  },
-  {
-    name: "Linear Algebra",
-    department_code: "MATH",
-    number: 232
-  },
-  {
-    name: "Differential Equations",
-    department_code: "MATH",
-    number: 234
-  },
-  {
-    name: "Foundations of Analysis",
-    department_code: "MATH",
-    number: 301
-  },
-  {
-    name: "Group Theory",
-    department_code: "MATH",
-    number: 327
-  },
-  {
-    name: "Information Theory",
-    department_code: "MATH",
-    number: 345
-  },
-  {
-    name: "Seminar in Mathematical Modeling",
-    department_code: "MATH",
-    number: 397
-  }
-]
-
-degrees = [
-  {
-    title: "M.S.",
-    major: "Computer Science",
-    track: "Vision and Graphics",
-    gpa: null,
-    college_name: "Columbia University",
-    college_nickname: "Columbia",
-    college_subtitle:"School of Engineering and Applied Science",
-    courses: columbiaMSCourses
-  },
-  {
-    title: "B.S.",
-    major: "Computer Science",
-    track: "Artificial Intelligence",
-    gpa: "3.91/4.33",
-    college_name: "Columbia University",
-    college_nickname: "Columbia",
-    college_subtitle:"School of Engineering and Applied Science",
-    courses: oberlinBACourses
-  },
-  {
-    title: "B.A.",
-    major: "Mathematics",
-    track: null,
-    gpa: "3.92/4.33",
-    college_name:"Oberlin College",
-    college_nickname: "Oberlin",
-    college_subtitle:"College of Arts and Sciences",
-    courses: columbiaBSCourses
-  }
-];
-
-//
 // PREPRINTS
 //
 
@@ -315,7 +84,7 @@ petProjects = [
     title: "400pixels.net",
     link: "http://400pixels.net/",
     image: "400pixels.png",
-    description: "Pixel art web app",
+    description: "Pixel art web app.",
     year: "2010",
     technologies: "AS 3.0 + PHP + MySQL"
   }
@@ -367,7 +136,8 @@ contests = [
     name: "ACM-ICPC Regional Programming Contest, Greater New York Region",
     venue: "St. Joseph's College",
     location: "Patchogue, NY",
-    date: "",
+    dateMonth: 11,
+    dateYear: 2014,
     honor: "4th Place",
     image:"acm.png",
     link: "http://acmgnyr.org/year2014/standings.shtml",
@@ -377,7 +147,8 @@ contests = [
     name: "HackMIT Hackathon",
     venue: "Massachusetts Institute of Technology",
     location: "Cambridge, MA",
-    date: "",
+    dateMonth: 2,
+    dateYear: 2013,
     honor: "1st Place",
     image:"hackmit.png",
     description: "Our team of four programmed a head-movement-controlled web-messaging interface. I implemented the head tracking (in Flash) and integrated the real-time head position data with the user interface and database (HTML, JS, PHP, MySQL) that my teammates created. The user interface is now being used and improved upon by the Speak Your Mind Foundation."
@@ -386,7 +157,9 @@ contests = [
     name: "Denison Programming Contest",
     venue: "Denison University",
     location: "Granville, OH",
-    date: "",
+    date: "Feb 2010",
+    dateMonth: 2,
+    dateYear: 2010,
     honor: "2nd Place",
     link: "http://personal.denison.edu/~lalla/DSPC/results10.html",
     description: "Represented Oberlin College on a team of three that solved 4 out of 6 ACM-ICPC-style problems in Java."
@@ -400,15 +173,15 @@ contests = [
 programmingExperiments = [
     {
     name: "2P Flappy Bird",
-    dateWhenMade: "2014",
+    dateYear: "2014",
     link:"http://400pixels.net/flappy2p/",
     image:"flappy2p.png",
     mobileFriendly: false,
-    description: "I reverse-engineered Flappy Bird and made a 2 player web version in Flash."
+    description: "A 2 player web version of the popular smartphone game."
   },
   {
     name: "Fractal Flame Generator",
-    dateWhenMade: "2012",
+    dateYear: "2012",
     // TODO(jruales): Make an HTML container for each SWF file
     link:"http://400pixels.net/isometric/flame.swf",
     image:"sierpinski1.png",
@@ -418,14 +191,268 @@ programmingExperiments = [
   },
   {
     name: "Maze",
-    dateWhenMade: "2006",
+    dateYear: "2006",
     link:"http://joaqo182.50webs.com/maze.html",
     image:"maze.png",
     mobileFriendly: false,
-    description: "Test your reflexes and hand steadiness as you guide your mouse pointer through 12 labirinthine levels and one final speed challenge. Includes a level where your mouse pointer will have to escape being eaten by Pac-Man and two levels where your mouse pointer is invisible and you will have to be guided by a multitude of watching eyes. This was the first web game I programmed.",
+    description: "Test your reflexes and hand steadiness as you guide your mouse pointer through 12 labirinthine levels and one final speed challenge. This was the first web game I ever programmed.",
     notesToSelf: "This email shows that the game was in fact made in 2006: https://mail.google.com/mail/u/0/?pli=1#search/maze/10e1a1226cd87249"
   }
 ]
+
+//
+// Degrees
+//
+
+columbiaMSCourses = [
+  {
+    name: "Fundamentals of Speech Recognition",
+    departmentCode: "COMS",
+    number: 6998.004
+  },
+  {
+    name: "Advanced Computer Graphics",
+    departmentCode: "COMS",
+    number: 4162
+  },
+  {
+    name: "Introduction to Computational Learning Theory",
+    departmentCode: "COMS",
+    number: 4162
+  },
+  {
+    name: "Computer Networks",
+    departmentCode: "COMS",
+    number: 4119
+  },
+  {
+    name: "Seminar in Animation and Geometry Processing",
+    departmentCode: "COMS",
+    number: 6998.002
+  },
+  {
+    name: "Deep Learning for Computer Vision and Natural Language Processing",
+    departmentCode: "EECS",
+    number: 6894
+  },
+  {
+    name: "Bayesian Statistics",
+    departmentCode: "STAT",
+    number: 4640
+  }
+]
+
+columbiaBSCourses = [
+  {
+    name: "Probability and Statistics",
+    departmentCode: "SIEO",
+    number: 4150
+  },
+  {
+    name: "Advanced Programming (C/C++)",
+    departmentCode: "COMS",
+    number: 3157
+  },
+  {
+    name: "Parallel Programming",
+    departmentCode: "COMS",
+    number: 4130
+  },
+  {
+    name: "Computer Graphics",
+    departmentCode: "COMS",
+    number: 4160
+  },
+  {
+    name: "Computer Vision",
+    departmentCode: "COMS",
+    number: 4731
+  },
+  {
+    name: "Machine Learning",
+    departmentCode: "COMS",
+    number: 4771
+  },
+  {
+    name: "Operating Systems",
+    departmentCode: "COMS",
+    number: 4118
+  },
+  {
+    name: "Quantum Computing",
+    departmentCode: "COMS",
+    number: 4281
+  },
+  {
+    name: "Number Theory & Cryptography",
+    departmentCode: "MATH",
+    number: 3020
+  },
+  {
+    name: "Programming Languages and Translators",
+    departmentCode: "COMS",
+    number: 4115
+  },
+  {
+    name: "Computational Aspects of Robotics",
+    departmentCode: "COMS",
+    number: 4733
+  },
+  {
+    name: "Natural Language Processing",
+    departmentCode: "COMS",
+    number: 4705
+  },
+  {
+    name: "Partial Differential Equations",
+    departmentCode: "MATH",
+    number: 3028
+  },
+  {
+    name: "Computer Animation",
+    departmentCode: "COMS",
+    number: 4167
+  },
+  {
+    name: "Digital Geometry Processing",
+    departmentCode: "COMS",
+    number: 4995
+  },
+  {
+    name: "Advanced Machine Learning",
+    departmentCode: "COMS",
+    number: 4772
+  }
+]
+
+stanfordSummerCourses = [
+  {
+    name: "Introduction to Artificial Intelligence",
+    departmentCode: "CS",
+    number: 121
+  },
+  {
+    name: "Technology Engrepreneurship",
+    departmentCode: "ENGR",
+    number: 145
+  }
+]
+
+oberlinBACourses = [
+  {
+    name: "Principles of Computer Science I",
+    departmentCode: "CSCI",
+    number: 150
+  },
+  {
+    name: "Principles of Computer Science II",
+    departmentCode: "CSCI",
+    number: 151
+  },
+  {
+    name: "Computer Organization",
+    departmentCode: "CSCI",
+    number: 210
+  },
+  {
+    name: "Programming Abstractions",
+    departmentCode: "CSCI",
+    number: 275
+  },
+  {
+    name: "Introduction to Algorithms",
+    departmentCode: "CSCI",
+    number: 280
+  },
+  {
+    name: "Theory of Computer Science",
+    departmentCode: "CSCI",
+    number: 383
+  },
+  {
+    name: "Discrete Mathematics",
+    departmentCode: "MATH",
+    number: 220
+  },
+  {
+    name: "Multivariable Calculus",
+    departmentCode: "MATH",
+    number: 231
+  },
+  {
+    name: "Linear Algebra",
+    departmentCode: "MATH",
+    number: 232
+  },
+  {
+    name: "Differential Equations",
+    departmentCode: "MATH",
+    number: 234
+  },
+  {
+    name: "Foundations of Analysis",
+    departmentCode: "MATH",
+    number: 301
+  },
+  {
+    name: "Group Theory",
+    departmentCode: "MATH",
+    number: 327
+  },
+  {
+    name: "Information Theory",
+    departmentCode: "MATH",
+    number: 345
+  },
+  {
+    name: "Seminar in Mathematical Modeling",
+    departmentCode: "MATH",
+    number: 397
+  }
+]
+
+degrees = [
+  {
+    collegeName: "Columbia University",
+    collegeNickname: "Columbia",
+    collegeSubtitle: "School of Engineering and Applied Science",
+    title: "M.S.",
+    major: "Computer Science",
+    track: "Vision and Graphics",
+    gpa: null,
+    courses: columbiaMSCourses
+  },
+  {
+    collegeName: "Columbia University",
+    collegeNickname: "Columbia",
+    collegeSubtitle: "School of Engineering and Applied Science",
+    title: "B.S.",
+    major: "Computer Science",
+    track: "Artificial Intelligence",
+    gpa: "3.91/4.33",
+    courses: columbiaBSCourses
+  },
+  {
+    collegeName: "Stanford University",
+    collegeNickname: "Stanford",
+    collegeSubtitle: null,
+    title: "Summer Session",
+    major: null,
+    track: null,
+    gpa: null,
+    courses: stanfordSummerCourses
+  },
+  {
+    collegeName:"Oberlin College",
+    collegeNickname: "Oberlin",
+    collegeSubtitle: "College of Arts and Sciences",
+    title: "B.A.",
+    major: "Mathematics",
+    track: null,
+    gpa: "3.92/4.33",
+    courses: oberlinBACourses
+  }
+];
 
 
 context = {
@@ -434,5 +461,6 @@ context = {
   petProjects: petProjects,
   preprints: preprints,
   contests: contests,
-  programmingExperiments: programmingExperiments
+  programmingExperiments: programmingExperiments,
+  degrees: degrees
 };
