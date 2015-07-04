@@ -11,7 +11,7 @@ basics = {
     label: "Columbia University Computer Science M.S. student",
     picture: "square_me3.jpg",
     email: "jar2262 [at] columbia [dot] edu",
-    summary: "Hi, I'm a software engineer and mathematician interested in machine learning, computer graphics, web application development, and applied math.",
+    summary: "Hi, I'm a software engineer and mathematician interested in machine learning, computer vision, computer graphics, web application development, and applied math.",
     phone: "",
     website: "",
     location: {
@@ -67,26 +67,91 @@ preprints = [
     image:"kanenobu.jpg",
     abstract: "We show that the fundamental group of the double branched cover of an infinite family of homologically thin, non-quasi-alternating knots is not left-orderable, giving further support for a conjecture of Boyer, Gordon, and Watson that an irreducible rational homology 3-sphere is an L-space if and only if its fundamental group is not left-orderable.",
     journal: "ArXiv",
-    website: "http://arxiv.org/abs/1310.1877"
+    link: "http://arxiv.org/abs/1310.1877"
   }
 ];
+
+//
+// PET PROJECTS
+//
 
 petProjects = [
   {
     title: "EcuaCines",
     link: "http://ecuacines.com/",
     image: "ecuacines.png",
+    mobileFriendly: true,
+    mobileFirst: true,
     description: "Displays showtimes for all major movie theaters in Quito, Ecuador. Showtime information collected automatically from each movie theater's website.",
-    year: "2013",
+    year: 2013,
     technologies: "HTML + CSS + JS + PHP + MySQL"
   },
   {
-    title: "400pixels.net",
+    title: "400 pixels",
     link: "http://400pixels.net/",
     image: "400pixels.png",
+    mobileFriendly: false,
+    mobileFirst: false, 
     description: "Pixel art web app.",
-    year: "2010",
+    year: 2010,
     technologies: "AS 3.0 + PHP + MySQL"
+  }
+]
+
+//
+// BUILT WEBSITES
+//
+
+builtWebsites = [
+  {
+    title: "Hostal Vista Amazonas",
+    link: "http://vistaamazonas.com/",
+    image: null,
+    mobileFriendly: true,
+    mobileFirst: false,
+    description: "Multilingual website for a hostal in Ecuador.",
+    dateYear: 2012,
+    technologies: "HTML + CSS + JS + PHP"
+  },
+  {
+    title: "Andrew J. Churchill's Portfolio Website",
+    link: "http://400pixels.net/churchill/",
+    image: null,
+    mobileFriendly: false,
+    mobileFirst: false,
+    description: "Website for a music composer.",
+    dateYear: null,
+    technologies: "AS 3.0"
+  },
+  {
+    title: "Oberlin College Library Website",
+    link: "http://www.oberlin.edu/library/",
+    image: null,
+    mobileFriendly: true,
+    mobileFirst: false,
+    description: "Rebuilt the library website's main pages as part of the library web team. Replaced outdated code libraries and coding standards and focused on making the site user-friendly and visually clean.",
+    dateYear: 2009,
+    technologies: null
+  },
+  {
+    title: "Movimiento Verde Estudiantil",
+    link: "http://movimiento-verde.50webs.com/",
+    image: null,
+    mobileFriendly: false,
+    mobileFirst: false,
+    description: "Website for a student recycling group organized by members of my high school.",
+    dateYear: 2009,
+    technologies: "AS 3.0 + PHP + MySQL"
+  },
+  {
+    title: "Joaquín Ruales's Art Portfolio",
+    link: "http://joaquin-ruales.50webs.com/",
+    image: null,
+    mobileFriendly: false,
+    mobileFirst: false,
+    description: "My art portfolio website up until 2008.",
+    dateYear: 2008,
+    technologies: "AS 3.0"
   }
 ]
 
@@ -149,8 +214,10 @@ contests = [
     location: "Cambridge, MA",
     dateMonth: 2,
     dateYear: 2013,
-    honor: "1st Place",
-    image:"hackmit.png",
+    honor: "1st Place and \"Most likely to become a real product\"",
+    image: "hackmit.png",
+    link: "https://www.facebook.com/events/295683690535160/",
+    link2: "https://twitter.com/dff/status/298218271117803520",
     description: "Our team of four programmed a head-movement-controlled web-messaging interface. I implemented the head tracking (in Flash) and integrated the real-time head position data with the user interface and database (HTML, JS, PHP, MySQL) that my teammates created. The user interface is now being used and improved upon by the Speak Your Mind Foundation."
   },
   {
@@ -161,6 +228,7 @@ contests = [
     dateMonth: 2,
     dateYear: 2010,
     honor: "2nd Place",
+    image: "denison.png",
     link: "http://personal.denison.edu/~lalla/DSPC/results10.html",
     description: "Represented Oberlin College on a team of three that solved 4 out of 6 ACM-ICPC-style problems in Java."
   }
@@ -177,6 +245,7 @@ programmingExperiments = [
     link:"http://400pixels.net/flappy2p/",
     image:"flappy2p.png",
     mobileFriendly: false,
+    mobileFirst: false,
     description: "A 2 player web version of the popular smartphone game."
   },
   {
@@ -187,7 +256,8 @@ programmingExperiments = [
     image:"sierpinski1.png",
     // TODO(jruales): Hide Flash experiments from mobile users
     mobileFriendly: false,
-    description: "This program uses <a target=\"_blank\" href=\"http://flam3.com/flame_draves.pdf\">Iterated function systems</a> to create a variety of fractals ranging from Sierpinski triangles to flame-like paintings, depending on the selected settings. Fractals are generated directly in your web browser."
+    mobileFirst: false,
+    description: "This program uses <a target=\"_blank\" href=\"http://flam3.com/flame_draves.pdf\">Iterated function systems</a> to create a variety of fractals ranging from Sierpinski triangles to flame-like paintings, depending on the selected settings. Fractals are generated directly by your web browser."
   },
   {
     name: "Maze",
@@ -195,6 +265,7 @@ programmingExperiments = [
     link:"http://joaqo182.50webs.com/maze.html",
     image:"maze.png",
     mobileFriendly: false,
+    mobileFirst: false,
     description: "Test your reflexes and hand steadiness as you guide your mouse pointer through 12 labirinthine levels and one final speed challenge. This was the first web game I ever programmed.",
     notesToSelf: "This email shows that the game was in fact made in 2006: https://mail.google.com/mail/u/0/?pli=1#search/maze/10e1a1226cd87249"
   }
@@ -204,7 +275,7 @@ programmingExperiments = [
 // Degrees
 //
 
-columbiaMSCourses = [
+columbiaMSRelevantCourses = [
   {
     name: "Fundamentals of Speech Recognition",
     departmentCode: "COMS",
@@ -240,9 +311,11 @@ columbiaMSCourses = [
     departmentCode: "STAT",
     number: 4640
   }
-]
+];
 
-columbiaBSCourses = [
+columbiaMSOtherCourses = [];
+
+columbiaBSRelevantCourses = [
   {
     name: "Probability and Statistics",
     departmentCode: "SIEO",
@@ -314,31 +387,46 @@ columbiaBSCourses = [
     number: 4167
   },
   {
-    name: "Digital Geometry Processing",
+    name: "Digital Geometry Processing with Discrete Differential Geometry",
     departmentCode: "COMS",
-    number: 4995
+    number: 4995.001
+  },
+  {
+    name: "GPU Computing",
+    departmentCode: "COMS",
+    number: 4995.004
   },
   {
     name: "Advanced Machine Learning",
     departmentCode: "COMS",
     number: 4772
   }
-]
+];
 
-stanfordSummerCourses = [
+columbiaBSOtherCourses = [
+  {
+    name: "Translation Seminar",
+    departmentCode: "WRIT",
+    number: 3336
+  }
+];
+
+stanfordSummerRelevantCourses = [
   {
     name: "Introduction to Artificial Intelligence",
     departmentCode: "CS",
     number: 121
   },
   {
-    name: "Technology Engrepreneurship",
+    name: "Technology Entrepreneurship",
     departmentCode: "ENGR",
     number: 145
   }
-]
+];
 
-oberlinBACourses = [
+stanfordSummerOtherCourses = [];
+
+oberlinBARelevantCourses = [
   {
     name: "Principles of Computer Science I",
     departmentCode: "CSCI",
@@ -409,7 +497,80 @@ oberlinBACourses = [
     departmentCode: "MATH",
     number: 397
   }
-]
+];
+
+oberlinBAOtherCourses = [
+  {
+    name: "Principles of Economics",
+    departmentCode: "ECON",
+    number: 101
+  },
+  {
+    name: "Information, Knowledge, and the Internet",
+    departmentCode: "FYSP",
+    number: 155
+  },
+  {
+    name: "Technique and Form in Fiction",
+    departmentCode: "CRWR",
+    number: 120
+  },
+  {
+    name: "Environment and Society",
+    departmentCode: "ENVS",
+    number: 101
+  },
+  {
+    name: "Topics in General Chemistry",
+    departmentCode: "CHEM",
+    number: 103
+  },
+  {
+    name: "Mechanics and Relativity",
+    departmentCode: "PHYS",
+    number: 110
+  },
+  {
+    name: "The Study of Behavior",
+    departmentCode: "PSYC",
+    number: 100
+  },
+  {
+    name: "Poetry/Prose Workshop",
+    departmentCode: "CRWR",
+    number: 201
+  },
+  {
+    name: "Electricity/Magnetism/Thermodynamics",
+    departmentCode: "PHYS",
+    number: 111
+  },
+  {
+    name: "Piano",
+    departmentCode: "PVST",
+    number: 51
+  },
+  {
+    name: "Modern Physics",
+    departmentCode: "PHYS",
+    number: 212
+  },
+  {
+    name: "Writing to Learn and Participate",
+    departmentCode: "RHET",
+    number: 105
+  },
+  {
+    name: "Introduction to Cultural Anthropology",
+    departmentCode: "ANTH",
+    number: 101
+  },
+  {
+    name: "Economic Development",
+    departmentCode: "ECON",
+    number: 209
+  }
+];
 
 degrees = [
   {
@@ -420,7 +581,8 @@ degrees = [
     major: "Computer Science",
     track: "Vision and Graphics",
     gpa: null,
-    courses: columbiaMSCourses
+    relevantCourses: columbiaMSRelevantCourses,
+    otherCourses: columbiaMSOtherCourses
   },
   {
     collegeName: "Columbia University",
@@ -430,7 +592,8 @@ degrees = [
     major: "Computer Science",
     track: "Artificial Intelligence",
     gpa: "3.91/4.33",
-    courses: columbiaBSCourses
+    relevantCourses: columbiaBSRelevantCourses,
+    otherCourses: columbiaBSOtherCourses
   },
   {
     collegeName: "Stanford University",
@@ -440,7 +603,8 @@ degrees = [
     major: null,
     track: null,
     gpa: null,
-    courses: stanfordSummerCourses
+    relevantCourses: stanfordSummerRelevantCourses,
+    otherCourses: stanfordSummerOtherCourses
   },
   {
     collegeName:"Oberlin College",
@@ -450,7 +614,8 @@ degrees = [
     major: "Mathematics",
     track: null,
     gpa: "3.92/4.33",
-    courses: oberlinBACourses
+    relevantCourses: oberlinBARelevantCourses,
+    otherCourses: oberlinBAOtherCourses
   }
 ];
 
@@ -459,6 +624,7 @@ context = {
   basics: basics,
   timeEvents: timeEvents,
   petProjects: petProjects,
+  builtWebsites: builtWebsites,
   preprints: preprints,
   contests: contests,
   programmingExperiments: programmingExperiments,

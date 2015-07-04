@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/webicons.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -53,15 +54,15 @@
                         </div>
                     </div>
                 </div>
-                <div style="margin-top:40px; margin-bottom:20px;" class="row">
+                <div style="margin-top:40px;" class="row">
                     <div class="col-md-12">
                         <div id="time-events" class="">
                             <!--h2>Timeline</h2-->
                             <ul>
                             {{#each timeEvents as |timeEvent timeEventId|}}
                                 <li class="time-event">
-                                    <div class="timeframe">{{timeEvent.timeframe}}</div>
                                     <div class="title">{{timeEvent.title}}</div>
+                                    <div class="timeframe">{{timeEvent.timeframe}}</div>
                                     {{#if timeEvent.description}}
                                         <div class="description">{{timeEvent.description}}</div>
                                     {{/if}}
@@ -73,6 +74,28 @@
                 </div>
                 <div class="row">
                     <div class="col-md-9">
+                        <div id="preprints" class="">
+                            <h2>Publication Preprints</h2>
+                            {{#each preprints as |preprint preprintId|}}
+                                <h3><a target="_blank" href="{{preprint.link}}">{{preprint.title}}</a></h3>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                    {{#if preprint.image}}
+                                        {{#if preprint.link}}
+                                        <a target="_blank" href="{{preprint.link}}"><img src="img/preprints/{{preprint.image}}" style="max-width:150px" /></a>
+                                        {{else}}
+                                        <img src="img/preprints/{{preprint.image}}" style="max-width:150px" />
+                                        {{/if}}
+                                    {{else}}
+                                        <img src="img/placeholder/square.png" style="max-width:150px" />
+                                    {{/if}}
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div>Authors: {{preprint.authors}}</div>
+                                        <div>Abstract: {{preprint.abstract}}</div>
+                                    </div>
+                            {{/each}}
+                        </div>
                         <div id="petProjects" class="">
                             <h2>Pet Projects</h2>
                             {{#each petProjects as |petProject petProjectId|}}
@@ -84,9 +107,15 @@
                                 <div class="row">
                                     <div class="col-md-3">
                                     {{#if petProject.image}}
-                                        <img src="img/pet_projects/{{petProject.image}}" style="max-width:150px"></img>
+                                        {{#if petProject.link}}
+                                        <a target="_blank" href="{{petProject.link}}">
+                                            <img src="img/pet_projects/{{petProject.image}}" style="max-width:150px" />
+                                        </a>
+                                        {{else}}
+                                        <img src="img/pet_projects/{{petProject.image}}" style="max-width:150px" />
+                                        {{/if}}
                                     {{else}}
-                                        <img src="img/placeholder/square.png" style="max-width:150px"></img>
+                                        <img src="img/placeholder/square.png" style="max-width:150px" />
                                     {{/if}}
                                     </div>
                                     <div class="col-md-9">
@@ -96,22 +125,35 @@
                                 </div>
                             {{/each}}
                         </div>
-                        <div id="preprints" class="">
-                            <h2>Publication Preprints</h2>
-                            {{#each preprints as |preprint preprintId|}}
-                                <h3><a target="_blank" href="{{preprint.website}}">{{preprint.title}}</a></h3>
+                        <div id="builtWebsites" class="">
+                            <h2>Websites</h2>
+                            {{#each builtWebsites as |builtWebsite builtWebsiteId|}}
+                                {{#if builtWebsite.link}}
+                                    <h3><a target="_blank" href="{{builtWebsite.link}}">{{builtWebsite.title}}</a></h3>
+                                {{else}}
+                                    <h3>{{builtWebsite.title}}</h3>
+                                {{/if}}
                                 <div class="row">
                                     <div class="col-md-3">
-                                    {{#if preprint.image}}
-                                        <img src="img/preprints/{{preprint.image}}" style="max-width:150px"></img>
+                                    {{#if builtWebsite.image}}
+                                        {{#if builtWebsite.link}}
+                                        <a target="_blank" href="{{builtWebsite.link}}">
+                                            <img src="img/pet_projects/{{builtWebsite.image}}" style="max-width:150px" />
+                                        </a>
+                                        {{else}}
+                                        <img src="img/pet_projects/{{builtWebsite.image}}" style="max-width:150px" />
+                                        {{/if}}
                                     {{else}}
-                                        <img src="img/placeholder/square.png" style="max-width:150px"></img>
+                                        <img src="img/placeholder/square.png" style="max-width:150px" />
                                     {{/if}}
                                     </div>
                                     <div class="col-md-9">
-                                        <div>Authors: {{preprint.authors}}</div>
-                                        <div>Abstract: {{preprint.abstract}}</div>
+                                        <div>{{builtWebsite.description}}</div>
+                                        {{#if builtWebsite.technologies}}
+                                        <div>Uses {{builtWebsite.technologies}}</div>
+                                        {{/if}}
                                     </div>
+                                </div>
                             {{/each}}
                         </div>
                         <div id="contests" class="">
@@ -125,9 +167,15 @@
                                 <div class="row">
                                     <div class="col-md-3">
                                         {{#if contest.image}}
-                                            <img src="img/contests/{{contest.image}}" style="max-width:150px"></img>
+                                            {{#if contest.link}}
+                                            <a target="_blank" href="{{contest.link}}">
+                                                <img src="img/contests/{{contest.image}}" style="max-width:150px" />
+                                            </a>
+                                            {{else}}
+                                            <img src="img/contests/{{contest.image}}" style="max-width:150px" />
+                                            {{/if}}
                                         {{else}}
-                                            <img src="img/placeholder/square.png" style="max-width:150px"></img>
+                                            <img src="img/placeholder/square.png" style="max-width:150px" />
                                         {{/if}}
                                     </div>
                                     <div class="col-md-9">
@@ -144,9 +192,13 @@
                                 <div class="row">
                                     <div class="col-md-3">
                                         {{#if programmingExperiment.image}}
+                                            {{#if programmingExperiment.link}}
                                             <a href="{{programmingExperiment.link}}" target="_blank"><img src="img/programming_experiments/{{programmingExperiment.image}}" style="max-width:150px" /></a>
+                                            {{else}}
+                                            <img src="img/programming_experiments/{{programmingExperiment.image}}" style="max-width:150px" />
+                                            {{/if}}
                                         {{else}}
-                                            <img src="img/placeholder/square.png" style="max-width:150px"></img>
+                                            <img src="img/placeholder/square.png" style="max-width:150px" />
                                         {{/if}}
                                     </div>
                                     <div class="col-md-9">
@@ -161,11 +213,16 @@
                                 <ul>
                                 {{#each degrees as |degree degreeId|}}
                                     <li>
-                                        {{degree.collegeName}} {{degree.title}}{{#if degree.major}} in {{degree.major}}{{/if}}
+                                        <strong>{{degree.collegeName}} {{degree.title}}{{#if degree.major}} in {{degree.major}}{{/if}}</strong>
                                         <ul>
-                                        {{#each degree.courses as |course courseId|}}
+                                        {{#each degree.relevantCourses as |relevantCourse relevantCourseId|}}
                                         <li>
-                                         {{course.name}} ({{course.departmentCode}} {{course.number}})
+                                         {{relevantCourse.name}} ({{relevantCourse.departmentCode}} {{relevantCourse.number}})
+                                        </li>
+                                        {{/each}}
+                                        {{#each degree.otherCourses as |otherCourse otherCourseId|}}
+                                        <li>
+                                         {{otherCourse.name}} ({{otherCourse.departmentCode}} {{otherCourse.number}})
                                         </li>
                                         {{/each}}
                                         </ul>

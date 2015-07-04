@@ -1,4 +1,27 @@
 $(function() {
+  function relevantCourseCompare(a, b) {
+    if (a.number < b.number) {
+      return 1;
+    } else if (a.number > b.number) {
+      return -1;
+    } else {
+      return 0;
+    }
+  }
+  function otherCourseCompare(a, b) {
+    if (a.departmentCode > b.departmentCode) {
+      return 1;
+    } else if (a.departmentCode < b.departmentCode) {
+      return -1;
+    } else {
+      return relevantCourseCompare(a, b);
+    }
+  }
+  for (var i = 0; i < context.degrees.length; i++) {
+    context.degrees[i].relevantCourses.sort(relevantCourseCompare);
+    context.degrees[i].otherCourses.sort(otherCourseCompare);
+  };
+
   var source = $("#page-template").html();
   var template = Handlebars.compile(source);
   $("#main").html(template(context));

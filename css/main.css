@@ -108,11 +108,17 @@ textarea {
 }
 
 body {
-    font-family: Roboto, sans-serif;
+    font-family: 'Oswald', 'Roboto', sans-serif;
+    /*font-family: Roboto, sans-serif;*/
     
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 300;
     
+}
+h2 {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: #000 1px solid;
 }
 header {
     background-color: #333;
@@ -165,6 +171,12 @@ header {
 }
 .time-event .description {
     font-size:0.9em;
+}
+
+.row img {
+    box-shadow: 0px 1px 10px #ccc;
+    margin-top:5px;
+    margin-bottom:10px;
 }
 
 
