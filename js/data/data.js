@@ -104,9 +104,19 @@ petProjects = [
 
 builtWebsites = [
   {
+    title: "This website",
+    link: "#",
+    image: "this_website.png",
+    mobileFriendly: true,
+    mobileFirst: true,
+    description: "Very meta.",
+    dateYear: 2015,
+    technologies: "HTML + CSS + JS"
+  },
+  {
     title: "Hostal Vista Amazonas",
     link: "http://vistaamazonas.com/",
-    image: null,
+    image: "vista_amazonas.png",
     mobileFriendly: true,
     mobileFirst: false,
     description: "Multilingual website for a hostal in Ecuador.",
@@ -116,7 +126,7 @@ builtWebsites = [
   {
     title: "Andrew J. Churchill's Portfolio Website",
     link: "http://400pixels.net/churchill/",
-    image: null,
+    image: "churchill.png",
     mobileFriendly: false,
     mobileFirst: false,
     description: "Website for a music composer.",
@@ -126,17 +136,17 @@ builtWebsites = [
   {
     title: "Oberlin College Library Website",
     link: "http://www.oberlin.edu/library/",
-    image: null,
+    image: "oberlin_library.png",
     mobileFriendly: true,
     mobileFirst: false,
-    description: "Rebuilt the library website's main pages as part of the library web team. Replaced outdated code libraries and coding standards and focused on making the site user-friendly and visually clean.",
-    dateYear: 2009,
+    description: "Rebuilt the library website's main pages as part of the library's web team. Replaced outdated code libraries and coding standards and focused on making the site user-friendly and visually clean. A snapshot of the old website before the remake is available on the <a target=\"_blank\" href=\"https://web.archive.org/web/20110519182042/http://www.oberlin.edu/library/\">Internet Archive</a>.",
+    dateYear: 2011,
     technologies: null
   },
   {
     title: "Movimiento Verde Estudiantil",
     link: "http://movimiento-verde.50webs.com/",
-    image: null,
+    image: "movimiento_verde.png",
     mobileFriendly: false,
     mobileFirst: false,
     description: "Website for a student recycling group organized by members of my high school.",
@@ -144,12 +154,12 @@ builtWebsites = [
     technologies: "AS 3.0 + PHP + MySQL"
   },
   {
-    title: "Joaquín Ruales's Art Portfolio",
+    title: "Joaquín Ruales's 2008 Art Portfolio",
     link: "http://joaquin-ruales.50webs.com/",
-    image: null,
+    image: "art_portfolio.png",
     mobileFriendly: false,
     mobileFirst: false,
-    description: "My art portfolio website up until 2008.",
+    description: "My photography and design portfolio up until 2008.",
     dateYear: 2008,
     technologies: "AS 3.0"
   }
@@ -260,13 +270,34 @@ programmingExperiments = [
     description: "This program uses <a target=\"_blank\" href=\"http://flam3.com/flame_draves.pdf\">Iterated function systems</a> to create a variety of fractals ranging from Sierpinski triangles to flame-like paintings, depending on the selected settings. Fractals are generated directly by your web browser."
   },
   {
+    name: "3D Fractal Tree",
+    dateYear: "2009",
+    // TODO(jruales): Make an HTML container for each SWF file
+    link:"http://joaqo182.50webs.com/fullPageFlash.html?swf=3DFractalTree&title=3D%20Fractal%20Tree",
+    image:"fractal_tree.png",
+    // TODO(jruales): Hide Flash experiments from mobile users
+    mobileFriendly: false,
+    mobileFirst: false,
+    description: "This program uses spherical coordinates to generate a different 3D fractal tree each time the page is reloaded."
+  },
+  {
+    name: "3D Space Invader Ball Bounce",
+    dateYear: "2008",
+    link:"http://joaqo182.50webs.com/fullPageFlash.html?swf=3D_y_Fisica&title=3D%20y%20Fisica",
+    image:"space_invader.png",
+    // TODO(jruales): Hide Flash experiments from mobile users
+    mobileFriendly: false,
+    mobileFirst: false,
+    description: "A bouncy ball inside a Space-Invader-shaped container. This was originally meant to work with WiiFlash so that the tilt of the Space Invader was controlled with a Wii remote, back when cell phones didn't have acceleromenters."
+  },
+  {
     name: "Maze",
     dateYear: "2006",
     link:"http://joaqo182.50webs.com/maze.html",
     image:"maze.png",
     mobileFriendly: false,
     mobileFirst: false,
-    description: "Test your reflexes and hand steadiness as you guide your mouse pointer through 12 labirinthine levels and one final speed challenge. This was the first web game I ever programmed.",
+    description: "Test your reflexes and hand steadiness as you guide your mouse pointer through twelve labirinthine levels and one final speed challenge. This was the first web game I ever programmed.",
     notesToSelf: "This email shows that the game was in fact made in 2006: https://mail.google.com/mail/u/0/?pli=1#search/maze/10e1a1226cd87249"
   }
 ]

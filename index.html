@@ -138,17 +138,17 @@
                                     {{#if builtWebsite.image}}
                                         {{#if builtWebsite.link}}
                                         <a target="_blank" href="{{builtWebsite.link}}">
-                                            <img src="img/pet_projects/{{builtWebsite.image}}" style="max-width:150px" />
+                                            <img src="img/websites/{{builtWebsite.image}}" style="max-width:150px" />
                                         </a>
                                         {{else}}
-                                        <img src="img/pet_projects/{{builtWebsite.image}}" style="max-width:150px" />
+                                        <img src="img/websites/{{builtWebsite.image}}" style="max-width:150px" />
                                         {{/if}}
                                     {{else}}
                                         <img src="img/placeholder/square.png" style="max-width:150px" />
                                     {{/if}}
                                     </div>
                                     <div class="col-md-9">
-                                        <div>{{builtWebsite.description}}</div>
+                                        <div>{{{builtWebsite.description}}}</div>
                                         {{#if builtWebsite.technologies}}
                                         <div>Uses {{builtWebsite.technologies}}</div>
                                         {{/if}}
