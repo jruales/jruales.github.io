@@ -290,6 +290,16 @@ programmingExperiments = [
     mobileFirst: false,
     description: "A bouncy ball inside a Space-Invader-shaped container. This was originally meant to work with WiiFlash so that the tilt of the Space Invader was controlled with a Wii remote, back when cell phones didn't have acceleromenters."
   },
+    {
+    name: "Vector Hollow Prism",
+    dateYear: "2008",
+    link:"http://joaqo182.50webs.com/fullPageFlash.html?swf=VectorHollowPrism",
+    image:"vector_hollow_prism.png",
+    // TODO(jruales): Hide Flash experiments from mobile users
+    mobileFriendly: false,
+    mobileFirst: false,
+    description: "<em>Five3d</em> (an AS3.0 code library for 3d vector graphics that existed before these graphics were supported natively by the program) didn't have an easy way of creating geometric figures, so I extended it by adding a function to make regular prisms, pyramids, and truncated pyramids, with the possibility of hollowing out the 3D shapes to make bolt-like shapes. I made a demo for playing with this new geometric function with immediate feedback, so that it would be easy to find the needed parameters to make a certain shape."
+  },
   {
     name: "Maze",
     dateYear: "2006",
@@ -388,7 +398,7 @@ columbiaBSRelevantCourses = [
     number: 4281
   },
   {
-    name: "Number Theory & Cryptography",
+    name: "Number Theory and Cryptography",
     departmentCode: "MATH",
     number: 3020
   },
