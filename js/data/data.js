@@ -567,12 +567,12 @@ oberlinBAOtherCourses = [
     number: 100
   },
   {
-    name: "Poetry/Prose Workshop",
+    name: "Poetry and Prose Workshop",
     departmentCode: "CRWR",
     number: 201
   },
   {
-    name: "Electricity/Magnetism/Thermodynamics",
+    name: "Electricity, Magnetism, and Thermodynamics",
     departmentCode: "PHYS",
     number: 111
   },
