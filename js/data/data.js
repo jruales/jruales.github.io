@@ -11,7 +11,7 @@ basics = {
     label: "Columbia University Computer Science M.S. student",
     picture: "square_me3.jpg",
     email: "jar2262 [at] columbia [dot] edu",
-    summary: "Hi, I'm a software engineer and mathematician interested in machine learning, computer vision, computer graphics, web application development, and applied math.",
+    summary: "<p>Hi, I'm a software engineer and mathematician interested in machine learning, computer vision, computer graphics, web application development, and applied math.</p><p>When I'm not making programs or playing with <a target=\"_blank\" href=\"https://www.desmos.com/calculator/lsmoh2g3py\">graphing calculators</a>, I enjoy taking photos, exploring new places, bicycling, and playing the piano.</p>",
     phone: "",
     website: "",
     location: {
@@ -88,7 +88,7 @@ petProjects = [
   },
   {
     title: "400 pixels",
-    link: "http://400pixels.net/",
+    link: null, //"http://400pixels.net/",
     image: "400pixels.png",
     mobileFriendly: false,
     mobileFirst: false, 
@@ -249,14 +249,23 @@ contests = [
 //
 
 programmingExperiments = [
-    {
-    name: "2P Flappy Bird",
+  {
+    name: "2 Player Flappy Bird",
     dateYear: "2014",
     link:"http://400pixels.net/flappy2p/",
     image:"flappy2p.png",
     mobileFriendly: false,
     mobileFirst: false,
     description: "A 2 player web version of the popular smartphone game."
+  },
+  {
+    name: "Tutorial: Curve Bounce in HTML5",
+    dateYear: "2013",
+    link:"http://blog.400pixels.net/?p=7",
+    image:"curve_bounce.png",
+    mobileFriendly: true,
+    mobileFirst: true,
+    description: "A tutorial on how to program a circle bouncing on a mathematically-defined curve."
   },
   {
     name: "Fractal Flame Generator",
@@ -298,7 +307,7 @@ programmingExperiments = [
     // TODO(jruales): Hide Flash experiments from mobile users
     mobileFriendly: false,
     mobileFirst: false,
-    description: "<em>Five3d</em> (an AS3.0 code library for 3d vector graphics that existed before these graphics were supported natively by the program) didn't have an easy way of creating geometric figures, so I extended it by adding a function to make regular prisms, pyramids, and truncated pyramids, with the possibility of hollowing out the 3D shapes to make bolt-like shapes. I made a demo for playing with this new geometric function with immediate feedback, so that it would be easy to find the needed parameters to make a certain shape."
+    description: "<em>Five3d</em> (an AS3.0 code library for 3d vector graphics that existed before these graphics were supported natively by the program) didn't have an easy way of creating geometric figures, so I extended it by adding a function to make regular prisms, pyramids, and truncated pyramids, with the possibility of hollowing out the 3D shapes with an inner radius. I made a demo for playing with this new geometric function with immediate feedback, so that it would be easy to find the needed parameters to make a certain shape."
   },
   {
     name: "Maze",

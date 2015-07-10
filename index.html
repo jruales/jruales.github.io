@@ -12,11 +12,12 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
         <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/webicons.css">
+
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -50,7 +51,7 @@
                     <div class="col-md-8">
                         <div id="summary" class="">
                             <!--h2>Summary</h2-->
-                            {{basics.summary}}
+                            {{{basics.summary}}}
                         </div>
                     </div>
                 </div>
@@ -186,7 +187,7 @@
                             {{/each}}
                         </div>
                         <div id="programmingExperiments" class="">
-                            <h2>Programming Experiments</h2>
+                            <h2>Web Programming Experiments</h2>
                             {{#each programmingExperiments as |programmingExperiment programmingExperimentId|}}
                                 <h3><a href="{{programmingExperiment.link}}" target="_blank">{{programmingExperiment.name}} ({{programmingExperiment.dateYear}})</a></h3>
                                 <div class="row">
