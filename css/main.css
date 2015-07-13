@@ -166,11 +166,11 @@ header {
     border-left: 1px solid black;
 }
 .time-event .timeframe {
-    /*font-weight: 500;*/
-    color:#888;
+    font-weight: 500;
 }
 .time-event .title {
-    font-weight: 500;
+    /*font-weight: 500;*/
+    color:#888;
 }
 .time-event .description {
     font-size:0.9em;

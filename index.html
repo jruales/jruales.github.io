@@ -50,7 +50,8 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div id="summary" class="">
-                            <!--h2>Summary</h2-->
+                            <!--h2>Hi,</h2-->
+                            <div style="height:20px"></div>
                             {{{basics.summary}}}
                         </div>
                     </div>
@@ -62,8 +63,8 @@
                             <ul>
                             {{#each timeEvents as |timeEvent timeEventId|}}
                                 <li class="time-event">
-                                    <div class="title">{{timeEvent.title}}</div>
                                     <div class="timeframe">{{timeEvent.timeframe}}</div>
+                                    <div class="title">{{timeEvent.title}}</div>
                                     {{#if timeEvent.description}}
                                         <div class="description">{{timeEvent.description}}</div>
                                     {{/if}}
@@ -75,28 +76,6 @@
                 </div>
                 <div class="row">
                     <div class="col-md-9">
-                        <div id="preprints" class="">
-                            <h2>Publication Preprints</h2>
-                            {{#each preprints as |preprint preprintId|}}
-                                <h3><a target="_blank" href="{{preprint.link}}">{{preprint.title}}</a></h3>
-                                <div class="row">
-                                    <div class="col-md-3">
-                                    {{#if preprint.image}}
-                                        {{#if preprint.link}}
-                                        <a target="_blank" href="{{preprint.link}}"><img src="img/preprints/{{preprint.image}}" style="max-width:150px" /></a>
-                                        {{else}}
-                                        <img src="img/preprints/{{preprint.image}}" style="max-width:150px" />
-                                        {{/if}}
-                                    {{else}}
-                                        <img src="img/placeholder/square.png" style="max-width:150px" />
-                                    {{/if}}
-                                    </div>
-                                    <div class="col-md-9">
-                                        <div>Authors: {{preprint.authors}}</div>
-                                        <div>Abstract: {{preprint.abstract}}</div>
-                                    </div>
-                            {{/each}}
-                        </div>
                         <div id="petProjects" class="">
                             <h2>Pet Projects</h2>
                             {{#each petProjects as |petProject petProjectId|}}
@@ -127,7 +106,7 @@
                             {{/each}}
                         </div>
                         <div id="builtWebsites" class="">
-                            <h2>Websites</h2>
+                            <h2>Other Websites</h2>
                             {{#each builtWebsites as |builtWebsite builtWebsiteId|}}
                                 {{#if builtWebsite.link}}
                                     <h3><a target="_blank" href="{{builtWebsite.link}}">{{builtWebsite.title}}</a></h3>
@@ -206,6 +185,28 @@
                                         <div>{{{programmingExperiment.description}}}</div>
                                     </div>
                                 </div>
+                            {{/each}}
+                        </div>
+                        <div id="preprints" class="">
+                            <h2>Publication Preprints</h2>
+                            {{#each preprints as |preprint preprintId|}}
+                                <h3><a target="_blank" href="{{preprint.link}}">{{preprint.title}}</a></h3>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                    {{#if preprint.image}}
+                                        {{#if preprint.link}}
+                                        <a target="_blank" href="{{preprint.link}}"><img src="img/preprints/{{preprint.image}}" style="max-width:150px" /></a>
+                                        {{else}}
+                                        <img src="img/preprints/{{preprint.image}}" style="max-width:150px" />
+                                        {{/if}}
+                                    {{else}}
+                                        <img src="img/placeholder/square.png" style="max-width:150px" />
+                                    {{/if}}
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div>Authors: {{preprint.authors}}</div>
+                                        <div>Abstract: {{preprint.abstract}}</div>
+                                    </div>
                             {{/each}}
                         </div>
                         <div id="degrees" class="">
