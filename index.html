@@ -35,12 +35,9 @@
                         <div id="label">{{basics.label}}</div>
                         <div id="email">{{basics.email}}</div>
                         <div>
-                            <a class="webicon googleplus" href="https://plus.google.com/u/0/108677809195090402050/posts">Google+</a>
-                            <a class="webicon twitter" href="https://twitter.com/_jruales">Twitter</a>
-                            <a class="webicon flickr" href="https://www.flickr.com/photos/46440167@N02">Flickr</a>
-                            <a class="webicon youtube" href="https://www.youtube.com/channel/UCSejsjO0ark_Xy3UEh2dDCg">YouTube</a>
-                            <a class="webicon linkedin" href="https://www.linkedin.com/in/jruales">LinkedIn</a>
-                            <a class="webicon github" href="https://github.com/jruales">Github</a>
+                        {{#each basics.profiles as |profile profileId|}}
+                            <a class="webicon {{profile.iconClass}}" href="{{profile.link}}">{{profile.name}}</a>
+                        {{/each}}
                         </div>
                     </div>
                 </div>
@@ -109,9 +106,9 @@
                             <h2>Other Websites</h2>
                             {{#each builtWebsites as |builtWebsite builtWebsiteId|}}
                                 {{#if builtWebsite.link}}
-                                    <h3><a target="_blank" href="{{builtWebsite.link}}">{{builtWebsite.title}}</a></h3>
+                                    <h3><a target="_blank" href="{{builtWebsite.link}}">{{builtWebsite.title}} ({{builtWebsite.dateYear}})</a></h3>
                                 {{else}}
-                                    <h3>{{builtWebsite.title}}</h3>
+                                    <h3>{{builtWebsite.title}} ({{builtWebsite.dateYear}})</h3>
                                 {{/if}}
                                 <div class="row">
                                     <div class="col-md-3">
@@ -140,9 +137,9 @@
                             <h2>Programming Contests</h2>
                             {{#each contests as |contest contestId|}}
                                 {{#if contest.link}}
-                                    <h3><a target="_blank" href="{{contest.link}}">{{contest.honor}}, {{contest.name}}</a></h3>
+                                    <h3><a target="_blank" href="{{contest.link}}">{{contest.honor}}, {{contest.name}} ({{contest.dateYear}})</a></h3>
                                 {{else}}
-                                    <h3>{{contest.honor}}, {{contest.name}}</h3>
+                                    <h3>{{contest.honor}}, {{contest.name}} ({{contest.dateYear}})</h3>
                                 {{/if}}
                                 <div class="row">
                                     <div class="col-md-3">

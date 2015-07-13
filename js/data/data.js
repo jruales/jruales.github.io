@@ -21,7 +21,38 @@ basics = {
       countryCode: "US",
       region: ""
     },
-    profiles: []
+    profiles: [
+      {
+        name: "Google+",
+        iconClass: "googleplus",
+        link: "https://plus.google.com/u/0/108677809195090402050/posts"
+      },
+      {
+        name: "Twitter",
+        iconClass: "twitter",
+        link: "https://twitter.com/_jruales"
+      },
+      {
+        name: "Flickr",
+        iconClass: "flickr",
+        link: "https://www.flickr.com/photos/46440167@N02"
+      },
+      {
+        name: "YouTube",
+        iconClass: "youtube",
+        link: "https://www.youtube.com/channel/UCSejsjO0ark_Xy3UEh2dDCg"
+      },
+      {
+        name: "LinkedIn",
+        iconClass: "linkedin",
+        link: "https://www.linkedin.com/in/jruales"
+      },
+      {
+        name: "Github",
+        iconClass: "github",
+        link: "https://github.com/jruales"
+      }
+    ]
 }
 
 //
@@ -124,16 +155,6 @@ builtWebsites = [
     technologies: "HTML + CSS + JS + PHP"
   },
   {
-    title: "Andrew J. Churchill's Portfolio Website",
-    link: "http://400pixels.net/churchill/",
-    image: "churchill.png",
-    mobileFriendly: false,
-    mobileFirst: false,
-    description: "Website for a music composer.",
-    dateYear: null,
-    technologies: "AS 3.0"
-  },
-  {
     title: "Oberlin College Library Website",
     link: "http://www.oberlin.edu/library/",
     image: "oberlin_library.png",
@@ -142,6 +163,16 @@ builtWebsites = [
     description: "Rebuilt the library website's main pages as part of the library's web team. Replaced outdated code libraries and coding standards and focused on making the site user-friendly and visually clean. A snapshot of the old website before the remake is available on the <a target=\"_blank\" href=\"https://web.archive.org/web/20110519182042/http://www.oberlin.edu/library/\">Internet Archive</a>.",
     dateYear: 2011,
     technologies: null
+  },
+  {
+    title: "Andrew J. Churchill's Portfolio Website",
+    link: "http://400pixels.net/churchill/",
+    image: "churchill.png",
+    mobileFriendly: false,
+    mobileFirst: false,
+    description: "Website for a music composer.",
+    dateYear: 2010,
+    technologies: "AS 3.0"
   },
   {
     title: "Movimiento Verde Estudiantil",
@@ -154,7 +185,7 @@ builtWebsites = [
     technologies: "AS 3.0 + PHP + MySQL"
   },
   {
-    title: "Joaquín Ruales's 2008 Art Portfolio",
+    title: "Joaquín Ruales's Art Portfolio",
     link: "http://joaquin-ruales.50webs.com/",
     image: "art_portfolio.png",
     mobileFriendly: false,
