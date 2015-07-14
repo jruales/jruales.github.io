@@ -11,7 +11,7 @@ basics = {
     label: "Columbia University Computer Science M.S. student",
     picture: "square_me3.jpg",
     email: "jar2262 [at] columbia [dot] edu",
-    summary: "<p>Hi, I'm a software engineer and mathematician interested in machine learning, computer vision, computer graphics, web application development, and applied math.</p><p>When I'm not making programs or playing with <a target=\"_blank\" href=\"https://www.desmos.com/calculator/lsmoh2g3py\">graphing calculators</a>, I enjoy taking photos, exploring new places, bicycling, and playing the piano.</p>",
+    summary: "<p>Hi, I'm a software engineer and mathematician interested in machine learning, computer graphics, web application development, and applied mathematics.</p><p>When I'm not making programs or playing with <a target=\"_blank\" href=\"https://www.desmos.com/calculator/lsmoh2g3py\">graphing calculators</a>, I enjoy taking photos, exploring new places, bicycling, and playing the piano.</p>",
     phone: "",
     website: "",
     location: {
@@ -23,14 +23,24 @@ basics = {
     },
     profiles: [
       {
-        name: "Google+",
-        iconClass: "googleplus",
-        link: "https://plus.google.com/u/0/108677809195090402050/posts"
+        name: "LinkedIn",
+        iconClass: "linkedin",
+        link: "https://www.linkedin.com/in/jruales"
+      },
+      {
+        name: "Github",
+        iconClass: "github",
+        link: "https://github.com/jruales"
       },
       {
         name: "Twitter",
         iconClass: "twitter",
         link: "https://twitter.com/_jruales"
+      },
+      {
+        name: "Google+",
+        iconClass: "googleplus",
+        link: "https://plus.google.com/u/0/108677809195090402050/posts"
       },
       {
         name: "Flickr",
@@ -42,16 +52,6 @@ basics = {
         iconClass: "youtube",
         link: "https://www.youtube.com/channel/UCSejsjO0ark_Xy3UEh2dDCg"
       },
-      {
-        name: "LinkedIn",
-        iconClass: "linkedin",
-        link: "https://www.linkedin.com/in/jruales"
-      },
-      {
-        name: "Github",
-        iconClass: "github",
-        link: "https://github.com/jruales"
-      }
     ]
 }
 
@@ -62,27 +62,27 @@ basics = {
 timeEvents = [
   {
     timeframe: "Summer 2015",
-    title: "Google Software Engineering Intern",
+    title: "💼 Google Software Engineering Intern",
     description: null
   },
   {
     timeframe: "Fall 2014 - Fall 2015",
-    title: "Columbia University Computer Science M.S.",
+    title: "🎓 Columbia University Computer Science M.S.",
     description: "Computer Vision and Graphics Track."
   },
   {
     timeframe: "Summer 2014",
-    title: "Google Software Engineering Intern",
+    title: "💼 Google Software Engineering Intern",
     description: null
   },
   {
     timeframe: "Fall 2012 - Spring 2014",
-    title: "Columbia University Computer Science B.S.",
+    title: "🎓 Columbia University Computer Science B.S.",
     description: "Artificial Intelligence Track."
   },
   {
     timeframe: "Fall 2009 - Spring 2012",
-    title: "Oberlin College Mathematics B.A.",
+    title: "🎓 Oberlin College Mathematics B.A.",
     description: "3-2 Engineering Program with Columbia University."
   }
 ]
@@ -98,7 +98,17 @@ preprints = [
     image:"kanenobu.jpg",
     abstract: "We show that the fundamental group of the double branched cover of an infinite family of homologically thin, non-quasi-alternating knots is not left-orderable, giving further support for a conjecture of Boyer, Gordon, and Watson that an irreducible rational homology 3-sphere is an L-space if and only if its fundamental group is not left-orderable.",
     journal: "ArXiv",
-    link: "http://arxiv.org/abs/1310.1877"
+    link: "http://arxiv.org/abs/1310.1877",
+    links: [
+      {
+        name: "ArXiv",
+        link: "http://arxiv.org/abs/1310.1877"
+      },
+      {
+        name: "PDF",
+        link: "http://arxiv.org/pdf/1310.1877.pdf"
+      },
+    ]
   }
 ];
 
@@ -116,6 +126,16 @@ petProjects = [
     description: "Displays showtimes for all major movie theaters in Quito, Ecuador. Showtime information collected automatically from each movie theater's website.",
     year: 2013,
     technologies: "HTML + CSS + JS + PHP + MySQL"
+    links: [
+      {
+        name: "Website",
+        link: "http://ecuacines.com/"
+      },
+      {
+        name: "Blog Post",
+        link: "http://blog.400pixels.net/?p=210"
+      },
+    ]
   },
   {
     title: "400 pixels",
@@ -247,7 +267,21 @@ contests = [
     honor: "4th Place",
     image:"acm.png",
     link: "http://acmgnyr.org/year2014/standings.shtml",
-    description: "Represented Columbia University on a team of three that solved 8 out of the 9 problems."
+    description: "Represented Columbia University on a team of three that solved 8 out of the 9 problems.",
+    links: [
+      {
+        name: "More Info.",
+        link: "http://acmgnyr.org/year2014/"
+      },
+      {
+        name: "Standings",
+        link: "http://acmgnyr.org/year2014/standings.shtml"
+      },
+      {
+        name: "Problems",
+        link: "http://acmgnyr.org/year2014/problems.shtml"
+      },
+    ]
   },
   {
     name: "HackMIT Hackathon",
@@ -259,7 +293,13 @@ contests = [
     image: "hackmit.png",
     link: "https://www.facebook.com/events/295683690535160/",
     link2: "https://twitter.com/dff/status/298218271117803520",
-    description: "Our team of four programmed a head-movement-controlled web-messaging interface. I implemented the head tracking (in Flash) and integrated the real-time head position data with the user interface and database (HTML, JS, PHP, MySQL) that my teammates created. The user interface is now being used and improved upon by the Speak Your Mind Foundation."
+    description: "Our team of four programmed a head-movement-controlled web-messaging interface. I implemented the head tracking (in Flash) and integrated the real-time head position data with the user interface and database (HTML, JS, PHP, MySQL) that my teammates created. The user interface is now being used and improved upon by the Speak Your Mind Foundation.",
+    links: [
+      {
+        name: "More Info.",
+        link: "https://www.facebook.com/events/295683690535160/"
+      },
+    ]
   },
   {
     name: "Denison Programming Contest",
@@ -271,7 +311,21 @@ contests = [
     honor: "2nd Place",
     image: "denison.png",
     link: "http://personal.denison.edu/~lalla/DSPC/results10.html",
-    description: "Represented Oberlin College on a team of three that solved 4 out of 6 ACM-ICPC-style problems in Java."
+    description: "Represented Oberlin College on a team of three that solved 4 out of 6 ACM-ICPC-style problems in Java.",
+    links: [
+      {
+        name: "More Info.",
+        link: "http://personal.denison.edu/~lalla/DSPC/results10.html"
+      },
+      {
+        name: "Standings",
+        link: "http://personal.denison.edu/~lalla/DSPC/scoreboard_2010.html"
+      },
+      {
+        name: "Problems",
+        link: "http://personal.denison.edu/~lalla/DSPC/pastproblems/probs10.pdf"
+      },
+    ]
   }
 ]
 
