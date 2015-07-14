@@ -125,7 +125,7 @@ petProjects = [
     mobileFirst: true,
     description: "Displays showtimes for all major movie theaters in Quito, Ecuador. Showtime information collected automatically from each movie theater's website.",
     year: 2013,
-    technologies: "HTML + CSS + JS + PHP + MySQL"
+    technologies: "HTML + CSS + JS + PHP + MySQL",
     links: [
       {
         name: "Website",
