@@ -158,6 +158,13 @@
                                     <div class="col-md-9">
                                         <div>{{contest.venue}}. {{contest.location}}.</div>
                                         <div>{{contest.description}}</div>
+                                        {{#each contest.links as |link linkId|}}
+                                        <a target="_blank" href="{{link.url}}">
+                                            <button type="button" class="btn btn-default" aria-label="{{link.name}}">
+                                              {{link.name}}
+                                            </button>
+                                        </a>
+                                        {{/each}}
                                     </div>
                                 </div>
                             {{/each}}

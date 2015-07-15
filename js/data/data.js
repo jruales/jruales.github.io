@@ -266,20 +266,20 @@ contests = [
     dateYear: 2014,
     honor: "4th Place",
     image:"acm.png",
-    link: "http://acmgnyr.org/year2014/standings.shtml",
+    //link: "http://acmgnyr.org/year2014/standings.shtml",
     description: "Represented Columbia University on a team of three that solved 8 out of the 9 problems.",
     links: [
       {
-        name: "More Info.",
-        link: "http://acmgnyr.org/year2014/"
-      },
-      {
-        name: "Standings",
-        link: "http://acmgnyr.org/year2014/standings.shtml"
+        name: "Contest Information",
+        url: "http://acmgnyr.org/year2014/"
       },
       {
         name: "Problems",
-        link: "http://acmgnyr.org/year2014/problems.shtml"
+        url: "http://acmgnyr.org/year2014/problems.shtml"
+      },
+      {
+        name: "Standings",
+        url: "http://acmgnyr.org/year2014/standings.shtml"
       },
     ]
   },
@@ -291,13 +291,13 @@ contests = [
     dateYear: 2013,
     honor: "1st Place and \"Most likely to become a real product\"",
     image: "hackmit.png",
-    link: "https://www.facebook.com/events/295683690535160/",
-    link2: "https://twitter.com/dff/status/298218271117803520",
+    //link: "https://www.facebook.com/events/295683690535160/",
+    //link2: "https://twitter.com/dff/status/298218271117803520",
     description: "Our team of four programmed a head-movement-controlled web-messaging interface. I implemented the head tracking (in Flash) and integrated the real-time head position data with the user interface and database (HTML, JS, PHP, MySQL) that my teammates created. The user interface is now being used and improved upon by the Speak Your Mind Foundation.",
     links: [
       {
-        name: "More Info.",
-        link: "https://www.facebook.com/events/295683690535160/"
+        name: "Contest Information",
+        url: "https://web.archive.org/web/20130126114515/http://hackmit.eventbrite.com/"
       },
     ]
   },
@@ -310,20 +310,20 @@ contests = [
     dateYear: 2010,
     honor: "2nd Place",
     image: "denison.png",
-    link: "http://personal.denison.edu/~lalla/DSPC/results10.html",
+    //link: "http://personal.denison.edu/~lalla/DSPC/results10.html",
     description: "Represented Oberlin College on a team of three that solved 4 out of 6 ACM-ICPC-style problems in Java.",
     links: [
       {
-        name: "More Info.",
-        link: "http://personal.denison.edu/~lalla/DSPC/results10.html"
+        name: "Contest Information",
+        url: "http://personal.denison.edu/~lalla/DSPC/results10.html"
+      },
+      {
+        name: "Problems",
+        url: "http://personal.denison.edu/~lalla/DSPC/pastproblems/probs10.pdf"
       },
       {
         name: "Standings",
         link: "http://personal.denison.edu/~lalla/DSPC/scoreboard_2010.html"
-      },
-      {
-        name: "Problems",
-        link: "http://personal.denison.edu/~lalla/DSPC/pastproblems/probs10.pdf"
       },
     ]
   }
