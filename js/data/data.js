@@ -102,11 +102,11 @@ preprints = [
     links: [
       {
         name: "ArXiv Page",
-        link: "http://arxiv.org/abs/1310.1877"
+        url: "http://arxiv.org/abs/1310.1877"
       },
       {
         name: "PDF",
-        link: "http://arxiv.org/pdf/1310.1877.pdf"
+        url: "http://arxiv.org/pdf/1310.1877.pdf"
       },
     ]
   }
@@ -323,7 +323,7 @@ contests = [
       },
       {
         name: "Standings",
-        link: "http://personal.denison.edu/~lalla/DSPC/scoreboard_2010.html"
+        url: "http://personal.denison.edu/~lalla/DSPC/scoreboard_2010.html"
       },
     ]
   }
