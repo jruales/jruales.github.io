@@ -98,10 +98,10 @@ preprints = [
     image:"kanenobu.jpg",
     abstract: "We show that the fundamental group of the double branched cover of an infinite family of homologically thin, non-quasi-alternating knots is not left-orderable, giving further support for a conjecture of Boyer, Gordon, and Watson that an irreducible rational homology 3-sphere is an L-space if and only if its fundamental group is not left-orderable.",
     journal: "ArXiv",
-    link: "http://arxiv.org/abs/1310.1877",
+    //link: "http://arxiv.org/abs/1310.1877",
     links: [
       {
-        name: "ArXiv",
+        name: "ArXiv Page",
         link: "http://arxiv.org/abs/1310.1877"
       },
       {

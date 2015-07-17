@@ -194,7 +194,11 @@
                         <div id="preprints" class="">
                             <h2>Publication Preprints</h2>
                             {{#each preprints as |preprint preprintId|}}
+                                {{#if preprint.link}}
                                 <h3><a target="_blank" href="{{preprint.link}}">{{preprint.title}}</a></h3>
+                                {{else}}
+                                <h3>{{preprint.title}}</h3>
+                                {{/if}}
                                 <div class="row">
                                     <div class="col-md-3">
                                     {{#if preprint.image}}
@@ -210,6 +214,13 @@
                                     <div class="col-md-9">
                                         <div>Authors: {{preprint.authors}}</div>
                                         <div>Abstract: {{preprint.abstract}}</div>
+                                        {{#each preprint.links as |link linkId|}}
+                                        <a target="_blank" href="{{link.url}}">
+                                            <button type="button" class="btn btn-default" aria-label="{{link.name}}">
+                                              {{link.name}}
+                                            </button>
+                                        </a>
+                                        {{/each}}
                                     </div>
                             {{/each}}
                         </div><!--#preprints-->
