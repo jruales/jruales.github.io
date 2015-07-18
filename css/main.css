@@ -185,6 +185,10 @@ header {
     height:150px;
 }
 
+a.no-hover-underline:hover {
+    text-decoration: none;
+}
+
 
 
 

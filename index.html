@@ -159,7 +159,7 @@
                                         <div>{{contest.venue}}. {{contest.location}}.</div>
                                         <div>{{contest.description}}</div>
                                         {{#each contest.links as |link linkId|}}
-                                        <a target="_blank" href="{{link.url}}">
+                                        <a class="no-hover-underline" target="_blank" href="{{link.url}}">
                                             <button type="button" class="btn btn-default" aria-label="{{link.name}}">
                                               {{link.name}}
                                             </button>
@@ -215,7 +215,7 @@
                                         <div>Authors: {{preprint.authors}}</div>
                                         <div>Abstract: {{preprint.abstract}}</div>
                                         {{#each preprint.links as |link linkId|}}
-                                        <a target="_blank" href="{{link.url}}">
+                                        <a class="no-hover-underline" target="_blank" href="{{link.url}}">
                                             <button type="button" class="btn btn-default" aria-label="{{link.name}}">
                                               {{link.name}}
                                             </button>
