@@ -39,7 +39,7 @@ $(function() {
   var template = Handlebars.compile(source);
   $("#main").html(template(context));
 
-  var previewBody = $('body').minimap();
+  var previewBody = $('#main').minimap();
   //$( "#accordion" ).accordion();
 });
 
