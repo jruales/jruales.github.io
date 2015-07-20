@@ -5,7 +5,9 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Joaquín Ruales</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
@@ -16,6 +18,9 @@
         <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/webicons.css">
+        <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css" />
+        <link type="text/css" rel="stylesheet" href="css/addons/jquery.mmenu.dragopen.css" />
+
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -25,9 +30,15 @@
         <![endif]-->
         <div id="main">
 <script id="page-template" type="text/x-handlebars-template">
-
+            <!--div class="header Fixed" style="height:50px; background-color:#fff; box-shadow: 0px 1px 10px #000; font-size:2em;">
+                <a href="#menu">🍔☰</a>
+            </div-->
+            <div class="header Fixed">
+                <a href="#menu"></a>
+                
+            </div>
             {{!-- Add your site or application content here --}}
-            <header>
+            <div id="actual-header" style="margin-top:0">
                 <div class="container" id="basics">
                     <img src="img/basics/{{basics.picture}}" style="float:left" id="picture"/>
                     <div id="name-label-email-links" style="float:left">
@@ -42,7 +53,7 @@
                     </div>
                 </div>
                 <div style="clear:both"></div>
-            </header>
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-8">
@@ -291,13 +302,30 @@
 
 </script> <!-- page-template -->
         </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="#summary">About Me</a></li>
+                <li><a href="#petProjects">Pet Projects</a></li>
+                <li><a href="#builtWebsites">Other Websites</a></li>
+                <li><a href="#programmingExperiments">Web Programming Experiments</a></li>
+                <li><a href="#contests">Programming Contests</a></li>
+                <li><a href="#preprints">Publication Preprints</a></li>
+                <li><a href="#degrees">Coursework</a></li>
+                <li><a href="#misc">Misc.</a></li>
+            </ul>
+        </nav>
 
+        <script type="text/javascript" src="http://hammerjs.github.io/dist/hammer.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/vendor/jquery-ui.min.js"></script>
         <script src="js/vendor/handlebars-v3.0.3.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="js/vendor/jquery.mmenu.min.js"></script>
+        <script type="text/javascript" src="js/vendor/addons/jquery.mmenu.dragopen.min.js"></script>
+        <script type="text/javascript" src="js/vendor/addons/jquery.mmenu.fixedelements.min.js"></script>
 
         <script src="js/vendor/three.min.js"></script>
         <script src="js/vendor/threejs/renderers/Projector.js"></script>

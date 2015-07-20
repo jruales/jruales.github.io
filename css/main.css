@@ -123,7 +123,7 @@ h2 {
 h3 {
     /*margin-top: 22px;*/
 }
-header {
+#actual-header {
     background-color: #333;
     background-image: url("../img/bg.jpg");
     /*background-attachment: fixed;*/
@@ -188,6 +188,77 @@ header {
 a.no-hover-underline:hover {
     text-decoration: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+nav:not(.mm-menu)
+{
+    display: none;
+}
+
+.header,
+.content,
+.footer
+{
+    text-align: center;
+}
+.header
+{
+    background: #777;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 40px;
+
+
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+    width: 100%;
+    height: 40px;
+    padding: 0 50px;
+
+    /*height:50px;*/
+    background-color:#222;
+    /*box-shadow: 0px 1px 10px #000;*/
+    font-size:2em;
+    z-index: 1000;
+    background-image: url("../img/bg.jpg");
+}
+.header.Fixed
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.header a
+{
+    background: center center no-repeat transparent;
+    background-image: url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADhJREFUeNpi/P//PwOtARMDHQBdLGFBYtMq3BiHT3DRPU4YR4NrNAmPJuHRJDyahEeT8Ii3BCDAAF0WBj5Er5idAAAAAElFTkSuQmCC );
+
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+.content
+{
+    padding: 150px 50px 50px 50px;
+}
+
+
+
+
+
 
 
 
