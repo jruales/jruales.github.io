@@ -1,10 +1,4 @@
 $(function() {
-  var $menu = $('nav#menu'),
-    $html = $('html, body');
-
-  $menu.mmenu({
-    dragOpen: false
-  });
   /*
   $("#showmoreprojects").click(function() {
     if(!more_projects_shown) {
@@ -20,6 +14,19 @@ $(function() {
     }
   });
   */
+
+  //
+  // Mobile-style nav menu. Pt1.
+  //
+  // TODO: figure out why this needs to appear before mustache.
+  var $menu = $('nav#menu'),
+    $html = $('html, body');
+
+  $menu.mmenu({
+    dragOpen: true
+  });
+
+
   function relevantCourseCompare(a, b) {
     if (a.number < b.number) {
       return 1;
@@ -53,8 +60,9 @@ $(function() {
   FastClick.attach(document.body);
 
 
-
-
+  //
+  // Mobile-style nav menu. Pt2.
+  //
   var $anchor = false;
   $menu.find( 'li > a' ).on(
     'click',
