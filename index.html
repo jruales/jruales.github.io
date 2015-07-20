@@ -134,6 +134,28 @@
                                 </div>
                             {{/each}}
                         </div>
+                        <div id="programmingExperiments" class="">
+                            <h2>Web Programming Experiments</h2>
+                            {{#each programmingExperiments as |programmingExperiment programmingExperimentId|}}
+                                <h3><a href="{{programmingExperiment.link}}" target="_blank">{{programmingExperiment.name}} ({{programmingExperiment.dateYear}})</a></h3>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        {{#if programmingExperiment.image}}
+                                            {{#if programmingExperiment.link}}
+                                            <a href="{{programmingExperiment.link}}" target="_blank"><img src="img/programming_experiments/{{programmingExperiment.image}}" /></a>
+                                            {{else}}
+                                            <img src="img/programming_experiments/{{programmingExperiment.image}}" />
+                                            {{/if}}
+                                        {{else}}
+                                            <img src="img/placeholder/square.png" />
+                                        {{/if}}
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div>{{{programmingExperiment.description}}}</div>
+                                    </div>
+                                </div>
+                            {{/each}}
+                        </div>
                         <div id="contests" class="">
                             <h2>Programming Contests</h2>
                             {{#each contests as |contest contestId|}}
@@ -166,28 +188,6 @@
                                             </button>
                                         </a>
                                         {{/each}}
-                                    </div>
-                                </div>
-                            {{/each}}
-                        </div>
-                        <div id="programmingExperiments" class="">
-                            <h2>Web Programming Experiments</h2>
-                            {{#each programmingExperiments as |programmingExperiment programmingExperimentId|}}
-                                <h3><a href="{{programmingExperiment.link}}" target="_blank">{{programmingExperiment.name}} ({{programmingExperiment.dateYear}})</a></h3>
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        {{#if programmingExperiment.image}}
-                                            {{#if programmingExperiment.link}}
-                                            <a href="{{programmingExperiment.link}}" target="_blank"><img src="img/programming_experiments/{{programmingExperiment.image}}" /></a>
-                                            {{else}}
-                                            <img src="img/programming_experiments/{{programmingExperiment.image}}" />
-                                            {{/if}}
-                                        {{else}}
-                                            <img src="img/placeholder/square.png" />
-                                        {{/if}}
-                                    </div>
-                                    <div class="col-md-9">
-                                        <div>{{{programmingExperiment.description}}}</div>
                                     </div>
                                 </div>
                             {{/each}}
