@@ -3,7 +3,7 @@ $(function() {
     $html = $('html, body');
 
   $menu.mmenu({
-    dragOpen: true
+    dragOpen: false
   });
   /*
   $("#showmoreprojects").click(function() {
@@ -45,6 +45,13 @@ $(function() {
   var source = $("#page-template").html();
   var template = Handlebars.compile(source);
   $("#main").html(template(context));
+
+
+
+
+
+  FastClick.attach(document.body);
+
 
 
 
