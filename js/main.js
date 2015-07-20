@@ -38,6 +38,8 @@ $(function() {
   var source = $("#page-template").html();
   var template = Handlebars.compile(source);
   $("#main").html(template(context));
+
+  var previewBody = $('body').minimap();
   //$( "#accordion" ).accordion();
 });
 
