@@ -297,7 +297,7 @@ contests = [
     image: "hackmit.png",
     //link: "https://www.facebook.com/events/295683690535160/",
     //link2: "https://twitter.com/dff/status/298218271117803520",
-    description: "Our team of four programmed a head-movement-controlled web-messaging interface. I implemented the head tracking (in Flash) and integrated the real-time head position data with the user interface and database (HTML, JS, PHP, MySQL) that my teammates created. The user interface is now being used and improved upon by the Speak Your Mind Foundation.",
+    description: "Our team of four programmed a head-movement-controlled web-messaging interface. I implemented the head tracking (in Flash) and integrated the real-time head position data with the user interface and database (HTML, JS, PHP, MySQL) that my teammates created. The user interface is now being used and improved upon by the SpeakYourMind Foundation.",
     links: [
       {
         name: "Contest Information",
