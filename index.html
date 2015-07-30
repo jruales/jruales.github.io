@@ -87,11 +87,7 @@
                         <div id="petProjects" class="">
                             <h2>💡 Pet Projects</h2>
                             {{#each petProjects as |petProject petProjectId|}}
-                                {{#if petProject.link}}
-                                    <h3><a target="_blank" href="{{petProject.link}}">{{petProject.title}}</a></h3>
-                                {{else}}
-                                    <h3>{{petProject.title}}</h3>
-                                {{/if}}
+                                <h3>{{petProject.title}}</h3>
                                 <div class="row">
                                     <div class="col-md-3">
                                     {{#if petProject.image}}
@@ -109,6 +105,13 @@
                                     <div class="col-md-9">
                                         <div>{{petProject.description}}</div>
                                         <div>Uses {{petProject.technologies}}</div>
+                                        {{#each petProject.links as |link linkId|}}
+                                        <a class="no-hover-underline" target="_blank" href="{{link.url}}">
+                                            <button type="button" class="btn btn-default" aria-label="{{link.name}}">
+                                              {{link.name}}
+                                            </button>
+                                        </a>
+                                        {{/each}}
                                     </div>
                                 </div>
                             {{/each}}
@@ -241,7 +244,7 @@
                                 <ul>
                                 {{#each degrees as |degree degreeId|}}
                                     <li>
-                                        <strong>{{degree.collegeName}} {{degree.title}}{{#if degree.major}} in {{degree.major}}{{/if}}</strong>
+                                        <strong>{{degree.collegeName}} {{degree.title}}{{#if degree.major}} in {{degree.major}}{{/if}}{{#if degree.gpa}} (GPA {{degree.gpa}}){{/if}}</strong>
                                         <ul>
                                         {{#each degree.relevantCourses as |relevantCourse relevantCourseId|}}
                                         <li>
@@ -264,30 +267,71 @@
                             <div>
                                 <ul>
                                     <li>
-                                        Teaching Experience:
-                                        <ul>
-                                            <li>I was a Teaching Assistant for Computational Aspects of Robotics (COMS 4733) at Columbia University during Fall 2014, and for Parallel Programming (COMS 4130) during Fall 2013. Duties included holding office hours and grading assignments.</li>
-                                            <li>I was a one-on-one tutor in Math and Computer Science while at Columbia University and Oberlin College.</li>
-                                        </ul>
-                                    </li>
-                                    <li>
                                         Programming Languages:
                                         <ul>
                                             <li>Java</li>
-                                            <li>C++</li>
-                                            <li>Python</li>
+                                            <li>C++ (incl. Eigen)</li>
+                                            <li>Python (incl. NumPy, SciPy, Theano)</li>
                                             <li>MATLAB</li>
-                                            <li>JavaScript</li>
+                                            <li>JavaScript (incl. jQuery, Angular, Underscore.js, Math.js, Numeric.js)</li>
                                             <li>ActionScript 3.0</li>
                                             <li>PHP</li>
                                             <li>SQL</li>
                                         </ul>
                                     </li>
                                     <li>
-                                        Adobe Creative Suite:
+                                        Tools:
                                         <ul>
-                                            <li>Ps</li>
-                                            <li>Fl</li>
+                                            <li>Eclipse</li>
+                                            <li>Sublime Text 3</li>
+                                            <li>Git</li>
+                                            <li>LaTeX</li>
+                                            <li>/\b(?:RegExp?|Regular Expressions)? \(incl\. RE2\)\b/</li>
+                                            <li>
+                                                Adobe Creative Suite:
+                                                <ul>
+                                                    <li>Ps</li>
+                                                    <li>Fl</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Human Languages:
+                                        <ul>
+                                            <li>Fluent in
+                                                <ul>
+                                                    <li>Spanish (Castilian)</li>
+                                                </ul>
+                                            </li>
+                                            <li>Working Proficiency in
+                                                <ul>
+                                                    <li>Italian</li>
+                                                    <li>Uncontracted English Braille</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Standardized Test Scores:
+                                        <ul>
+                                            <li>GRE
+                                                <ul>
+                                                    <li>V166 (96th percentile), Q170 (98th percentile), W3.5 (35th percentile)</li>
+                                                </ul>
+                                            </li>
+                                            <li>SAT
+                                                <ul>
+                                                    <li>R650, M800, W660</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Teaching Experience:
+                                        <ul>
+                                            <li>I was a Teaching Assistant for Computational Aspects of Robotics (COMS 4733) at Columbia during Fall 2014, and for Parallel Programming (COMS 4130) during Fall 2013. Duties included holding office hours and grading assignments.</li>
+                                            <li>I was a one-on-one tutor in Math and Computer Science while at Columbia University and Oberlin College.</li>
                                         </ul>
                                     </li>
                                 </ul>

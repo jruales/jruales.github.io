@@ -129,11 +129,11 @@ petProjects = [
     links: [
       {
         name: "Website",
-        link: "http://ecuacines.com/"
+        url: "http://ecuacines.com/"
       },
       {
         name: "Blog Post",
-        link: "http://blog.400pixels.net/?p=210"
+        url: "http://blog.400pixels.net/?p=210"
       },
     ]
   },
@@ -715,7 +715,7 @@ degrees = [
     title: "M.S.",
     major: "Computer Science",
     track: "Vision and Graphics",
-    gpa: null,
+    gpa: "4.08/4.33",
     relevantCourses: columbiaMSRelevantCourses,
     otherCourses: columbiaMSOtherCourses
   },
@@ -737,7 +737,7 @@ degrees = [
     title: "Summer Session",
     major: null,
     track: null,
-    gpa: null,
+    gpa: "3.96/4.3",
     relevantCourses: stanfordSummerRelevantCourses,
     otherCourses: stanfordSummerOtherCourses
   },

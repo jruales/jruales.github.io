@@ -23,7 +23,7 @@ $(function() {
     $html = $('html, body');
 
   $menu.mmenu({
-    dragOpen: true
+    dragOpen: false
   });
 
 
