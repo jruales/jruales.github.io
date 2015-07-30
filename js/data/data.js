@@ -105,12 +105,12 @@ preprints = [
         url: "http://arxiv.org/abs/1310.1877"
       },
       {
-        name: "PDF",
-        url: "http://arxiv.org/pdf/1310.1877.pdf"
-      },
-      {
         name: "Bibtex Entry",
         url: "http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2013arXiv1310.1877D&data_type=BIBTEX&db_key=PRE&nocookieset=1"
+      },
+      {
+        name: "PDF",
+        url: "http://arxiv.org/pdf/1310.1877.pdf"
       },
     ]
   }
