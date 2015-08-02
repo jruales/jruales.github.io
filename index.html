@@ -84,6 +84,42 @@
                 </div>
                 <div class="row">
                     <div class="col-md-9">
+                        <div id="contests" class="">
+                            <h2>🏆 Programming Contests</h2>
+                            {{#each contests as |contest contestId|}}
+                                {{#if contest.link}}
+                                    <h3><a target="_blank" href="{{contest.link}}">{{contest.honor}}, {{contest.name}}</a></h3>
+                                {{else}}
+                                    <h3>{{contest.honor}}, {{contest.name}}</h3>
+                                {{/if}}
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        {{#if contest.image}}
+                                            {{#if contest.link}}
+                                            <a target="_blank" href="{{contest.link}}">
+                                                <img src="img/contests/{{contest.image}}" />
+                                            </a>
+                                            {{else}}
+                                            <img src="img/contests/{{contest.image}}" />
+                                            {{/if}}
+                                        {{else}}
+                                            <img src="img/placeholder/square.png" />
+                                        {{/if}}
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div>{{contest.dateYear}}. {{contest.venue}}. {{contest.location}}.</div>
+                                        <div>{{contest.description}}</div>
+                                        {{#each contest.links as |link linkId|}}
+                                        <a class="no-hover-underline" target="_blank" href="{{link.url}}">
+                                            <button type="button" class="btn btn-default" aria-label="{{link.name}}">
+                                              {{link.name}}
+                                            </button>
+                                        </a>
+                                        {{/each}}
+                                    </div>
+                                </div>
+                            {{/each}}
+                        </div>
                         <div id="petProjects" class="">
                             <h2>💡 Pet Projects</h2>
                             {{#each petProjects as |petProject petProjectId|}}
@@ -103,6 +139,7 @@
                                     {{/if}}
                                     </div>
                                     <div class="col-md-9">
+                                        <!--div>{{petProject.dateYear}}</div-->
                                         <div>{{petProject.description}}</div>
                                         <div>Uses {{petProject.technologies}}</div>
                                         {{#each petProject.links as |link linkId|}}
@@ -120,9 +157,9 @@
                             <h2>💻 Other Websites</h2>
                             {{#each builtWebsites as |builtWebsite builtWebsiteId|}}
                                 {{#if builtWebsite.link}}
-                                    <h3><a target="_blank" href="{{builtWebsite.link}}">{{builtWebsite.title}} ({{builtWebsite.dateYear}})</a></h3>
+                                    <h3><a target="_blank" href="{{builtWebsite.link}}">{{builtWebsite.title}}</a></h3>
                                 {{else}}
-                                    <h3>{{builtWebsite.title}} ({{builtWebsite.dateYear}})</h3>
+                                    <h3>{{builtWebsite.title}}</h3>
                                 {{/if}}
                                 <div class="row">
                                     <div class="col-md-3">
@@ -139,6 +176,7 @@
                                     {{/if}}
                                     </div>
                                     <div class="col-md-9">
+                                        <div>{{builtWebsite.dateYear}}.</div>
                                         <div>{{{builtWebsite.description}}}</div>
                                         {{#if builtWebsite.technologies}}
                                         <div>Uses {{builtWebsite.technologies}}</div>
@@ -150,7 +188,7 @@
                         <div id="programmingExperiments" class="">
                             <h2>👾 Web Programming Experiments</h2>
                             {{#each programmingExperiments as |programmingExperiment programmingExperimentId|}}
-                                <h3><a href="{{programmingExperiment.link}}" target="_blank">{{programmingExperiment.name}} ({{programmingExperiment.dateYear}})</a></h3>
+                                <h3><a href="{{programmingExperiment.link}}" target="_blank">{{programmingExperiment.name}}</a></h3>
                                 <div class="row">
                                     <div class="col-md-3">
                                         {{#if programmingExperiment.image}}
@@ -164,43 +202,8 @@
                                         {{/if}}
                                     </div>
                                     <div class="col-md-9">
+                                        <div>{{programmingExperiment.dateYear}}.</div>
                                         <div>{{{programmingExperiment.description}}}</div>
-                                    </div>
-                                </div>
-                            {{/each}}
-                        </div>
-                        <div id="contests" class="">
-                            <h2>🏆 Programming Contests</h2>
-                            {{#each contests as |contest contestId|}}
-                                {{#if contest.link}}
-                                    <h3><a target="_blank" href="{{contest.link}}">{{contest.honor}}, {{contest.name}} ({{contest.dateYear}})</a></h3>
-                                {{else}}
-                                    <h3>{{contest.honor}}, {{contest.name}} ({{contest.dateYear}})</h3>
-                                {{/if}}
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        {{#if contest.image}}
-                                            {{#if contest.link}}
-                                            <a target="_blank" href="{{contest.link}}">
-                                                <img src="img/contests/{{contest.image}}" />
-                                            </a>
-                                            {{else}}
-                                            <img src="img/contests/{{contest.image}}" />
-                                            {{/if}}
-                                        {{else}}
-                                            <img src="img/placeholder/square.png" />
-                                        {{/if}}
-                                    </div>
-                                    <div class="col-md-9">
-                                        <div>{{contest.venue}}. {{contest.location}}.</div>
-                                        <div>{{contest.description}}</div>
-                                        {{#each contest.links as |link linkId|}}
-                                        <a class="no-hover-underline" target="_blank" href="{{link.url}}">
-                                            <button type="button" class="btn btn-default" aria-label="{{link.name}}">
-                                              {{link.name}}
-                                            </button>
-                                        </a>
-                                        {{/each}}
                                     </div>
                                 </div>
                             {{/each}}
@@ -267,7 +270,7 @@
                             <div>
                                 <ul>
                                     <li>
-                                        Programming Languages:
+                                        <strong>Programming Languages:</strong>
                                         <ul>
                                             <li>Java</li>
                                             <li>C++ (incl. Eigen)</li>
@@ -280,7 +283,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        Tools:
+                                        <strong>Tools:</strong>
                                         <ul>
                                             <li>Eclipse</li>
                                             <li>Sublime Text 3</li>
@@ -297,7 +300,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        Human Languages:
+                                        <strong>Human Languages:</strong>
                                         <ul>
                                             <li>Fluent in
                                                 <ul>
@@ -313,7 +316,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        Standardized Test Scores:
+                                        <strong>Standardized Test Scores:</strong>
                                         <ul>
                                             <li>GRE
                                                 <ul>
@@ -328,7 +331,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        Teaching Experience:
+                                        <strong>Teaching Experience:</strong>
                                         <ul>
                                             <li>I was a Teaching Assistant for Computational Aspects of Robotics (COMS 4733) at Columbia during Fall 2014, and for Parallel Programming (COMS 4130) during Fall 2013. Duties included holding office hours and grading assignments.</li>
                                             <li>I was a one-on-one tutor in Math and Computer Science while at Columbia University and Oberlin College.</li>
@@ -337,6 +340,7 @@
                                 </ul>
                             </div>
                         </div><!--#misc-->
+                        <div style="height:100px"></div>
                     </div>
                 </div>
             </div>
@@ -349,10 +353,10 @@
         <nav id="menu">
             <ul>
                 <li><a href="#summary">😃 About Me</a></li>
+                <li><a href="#contests">🏆 Programming Contests</a></li>
                 <li><a href="#petProjects">💡 Pet Projects</a></li>
                 <li><a href="#builtWebsites">💻 Other Websites</a></li>
                 <li><a href="#programmingExperiments">👾 Web Programming Experiments</a></li>
-                <li><a href="#contests">🏆 Programming Contests</a></li>
                 <li><a href="#preprints">📃 Publication Preprints</a></li>
                 <li><a href="#degrees">📚 Coursework</a></li>
                 <li><a href="#misc">🎁 Misc.</a></li>

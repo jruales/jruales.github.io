@@ -345,7 +345,7 @@ programmingExperiments = [
     image:"flappy2p.png",
     mobileFriendly: false,
     mobileFirst: false,
-    description: "A 2 player web version of the popular smartphone game."
+    description: "A 2 player collaborative web version of the popular smartphone game."
   },
   {
     name: "Tutorial: Curve Bounce in HTML5",
