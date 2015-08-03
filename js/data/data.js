@@ -159,12 +159,12 @@ petProjects = [
 
 builtWebsites = [
   {
-    title: "This website",
+    title: "My Personal Website",
     link: "#",
     image: "this_website.png",
     mobileFriendly: true,
     mobileFirst: true,
-    description: "Very meta.",
+    description: "The website you're on right now.",
     dateYear: 2015,
     technologies: "HTML + CSS + JS"
   },
@@ -368,6 +368,18 @@ programmingExperiments = [
     description: "This program uses <a target=\"_blank\" href=\"http://flam3.com/flame_draves.pdf\">Iterated function systems</a> to create a variety of fractals ranging from Sierpinski triangles to flame-like paintings, depending on the selected settings. Fractals are generated directly by your web browser."
   },
   {
+    name: "AP Spanish Literature Magazine",
+    dateYear: "2009",
+    dateMonth: "04",
+    // TODO(jruales): Make an HTML container for each SWF file
+    link:"assets/pdfs/bifurcaciones2009.pdf",
+    image:"bifurcaciones2009_4.jpg",
+    // TODO(jruales): Hide Flash experiments from mobile users
+    mobileFriendly: true,
+    mobileFirst: false,
+    description: "I designed the layout for <em>Bifurcaciones de Mentes</em> (\"Mind Bifurcations\"), the yearly literary magazine published by my school's AP Spanish Literature class. The first sentences of the books we read throughout the school year frame the pages. I also wrote a few of the stories inside the magazine."
+  },
+  {
     name: "3D Fractal Tree",
     dateYear: "2009",
     // TODO(jruales): Make an HTML container for each SWF file
@@ -376,7 +388,7 @@ programmingExperiments = [
     // TODO(jruales): Hide Flash experiments from mobile users
     mobileFriendly: false,
     mobileFirst: false,
-    description: "This program uses spherical coordinates to generate a different 3D fractal tree each time the page is reloaded."
+    description: "This program uses spherical coordinates to generate a different 3D fractal tree each time you reload the page."
   },
   {
     name: "3D Space Invader Ball Bounce",
@@ -396,7 +408,7 @@ programmingExperiments = [
     // TODO(jruales): Hide Flash experiments from mobile users
     mobileFriendly: false,
     mobileFirst: false,
-    description: "<em>Five3d</em> (an AS3.0 code library for 3d vector graphics that existed before these graphics were supported natively by the program) didn't have an easy way of creating geometric figures, so I extended it by adding a function to make regular prisms, pyramids, and truncated pyramids, with the possibility of hollowing out the 3D shapes with an inner radius. I made a demo for playing with this new geometric function with immediate feedback, so that it would be easy to find the needed parameters to make a certain shape."
+    description: "Having no easy way of making a variety of geometric shapes using the default Five3d ActionScript 3D library, I created my own function to do it. It can make regular prisms, pyramids, and truncated pyramids, with the possibility of hollowing out the 3D shapes with an inner radius. I also made a tool for playing with this new code with immediate feedback, so that it would be easy to find the parameters needed to make a certain shape."
   },
   {
     name: "Maze",
