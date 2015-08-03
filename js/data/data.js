@@ -348,6 +348,16 @@ programmingExperiments = [
     description: "A 2 player collaborative web version of the popular smartphone game."
   },
   {
+    name: "PLATO Programming Language",
+    dateYear: "2013",
+    dateMonth: "12",
+    link:"assets/pdfs/plato.pdf",
+    image:"plato.jpg",
+    mobileFriendly: true,
+    mobileFirst: false,
+    description: "Made with two other students as a final project for our Programming Languages and Translators class. PLATO (Programing Language for Abstract Transformation Operators) is a programming language inspired by MATLAB, Python, Prolog, Java, and Ocaml, and designed for the direct manipulation of abstract mathematical expressions. In addition to being able to express basic number­-theoretical algorithms, it can also also handle finite sets, groups, rings, and fields."
+  },
+  {
     name: "Tutorial: Curve Bounce in HTML5",
     dateYear: "2013",
     link:"http://blog.400pixels.net/?p=7",
@@ -377,7 +387,7 @@ programmingExperiments = [
     // TODO(jruales): Hide Flash experiments from mobile users
     mobileFriendly: true,
     mobileFirst: false,
-    description: "I designed the layout for <em>Bifurcaciones de Mentes</em> (\"Mind Bifurcations\"), the yearly literary magazine published by my school's AP Spanish Literature class. The first sentences of the books we read throughout the school year frame the pages. I also wrote a few of the stories inside the magazine."
+    description: "I designed the layout for <em>Bifurcaciones de mentes</em> (\"Mind Bifurcations\"), the yearly literary magazine published by my school's AP Spanish Literature class. The first sentences of the books we read throughout the school year frame the pages. I also wrote a few of the stories inside the magazine."
   },
   {
     name: "3D Fractal Tree",
