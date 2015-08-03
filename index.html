@@ -107,7 +107,8 @@
                                         {{/if}}
                                     </div>
                                     <div class="col-md-9">
-                                        <div>{{contest.dateYear}}. {{contest.venue}}. {{contest.location}}.</div>
+                                        <div><em>{{contest.dateYear}}.</em></div>
+                                        <div><em>{{contest.venue}}. {{contest.location}}.</em></div>
                                         <div>{{contest.description}}</div>
                                         {{#each contest.links as |link linkId|}}
                                         <a class="no-hover-underline" target="_blank" href="{{link.url}}">
@@ -176,7 +177,7 @@
                                     {{/if}}
                                     </div>
                                     <div class="col-md-9">
-                                        <div>{{builtWebsite.dateYear}}.</div>
+                                        <div><em>{{builtWebsite.dateYear}}.</em></div>
                                         <div>{{{builtWebsite.description}}}</div>
                                         {{#if builtWebsite.technologies}}
                                         <div>Uses {{builtWebsite.technologies}}</div>
@@ -202,7 +203,7 @@
                                         {{/if}}
                                     </div>
                                     <div class="col-md-9">
-                                        <div>{{programmingExperiment.dateYear}}.</div>
+                                        <div><em>{{programmingExperiment.dateYear}}.</em></div>
                                         <div>{{{programmingExperiment.description}}}</div>
                                     </div>
                                 </div>

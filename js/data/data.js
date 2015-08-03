@@ -132,7 +132,7 @@ petProjects = [
     technologies: "HTML + CSS + JS + PHP + MySQL",
     links: [
       {
-        name: "Website",
+        name: "Project",
         url: "http://ecuacines.com/"
       },
       {
@@ -387,7 +387,7 @@ programmingExperiments = [
     // TODO(jruales): Hide Flash experiments from mobile users
     mobileFriendly: true,
     mobileFirst: false,
-    description: "I designed the layout for <em>Bifurcaciones de mentes</em> (\"Mind Bifurcations\"), the yearly literary magazine published by my school's AP Spanish Literature class. The first sentences of the books we read throughout the school year frame the pages. I also wrote a few of the stories inside the magazine."
+    description: "I designed the layout for the 2009 edition of <em>Bifurcaciones de mentes</em> (\"Mind Bifurcations\"), the yearly literary magazine published by my school's AP Spanish Literature class. The first sentences of the books we read throughout the school year frame the pages. I also wrote a few of the stories inside the magazine."
   },
   {
     name: "3D Fractal Tree",
