@@ -119,6 +119,9 @@ h2 {
     margin-top: 40px;
     padding-top: 30px;
     border-top: #000 1px solid;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    border-bottom: #000 1px solid;
 }
 h3 {
     /*margin-top: 22px;*/
