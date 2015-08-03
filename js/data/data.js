@@ -355,7 +355,7 @@ programmingExperiments = [
     image:"plato.jpg",
     mobileFriendly: true,
     mobileFirst: false,
-    description: "Made with two other students as a final project for our Programming Languages and Translators class. PLATO (Programing Language for Abstract Transformation Operators) is a programming language inspired by MATLAB, Python, Prolog, Java, and Ocaml, and designed for the direct manipulation of abstract mathematical expressions. In addition to being able to express basic number­-theoretical algorithms, it can also also handle finite sets, groups, rings, and fields."
+    description: "Made with two other students as the final project for our Programming Languages and Translators class. PLATO (Programing Language for Abstract Transformation Operators) is a programming language inspired by MATLAB, Python, Prolog, Java, and Ocaml, and designed for the direct manipulation of abstract mathematical expressions. In addition to being able to express basic number­-theoretical algorithms, it can also also handle finite sets, groups, rings, and fields."
   },
   {
     name: "Tutorial: Curve Bounce in HTML5",
