@@ -378,6 +378,19 @@ programmingExperiments = [
     description: "This program uses <a target=\"_blank\" href=\"http://flam3.com/flame_draves.pdf\">Iterated function systems</a> to create a variety of fractals ranging from Sierpinski triangles to flame-like paintings, depending on the selected settings. Fractals are generated directly by your web browser."
   },
   {
+    name: "Oberlin Class of 2015 T-shirt Design",
+    dateYear: "2011",
+    dateMonth: "12",
+    dateDay: "2",
+    // TODO(jruales): Make an HTML container for each SWF file
+    link:"assets/graphics/oberlin2015.png",
+    image:"oberlin2015_small.jpg",
+    // TODO(jruales): Hide Flash experiments from mobile users
+    mobileFriendly: true,
+    mobileFirst: false,
+    description: "My design won Oberlin's annual t-shirt design contest. Tshirts with the design were mailed to every incoming first year student in the class of 2015 together with their admission package. The design features an albino squirrel in a ball chair atop a Tappan Square tree. Next to the tree is a painted rock."
+  },
+  {
     name: "AP Spanish Literature Magazine",
     dateYear: "2009",
     dateMonth: "04",
