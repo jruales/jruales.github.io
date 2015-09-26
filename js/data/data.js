@@ -384,7 +384,7 @@ programmingExperiments = [
     dateDay: "2",
     // TODO(jruales): Make an HTML container for each SWF file
     link:"assets/graphics/oberlin2015.png",
-    image:"oberlin2015_small.jpg",
+    image:"oberlin2015.jpg",
     // TODO(jruales): Hide Flash experiments from mobile users
     mobileFriendly: true,
     mobileFirst: false,
