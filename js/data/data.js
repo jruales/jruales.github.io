@@ -168,6 +168,7 @@ builtWebsites = [
     dateYear: 2015,
     technologies: "HTML + CSS + JS"
   },
+  /*
   {
     title: "Hostal Vista Amazonas",
     link: "http://vistaamazonas.com/",
@@ -178,6 +179,7 @@ builtWebsites = [
     dateYear: 2012,
     technologies: "HTML + CSS + JS + PHP"
   },
+  */
   {
     title: "Oberlin College Library Website",
     link: "http://www.oberlin.edu/library/",
