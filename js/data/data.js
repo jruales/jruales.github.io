@@ -68,7 +68,7 @@ timeEvents = [
   {
     timeframe: "Fall 2014 - Fall 2015",
     title: "🎓 Columbia University Computer Science M.S.",
-    description: "Computer Vision and Graphics Track."
+    description: "Machine Learning and Computer Vision and Graphics Tracks."
   },
   {
     timeframe: "Summer 2014",
