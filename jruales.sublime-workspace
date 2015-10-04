@@ -167,6 +167,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 23833,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/data/data.js",
+			"settings":
+			{
+				"buffer_size": 22566,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -253,7 +269,9 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/Joaqo/CP/websites/jruales"
+		"/Users/Joaqo/CP/websites/jruales",
+		"/Users/Joaqo/CP/websites/jruales/js",
+		"/Users/Joaqo/CP/websites/jruales/js/data"
 	],
 	"file_history":
 	[
@@ -375,7 +393,7 @@
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -567,8 +585,69 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23833,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								428,
+								428
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 10.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/data/data.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22566,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4960,
+								4960
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3146.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],

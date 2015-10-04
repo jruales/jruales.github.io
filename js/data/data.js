@@ -11,7 +11,9 @@ basics = {
     label: "Columbia University Computer Science M.S. student",
     picture: "square_me3.jpg",
     email: "jar2262 [at] columbia [dot] edu",
-    summary: "<p>Hi, I'm Joaquín (pronounced \"haw-ah-KEEN\"), a software engineer and mathematician interested in machine learning, computer graphics, web application development, and applied mathematics.</p><p>When I'm not making programs or playing with <a target=\"_blank\" href=\"https://www.desmos.com/calculator/\">graphing calculators</a>, I like taking photos, exploring new places, bicycling, and playing the piano.</p>",
+    summary: "<p>Hi, I'm a software engineer and mathematician interested in machine learning, computer graphics, web application development, and applied mathematics.</p><p>When I'm not making programs or playing with <a target=\"_blank\" href=\"https://www.desmos.com/calculator/\">graphing calculators</a>, I like taking photos, exploring new places, bicycling, and playing the piano.</p>",
+    // Joaquín (pronounced \"haw-ah-KEEN\" or \"hwah-KEEN\"),
+    // Ruales (pronounced \"RWA-less\"),
     phone: "",
     website: "",
     location: {
