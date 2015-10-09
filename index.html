@@ -74,7 +74,7 @@
                                     <div class="timeframe">{{timeEvent.timeframe}}</div>
                                     <div class="title">{{timeEvent.title}}</div>
                                     {{#if timeEvent.description}}
-                                        <div class="description">{{timeEvent.description}}</div>
+                                        <div class="description">{{{timeEvent.description}}}</div>
                                     {{/if}}
                                 </li>
                             {{/each}}
@@ -230,8 +230,9 @@
                                     {{/if}}
                                     </div>
                                     <div class="col-md-9">
-                                        <div>Authors: {{preprint.authors}}</div>
-                                        <div>Abstract: {{preprint.abstract}}</div>
+                                        <div>{{{preprint.notes}}}</div>
+                                        <div><strong>Authors:</strong> (in alphabetical order) {{preprint.authors}}</div>
+                                        <div><strong>Abstract:</strong> {{preprint.abstract}}</div>
                                         {{#each preprint.links as |link linkId|}}
                                         <a class="no-hover-underline" target="_blank" href="{{link.url}}">
                                             <button type="button" class="btn btn-default" aria-label="{{link.name}}">
@@ -289,7 +290,7 @@
                                             <li>Eclipse</li>
                                             <li>Sublime Text 3</li>
                                             <li>Git</li>
-                                            <li>LaTeX</li>
+                                            <li><img src="img/LaTeX_logo.svg" class="latex-logo"/></li>
                                             <li>/\b(?:Regular Expressions|RegExp?)\b/</li>
                                             <li>
                                                 Adobe Creative Suite:
@@ -301,19 +302,16 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <strong>Human Languages:</strong>
+                                        <strong>Teaching Experience:</strong>
                                         <ul>
-                                            <li>Fluent in
+                                            <li>Course Assistant (held office hours, graded assignments and exams) for:
                                                 <ul>
-                                                    <li>Spanish (Castilian)</li>
+                                                    <li>Computational Aspects of Robotics (COMS 4733)<br/>Fall 2015 and Fall 2014, Columbia University</li>
+                                                    <li>Parallel Programming (COMS 4130)<br/>Fall 2013, Columbia University</li>
                                                 </ul>
                                             </li>
-                                            <li>Working Proficiency in
-                                                <ul>
-                                                    <li>Italian</li>
-                                                    <li>Uncontracted English Braille</li>
-                                                </ul>
-                                            </li>
+                                            <li>I was a one-on-one tutor in Math and Computer Science while at Columbia University and Oberlin College.</li>
+                                            <li>In High School, I coached a group of four students for an interscholastic Math competition and taught an extracurricular class on ActionScript programming.</li>
                                         </ul>
                                     </li>
                                     <li>
@@ -329,19 +327,6 @@
                                                     <li>R650, M800, W660</li>
                                                 </ul>
                                             </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <strong>Teaching Experience:</strong>
-                                        <ul>
-                                            <li>Course Assistant (held office hours, graded assignments and exams) for:
-                                                <ul>
-                                                    <li>Computational Aspects of Robotics (COMS 4733)<br/>Fall 2015 and Fall 2014, Columbia University</li>
-                                                    <li>Parallel Programming (COMS 4130)<br/>Fall 2013, Columbia University</li>
-                                                </ul>
-                                            </li>
-                                            <li>I was a one-on-one tutor in Math and Computer Science while at Columbia University and Oberlin College.</li>
-                                            <li>In High School, I coached a group of four students for an interscholastic Math competition, and I taught an extracurricular class on ActionScript programming.</li>
                                         </ul>
                                     </li>
                                 </ul>

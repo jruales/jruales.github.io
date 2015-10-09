@@ -9,7 +9,7 @@ function makeUrl(text, url) {
 basics = {
     name: "Joaquín Ruales",
     label: "Columbia University Computer Science M.S. student",
-    picture: "square_me3.jpg",
+    picture: "square_me5.jpg",
     email: "jar2262 [at] columbia [dot] edu",
     summary: "<p>Hi, I'm a software engineer and mathematician interested in machine learning, computer graphics, web application development, and applied mathematics.</p><p>When I'm not making programs or playing with <a target=\"_blank\" href=\"https://www.desmos.com/calculator/\">graphing calculators</a>, I like taking photos, exploring new places, bicycling, and playing the piano.</p>",
     // Joaquín (pronounced \"haw-ah-KEEN\" or \"hwah-KEEN\"),
@@ -70,7 +70,7 @@ timeEvents = [
   {
     timeframe: "Fall 2014 - Fall 2015",
     title: "🎓 Columbia University Computer Science M.S.",
-    description: "Machine Learning and Computer Vision and Graphics Tracks."
+    description: "<em>Machine Learning</em> and <em>Vision and Graphics</em> Tracks."
   },
   {
     timeframe: "Summer 2014",
@@ -80,12 +80,12 @@ timeEvents = [
   {
     timeframe: "Fall 2012 - Spring 2014",
     title: "🎓 Columbia University Computer Science B.S.",
-    description: "Artificial Intelligence Track."
+    description: "<em>Artificial Intelligence</em> Track."
   },
   {
     timeframe: "Fall 2009 - Spring 2012",
     title: "🎓 Oberlin College Mathematics B.A.",
-    description: "3-2 Engineering Program with Columbia University."
+    description: "3-2 Engineering Combined Program with Columbia University."
   }
 ]
 
@@ -96,6 +96,7 @@ timeEvents = [
 preprints = [
   {
     title: "On left-orderability and double branched covers of Kanenobu's knots",
+    notes:"Now accepted to the Journal of Knot Theory and its Ramifications. <br/> For this paper, I created and optimized a Lemma-proving program that used facts we derived by hand about an infinite mathematical group to derive properties of other elements in the group and eventually reach a contradiction. Even though it was not clear that it would work (since the program had an infinite search space, and no one had proven before that a contradiction would ever be reached), deciding to create such a program allowed us to find the contradiction, prove our main theorem, and write the paper on time before the end of the REU.",
     authors: "F. Doria Medina, M. Jackson, J. Ruales, and H. Zeilberger",
     image:"kanenobu.jpg",
     abstract: "We show that the fundamental group of the double branched cover of an infinite family of homologically thin, non-quasi-alternating knots is not left-orderable, giving further support for a conjecture of Boyer, Gordon, and Watson that an irreducible rational homology 3-sphere is an L-space if and only if its fundamental group is not left-orderable.",
@@ -131,7 +132,7 @@ petProjects = [
     mobileFirst: true,
     description: "Displays showtimes for all major movie theaters in Quito, Ecuador. Showtime information collected automatically from each movie theater's website.",
     year: 2013,
-    technologies: "HTML + CSS + JS + PHP + MySQL",
+    technologies: "HTML + CSS + JS + PHP (Laravel) + MySQL",
     links: [
       {
         name: "Project",
@@ -149,7 +150,7 @@ petProjects = [
     image: "400pixels.png",
     mobileFriendly: false,
     mobileFirst: false, 
-    description: "Pixel art web app.",
+    description: "A web app for making and sharing pixel art online. As a challenge, I avoided using any third-party libraries for the front-end, so I implemented my own color picker, undo-redo feature, Breshenham's line drawing algorithm, isometric cube tool, and so on.",
     year: 2010,
     technologies: "AS 3.0 + PHP + MySQL"
   }
@@ -161,14 +162,14 @@ petProjects = [
 
 builtWebsites = [
   {
-    title: "My Personal Website",
+    title: "Personal Website",
     link: "#",
     image: "this_website.png",
     mobileFriendly: true,
     mobileFirst: true,
-    description: "The website you're on.",
+    description: "My CV/portfolio website. I used Handlebars templating to make it simple to modify and add information to the page.",
     dateYear: 2015,
-    technologies: "HTML + CSS + JS"
+    technologies: "HTML + CSS + JS (w/ Handlebars)"
   },
   /*
   {
@@ -200,7 +201,7 @@ builtWebsites = [
     mobileFirst: false,
     description: "Website for a music composer.",
     dateYear: 2010,
-    technologies: "AS 3.0"
+    technologies: "AS 3.0 + PHP"
   },
   {
     title: "Movimiento Verde Estudiantil",
@@ -208,9 +209,9 @@ builtWebsites = [
     image: "movimiento_verde.png",
     mobileFriendly: false,
     mobileFirst: false,
-    description: "Website for a student recycling group organized by members of my high school.",
+    description: "Website for a student recycling group organized by members of my high school.<br/>I used the Five3D 3D engine to program the carousel transition. Since that library could not handle text, I converted the heading text into spline curves so that they could be rotated, and I hid the body text before each transition. I also designed the logo for the student group.",
     dateYear: 2009,
-    technologies: "AS 3.0 + PHP + MySQL"
+    technologies: "AS 3.0"
   },
   {
     title: "Joaquín Ruales's Art Portfolio",
@@ -218,7 +219,7 @@ builtWebsites = [
     image: "art_portfolio.png",
     mobileFriendly: false,
     mobileFirst: false,
-    description: "My photography and design portfolio up until 2008.",
+    description: "My photography and design portfolio up until 2008.<br/>I programmed a simple parallax effect on the front page, and used a 3rd party image viewer for the other pages.",
     dateYear: 2008,
     technologies: "AS 3.0"
   }
@@ -392,7 +393,7 @@ programmingExperiments = [
     // TODO(jruales): Hide Flash experiments from mobile users
     mobileFriendly: true,
     mobileFirst: false,
-    description: "My design won Oberlin's annual t-shirt design contest, so every incoming first year student of the class of 2015 received in the mail a t-shirt with my design. The design features an albino squirrel in a ball chair atop a tree in Tappan Square. Next to the tree is a painted rock with the words \"Oberlin Class of 2015.\" I wrote Euler's Formula in a tiny font on one of the branches as an Easter Egg."
+    description: "My design won Oberlin's annual t-shirt design contest, so every incoming first year student of the class of 2015 received a t-shirt with my design. The design features an albino squirrel in a ball chair atop a tree in Tappan Square. Next to the tree is a painted rock with the words \"Oberlin Class of 2015.\" I wrote Euler's Formula in a tiny font on one of the branches as an 'Easter egg'."
   },
   {
     name: "AP Spanish Literature Magazine Layout Design",
@@ -435,7 +436,7 @@ programmingExperiments = [
     // TODO(jruales): Hide Flash experiments from mobile users
     mobileFriendly: false,
     mobileFirst: false,
-    description: "Having no easy way of making a variety of geometric shapes using the default Five3d ActionScript 3D library, I created my own function to do it. It can make regular prisms, pyramids, and truncated pyramids, with the possibility of hollowing out the 3D shapes with an inner radius. I also made a tool for playing with this new code with immediate feedback, so that it would be easy to find the parameters needed to make a certain shape."
+    description: "Having no easy way of making a variety of geometric shapes using the Five3d ActionScript 3D library, I created my own function to do it. It can make regular prisms, pyramids, and truncated pyramids, with the possibility of hollowing out the 3D shapes with an inner radius. I also made a tool for playing with this new code with immediate feedback, so that it would be easy to find the parameters needed to make a certain shape."
   },
   {
     name: "Maze",
@@ -444,7 +445,7 @@ programmingExperiments = [
     image:"maze.png",
     mobileFriendly: false,
     mobileFirst: false,
-    description: "Test your reflexes and hand steadiness as you guide your mouse pointer through twelve labirinthine levels and one final speed challenge. This was the first web game I ever programmed.",
+    description: "My first web game. Test your reflexes and hand steadiness as you guide your mouse pointer through twelve labyrinthine levels and one final speed challenge. Stop/play music with the left/right arrows. You can skip up to three levels by using the spacebar. Cheat codes are shift + number keys on an English keyboard.",
     notesToSelf: "This email shows that the game was in fact made in 2006: https://mail.google.com/mail/u/0/?pli=1#search/maze/10e1a1226cd87249"
   }
 ]
