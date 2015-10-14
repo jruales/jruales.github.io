@@ -11,7 +11,7 @@ basics = {
     label: "Columbia University Computer Science M.S. student",
     picture: "square_me5.jpg",
     email: "jar2262 [at] columbia [dot] edu",
-    summary: "<p>Hi, I'm a software engineer and mathematician interested in machine learning, computer graphics, web application development, and applied mathematics.</p><p>When I'm not making programs or playing with <a target=\"_blank\" href=\"https://www.desmos.com/calculator/\">graphing calculators</a>, I like taking photos, exploring new places, bicycling, and playing the piano.</p>",
+    summary: "<p>Hi, I'm a software engineer and mathematician interested in machine learning, computer graphics, web application development, and applied mathematics. I'm looking for a Software Engineer position starting February 2016.</p><p>I'm currently taking two courses, TAing in <a target=\"_blank\" href=\"http://www1.cs.columbia.edu/~allen/F15/\">Computational Aspects of Robotics</a>, and researching on using Convolutional Neural Networks for robotic grasp planning based on a single viewpoint point cloud.</p><p>When I'm not making programs or playing with <a target=\"_blank\" href=\"https://www.desmos.com/calculator/hnsscipxep\">graphing calculators</a>, you'll find me bik or <a target='_blank' href='https://www.flickr.com/photos/46440167@N02/albums'>taking photos</a>.</p>",
     // Joaquín (pronounced \"haw-ah-KEEN\" or \"hwah-KEEN\"),
     // Ruales (pronounced \"RWA-less\"),
     phone: "",
@@ -96,7 +96,7 @@ timeEvents = [
 preprints = [
   {
     title: "On left-orderability and double branched covers of Kanenobu's knots",
-    notes:"Now accepted to the Journal of Knot Theory and its Ramifications. <br/> For this paper, I created and optimized a Lemma-proving program that used facts we derived by hand about an infinite mathematical group to derive properties of other elements in the group and eventually reach a contradiction. Even though it was not clear that it would work (since the program had an infinite search space, and no one had proven before that a contradiction would ever be reached), deciding to create such a program allowed us to find the contradiction, prove our main theorem, and write the paper on time before the end of the REU.",
+    notes:"<p>Now accepted into the Journal of Knot Theory and its Ramifications.</p> <p>For this paper, I created and optimized a Lemma-proving program that used facts we derived by hand about an infinite mathematical group to derive properties of other elements in the group and eventually reach a contradiction, this way proving our main theorem.</p><p>Even though it was not clear that it would work (since the program had an infinite search space, and no one had proven before that a contradiction would ever be reached), deciding to create such a program allowed us to find the contradiction, prove our main theorem, and write the paper on time before the end of the REU.</p>",
     authors: "F. Doria Medina, M. Jackson, J. Ruales, and H. Zeilberger",
     image:"kanenobu.jpg",
     abstract: "We show that the fundamental group of the double branched cover of an infinite family of homologically thin, non-quasi-alternating knots is not left-orderable, giving further support for a conjecture of Boyer, Gordon, and Watson that an irreducible rational homology 3-sphere is an L-space if and only if its fundamental group is not left-orderable.",
