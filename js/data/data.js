@@ -461,6 +461,16 @@ columbiaMSRelevantCourses = [
     number: 6998.004
   },
   {
+    name: "Bayesian Models for Machine Learning",
+    departmentCode: "EECS",
+    number: 6892
+  },
+  {
+    name: "Advanced Database Systems",
+    departmentCode: "COMS",
+    number: 6111
+  },
+  {
     name: "Advanced Computer Graphics",
     departmentCode: "COMS",
     number: 4162
@@ -561,7 +571,7 @@ columbiaBSRelevantCourses = [
     number: 3028
   },
   {
-    name: "Computer Animation",
+    name: "Physically Based Computer Animation",
     departmentCode: "COMS",
     number: 4167
   },
