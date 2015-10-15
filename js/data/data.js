@@ -9,9 +9,9 @@ function makeUrl(text, url) {
 basics = {
     name: "Joaquín Ruales",
     label: "Columbia University Computer Science M.S. student",
-    picture: "square_me5.jpg",
+    picture: "square_me6.jpg",
     email: "jar2262 [at] columbia [dot] edu",
-    summary: "<p>Hi, I'm a software engineer and mathematician interested in machine learning, computer graphics, web application development, and applied mathematics. I'm looking for a Software Engineer position starting February 2016.</p><p>Other than taking two courses, I'm currently TAing in <a target=\"_blank\" href=\"http://www1.cs.columbia.edu/~allen/F15/\">Computational Aspects of Robotics</a>, and researching on using Convolutional Neural Networks for robotic grasp planning based on a single viewpoint point cloud.</p><p>When I'm not making programs or playing with <a target=\"_blank\" href=\"https://www.desmos.com/calculator/hnsscipxep\">graphing calculators</a>, you'll find me bik or <a target='_blank' href='https://www.flickr.com/photos/46440167@N02/albums'>taking photos</a>.</p>",
+    summary: "<p>Hi, I'm a software engineer and mathematician interested in machine learning, computer graphics, web application development, and applied mathematics. I'm looking for a Software Engineer position starting February 2016.</p><p>Other than taking two university courses, I'm currently TAing in <a target=\"_blank\" href=\"http://www1.cs.columbia.edu/~allen/F15/\">Computational Aspects of Robotics</a> and researching on using Convolutional Neural Networks for robotic grasp planning based on a single-viewpoint depth image.</p><p>When I'm not programming computers or playing with <a target=\"_blank\" href=\"https://www.desmos.com/calculator/hqgi7zssfd\">graphing calculators</a>, you'll find me bicycling or <a target='_blank' href='https://www.flickr.com/photos/46440167@N02/albums'>taking photos</a>.</p>",
     // Joaquín (pronounced \"haw-ah-KEEN\" or \"hwah-KEEN\"),
     // Ruales (pronounced \"RWA-less\"),
     phone: "",
