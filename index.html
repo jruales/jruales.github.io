@@ -73,7 +73,7 @@
                             {{#each timeEvents as |timeEvent timeEventId|}}
                                 <li class="time-event">
                                     <div class="timeframe">{{timeEvent.timeframe}}</div>
-                                    <div class="title">{{timeEvent.title}}</div>
+                                    <div class="title">{{{timeEvent.title}}}</div>
                                     {{#if timeEvent.description}}
                                         <div class="description">{{{timeEvent.description}}}</div>
                                     {{/if}}
