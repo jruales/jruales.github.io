@@ -189,7 +189,7 @@ builtWebsites = [
     image: "oberlin_library.png",
     mobileFriendly: true,
     mobileFirst: false,
-    description: "Rebuilt the library website's main pages as part of the library's web team. Replaced outdated code libraries and coding standards and focused on making the site user-friendly and visually clean. A snapshot of the old website before the remake is available on the <a target=\"_blank\" href=\"https://web.archive.org/web/20110519182042/http://www.oberlin.edu/library/\">Internet Archive</a>.",
+    description: "Rebuilt the library website's main pages as part of the library's web team. Replaced outdated code libraries and coding standards and focused on making the site user-friendly and visually clean.", //A snapshot of the old website before the remake is available on the <a target=\"_blank\" href=\"https://web.archive.org/web/20110519182042/http://www.oberlin.edu/library/\">Internet Archive</a>.
     dateYear: 2011,
     technologies: null
   },
