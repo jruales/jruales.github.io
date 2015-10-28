@@ -346,8 +346,29 @@ contests = [
 
 programmingExperiments = [
   {
+    name: "Recurrent Neural Networks for Sentiment Analysis",
+    dateYear: "2015",
+    dateMonth: "05",
+    link:"assets/pdfs/rnn_class_project.pdf",
+    image:"rnn_class_project.png",
+    mobileFriendly: true,
+    mobileFirst: false,
+    description: "Individual class project for Advanced Machine Learning. I ran some experiments using recurrent neural networks for binary classification of movie review sentiment using Theano. I then used a t-SNE embedding to visualize the word vectors that one of these classifiers learned during training."
+  },
+  {
+    name: "Vocal Extraction From Music Using RPCA Decomposition",
+    dateYear: "2014",
+    dateMonth: "05",
+    link:"assets/pdfs/rpca_class_project.pdf",
+    image:"rpca_class_project.png",
+    mobileFriendly: true,
+    mobileFirst: false,
+    description: "Group project for our Convex Optimization class. We used Robust Principal Component Analysis (RPCA) to separate a music audio file into instrumental and vocal audio components. This was possible thanks to the fact that instrumentals tend to be low-rank and vocals tend to be sparse in the frequency domain."
+  },
+  {
     name: "2 Player Flappy Bird",
     dateYear: "2014",
+    dateMonth: "02",
     link:"http://400pixels.net/flappy2p/",
     image:"flappy2p.png",
     mobileFriendly: false,
@@ -362,7 +383,7 @@ programmingExperiments = [
     image:"plato.jpg",
     mobileFriendly: true,
     mobileFirst: false,
-    description: "Made with two other students as the final project for our Programming Languages and Translators class. PLATO (Programing Language for Abstract Transformation Operators) is a programming language inspired by MATLAB, Python, Prolog, Java, and Ocaml, and designed for the direct manipulation of abstract mathematical expressions. In addition to being able to express basic number­-theoretical algorithms, it can also also handle finite sets, groups, rings, and fields."
+    description: "Group project for Programming Languages and Translators. PLATO (Programing Language for Abstract Transformation Operators) is a programming language inspired by MATLAB, Python, Prolog, Java, and Ocaml, and designed for the direct manipulation of abstract mathematical expressions. In addition to being able to express basic number­-theoretical algorithms, it can also also handle finite sets, groups, rings, and fields."
   },
   {
     name: "Tutorial: Curve Bounce in HTML5",
@@ -382,7 +403,7 @@ programmingExperiments = [
     // TODO(jruales): Hide Flash experiments from mobile users
     mobileFriendly: false,
     mobileFirst: false,
-    description: "This program uses <a target=\"_blank\" href=\"http://flam3.com/flame_draves.pdf\">Iterated function systems</a> to create a variety of fractals ranging from Sierpinski triangles to flame-like paintings, depending on the selected settings. Fractals are generated directly by your web browser."
+    description: "Individual project for Seminar in Mathematical Modeling. This program uses <a target=\"_blank\" href=\"http://flam3.com/flame_draves.pdf\">Iterated function systems</a> to create a variety of fractals ranging from Sierpinski triangles to flame-like paintings, depending on the selected settings. Fractals are generated directly by your web browser."
   },
   {
     name: "Oberlin Class of 2015 T-shirt Design",
@@ -428,7 +449,7 @@ programmingExperiments = [
     // TODO(jruales): Hide Flash experiments from mobile users
     mobileFriendly: false,
     mobileFirst: false,
-    description: "A bouncy ball inside a Space-Invader-shaped container. This was originally meant to work with WiiFlash so that the tilt of the Space Invader was controlled with a Wii remote, back when cell phones didn't have acceleromenters."
+    description: "A bouncy ball inside a Space-Invader-shaped container. This was originally meant to work with WiiFlash so that the tilt of the Space Invader was controlled with a Wii remote, back when cell phones didn't commonly have acceleromenters."
   },
     {
     name: "Vector Hollow Prism",
@@ -501,6 +522,11 @@ columbiaMSRelevantCourses = [
     name: "Bayesian Statistics",
     departmentCode: "STAT",
     number: 4640
+  },
+  {
+    name: "Advanced Machine Learning — Misc. Topics",
+    departmentCode: "COMS",
+    number: 4772
   }
 ];
 
@@ -588,7 +614,7 @@ columbiaBSRelevantCourses = [
     number: 4995.004
   },
   {
-    name: "Advanced Machine Learning",
+    name: "Advanced Machine Learning — Convex Optimization",
     departmentCode: "COMS",
     number: 4772
   }
