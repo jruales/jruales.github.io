@@ -368,7 +368,7 @@ programmingExperiments = [
     image:"rpca_class_project.png",
     mobileFriendly: true,
     mobileFirst: false,
-    description: "Group project for our Convex Optimization class. We used Robust Principal Component Analysis (RPCA) to separate a music audio file into instrumental and vocal audio components. This was possible thanks to the fact that instrumentals tend to be low-rank and vocals tend to be sparse in the frequency domain."
+    description: "Group project for our Convex Optimization class. We used Robust Principal Component Analysis (RPCA) to separate a music audio file into instrumental and vocal audio components. This was possible because instrumentals tend to be low-rank and vocals tend to be sparse in the frequency domain."
   },
   {
     name: "2 Player Flappy Bird",
