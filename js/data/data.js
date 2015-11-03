@@ -153,7 +153,13 @@ petProjects = [
     mobileFirst: false, 
     description: "A web app for making and sharing pixel art online. As a challenge, I avoided using any third-party libraries for the front-end, so I implemented my own color picker, undo-redo feature, Breshenham's line drawing algorithm, isometric cube tool, and so on.",
     year: 2010,
-    technologies: "AS 3.0 + PHP + MySQL"
+    technologies: "AS 3.0 + PHP + MySQL",
+    links: [
+      {
+        name: "Video Demo",
+        url: "https://youtu.be/HElPy2vxQN4"
+      },
+    ]
   }
 ]
 
