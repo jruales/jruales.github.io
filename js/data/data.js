@@ -132,7 +132,7 @@ petProjects = [
     mobileFriendly: true,
     mobileFirst: true,
     description: "Displays showtimes for all major movie theaters in Quito, Ecuador. Showtime information collected automatically from each movie theater's website.",
-    year: 2013,
+    dateYear: 2012,
     technologies: "HTML + CSS + JS + PHP (Laravel) + MySQL",
     links: [
       {
@@ -152,7 +152,7 @@ petProjects = [
     mobileFriendly: false,
     mobileFirst: false, 
     description: "A web app for making and sharing pixel art online. As a challenge, I avoided using any third-party libraries for the front-end, so I implemented my own color picker, undo-redo feature, Breshenham's line drawing algorithm, isometric cube tool, and so on.",
-    year: 2010,
+    dateYear: 2010,
     technologies: "AS 3.0 + PHP + MySQL",
     links: [
       {
