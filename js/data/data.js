@@ -370,6 +370,7 @@ programmingExperiments = [
     mobileFirst: false,
     description: "Group project for our Convex Optimization class. We used Robust Principal Component Analysis (RPCA) to separate a music audio file into instrumental and vocal audio components. This was possible because instrumentals tend to be low-rank and vocals tend to be sparse in the frequency domain."
   },
+  /*
   {
     name: "2 Player Flappy Bird",
     dateYear: "2014",
@@ -380,6 +381,7 @@ programmingExperiments = [
     mobileFirst: false,
     description: "A 2 player collaborative web version of the popular smartphone game."
   },
+  */
   {
     name: "PLATO Programming Language",
     dateYear: "2013",
