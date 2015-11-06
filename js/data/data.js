@@ -349,6 +349,11 @@ contests = [
 // PROGRAMMING EXPERIMENTS
 //
 
+// TODO(jruales): add the following projects
+// - Graphcut Textures
+// - SVM CVN professor autozoom
+// - 3D Renders from Graphics (raytra) and Adv. Computer Graphics (Kajiya)
+// - Blog post about Animation and Geometry Processing Seminar hacker demos
 programmingExperiments = [
   {
     name: "Recurrent Neural Networks for Sentiment Analysis",
