@@ -473,6 +473,7 @@ programmingExperiments = [
     dateYear: "2006",
     link:"http://joaqo182.50webs.com/maze.html",
     image:"maze.png",
+    // TODO(jruales): Hide Flash experiments from mobile users
     mobileFriendly: false,
     mobileFirst: false,
     description: "My first web game. Test your reflexes and hand steadiness as you guide your mouse pointer through twelve labyrinthine levels and one final speed challenge. Stop/play music with the left/right arrows. You can skip up to three levels by using the spacebar. Cheat codes are shift + number keys on an English keyboard.",
