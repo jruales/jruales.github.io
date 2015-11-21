@@ -79,6 +79,11 @@ timeEvents = [
     description: "<em>Artificial Intelligence</em> Track. See <a target=\"_blank\" href=\"http://jruales.github.io/#coursework\">coursework</a>."
   },
   {
+    timeframe: "Summer 2010",
+    title: "🎓 Stanford University Summer Session",
+    description: "See <a target=\"_blank\" href=\"http://jruales.github.io/#coursework\">coursework</a>."
+  },
+  {
     timeframe: "Fall 2009 - Spring 2012",
     title: "🎓 Oberlin College Mathematics B.A. (Phi Beta Kappa)",
     description: "3-2 Engineering Combined Program with Columbia University. See <a target=\"_blank\" href=\"http://jruales.github.io/#coursework\">coursework</a>."
