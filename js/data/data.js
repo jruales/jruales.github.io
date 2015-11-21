@@ -41,11 +41,6 @@ basics = {
         link: "https://twitter.com/_jruales"
       },
       {
-        name: "Google+",
-        iconClass: "googleplus",
-        link: "https://plus.google.com/u/0/108677809195090402050/posts"
-      },
-      {
         name: "Flickr",
         iconClass: "flickr",
         link: "https://www.flickr.com/photos/46440167@N02"
