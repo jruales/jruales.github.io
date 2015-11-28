@@ -810,7 +810,7 @@ degrees = [
     title: "M.S.",
     major: "Computer Science",
     track: "Vision and Graphics",
-    gpa: "4.08/4.33",
+    // gpa: "4.08/4.33",
     relevantCourses: columbiaMSRelevantCourses,
     otherCourses: columbiaMSOtherCourses
   },
@@ -821,7 +821,7 @@ degrees = [
     title: "B.S.",
     major: "Computer Science",
     track: "Artificial Intelligence",
-    gpa: "3.91/4.33",
+    // gpa: "3.91/4.33",
     relevantCourses: columbiaBSRelevantCourses,
     otherCourses: columbiaBSOtherCourses
   },
@@ -832,7 +832,7 @@ degrees = [
     title: "Summer Session",
     major: null,
     track: null,
-    gpa: "3.96/4.3",
+    // gpa: "3.96/4.3",
     relevantCourses: stanfordSummerRelevantCourses,
     otherCourses: stanfordSummerOtherCourses
   },
@@ -843,7 +843,7 @@ degrees = [
     title: "B.A.",
     major: "Mathematics",
     track: null,
-    gpa: "3.92/4.33",
+    // gpa: "3.92/4.33",
     relevantCourses: oberlinBARelevantCourses,
     otherCourses: oberlinBAOtherCourses
   }
