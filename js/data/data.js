@@ -216,7 +216,7 @@ builtWebsites = [
     image: "movimiento_verde.png",
     mobileFriendly: false,
     mobileFirst: false,
-    description: "Website for a student recycling group organized by members of my high school.<br/>I used the Five3D 3D engine to program the carousel transition. Since that library could not handle text, I converted the heading text into spline curves so that they could be rotated, and I hid the body text before each transition. I also designed the logo for the student group.",
+    description: "Website for a student recycling group organized by members of my high school.<br/>I used the Five3D 3D engine to program the carousel transition. Since that library could not handle 3d transformations of text, I converted the heading text into spline curves so that they could be rotated, and I hid the body text before each transition. I also designed the logo for the student group.",
     dateYear: 2009,
     technologies: "AS 3.0"
   },
