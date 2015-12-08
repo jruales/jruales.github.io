@@ -350,6 +350,7 @@ contests = [
 //
 
 // TODO(jruales): add the following projects
+// - Flora Quitensis (http://400pixels.net/floranativa/) -- Doesn't work anymore due to PHP version...
 // - Graphcut Textures
 // - SVM CVN professor autozoom
 // - 3D Renders from Graphics (raytra) and Adv. Computer Graphics (Kajiya)
