@@ -366,14 +366,14 @@ programmingExperiments = [
     description: "Individual class project for Advanced Machine Learning. I ran some experiments using recurrent neural networks for binary classification of movie review sentiment using Theano. I then used a t-SNE embedding to visualize the word vectors that one of these classifiers learned during training."
   },
   {
-    name: "Vocal Extraction From Music Using RPCA Decomposition",
+    name: "Vocal Extraction From Monaural Music Using RPCA Decomposition",
     dateYear: "2014",
     dateMonth: "05",
     link:"assets/pdfs/rpca_class_project.pdf",
     image:"rpca_class_project.png",
     mobileFriendly: true,
     mobileFirst: false,
-    description: "Group project for our Convex Optimization class. We used Robust Principal Component Analysis (RPCA) to separate a music audio file into instrumental and vocal audio components. This was possible because instrumentals tend to be low-rank and vocals tend to be sparse in the frequency domain."
+    description: "Group project for our Convex Optimization class. We used Robust Principal Component Analysis (RPCA) to separate a single-channel music audio file into instrumental and vocal audio components. This was possible because instrumentals tend to be low-rank and vocals tend to be sparse in the frequency domain."
   },
   /*
   {
