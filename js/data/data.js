@@ -12,7 +12,7 @@ basics = {
     picture: "square_me6.jpg",
     email: "jar2262 [at] columbia [dot] edu",
     summary: "<p>Hi, I'm a software engineer and mathematician interested in machine learning, computer graphics, web application development, and applied mathematics. I'll be graduating in December, and I'm looking for a Software Engineer position starting February 2016.</p>"
-    + "<p>Other than taking two university courses, I'm currently TAing <a target=\"_blank\" href=\"http://www1.cs.columbia.edu/~allen/F15/\">Computational Aspects of Robotics</a> and researching on using Convolutional Neural Networks for robotic grasp planning based on a single-viewpoint depth image.</p>"
+    + "<p>In addition to taking two university courses, I'm currently TAing <a target=\"_blank\" href=\"http://www1.cs.columbia.edu/~allen/F15/\">Computational Aspects of Robotics</a> and researching on using Convolutional Neural Networks for robotic grasp planning based on a single-viewpoint depth image.</p>"
     + "<p>When not programming or playing with <a target=\"_blank\" href=\"https://www.desmos.com/calculator/hqgi7zssfd\">graphing calculators</a>, I am generally found bicycling or <a target='_blank' href='https://www.flickr.com/photos/46440167@N02/albums'>taking photos</a>.</p>",
     //+ "<p>My name is pronounced haw-ah-KEEN RWA-less (IPA: /xo.aˈkin ˈrwa.les/).</p>"
     phone: "",
@@ -216,7 +216,7 @@ builtWebsites = [
     image: "movimiento_verde.png",
     mobileFriendly: false,
     mobileFirst: false,
-    description: "Website for a student recycling group organized by members of my high school.<br/>I used the Five3D 3D engine to program the carousel transition. Since that library could not handle text, I converted the heading text into spline curves so that they could be rotated, and I hid the body text before each transition. I also designed the logo for the student group.",
+    description: "Website for a student recycling group organized by members of my high school.<br/>I used the Five3D 3D engine to program the carousel transition. Since that library could not handle 3d transformations of text, I converted the heading text into spline curves so that they could be rotated, and I hid the body text before each transition. I also designed the logo for the student group.",
     dateYear: 2009,
     technologies: "AS 3.0"
   },
@@ -350,6 +350,7 @@ contests = [
 //
 
 // TODO(jruales): add the following projects
+// - Flora Quitensis (http://400pixels.net/floranativa/) -- Doesn't work anymore due to PHP version...
 // - Graphcut Textures
 // - SVM CVN professor autozoom
 // - 3D Renders from Graphics (raytra) and Adv. Computer Graphics (Kajiya)
