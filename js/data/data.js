@@ -11,9 +11,9 @@ basics = {
     label: "Columbia University Computer Science M.S. student",
     picture: "square_me6.jpg",
     email: "jar2262 [at] columbia [dot] edu",
-    summary: "<p>Hi, I'm a software engineer and mathematician interested in machine learning, computer graphics, web application development, and applied mathematics. I'll be graduating in December, and I'm looking for a Software Engineer position starting February 2016.</p>"
-    + "<p>In addition to taking two university courses, I'm currently TAing <a target=\"_blank\" href=\"http://www1.cs.columbia.edu/~allen/F15/\">Computational Aspects of Robotics</a> and researching on using Convolutional Neural Networks for robotic grasp planning based on a single-viewpoint depth image.</p>"
-    + "<p>When not programming or playing with <a target=\"_blank\" href=\"https://www.desmos.com/calculator/hqgi7zssfd\">graphing calculators</a>, I am generally found bicycling or <a target='_blank' href='https://www.flickr.com/photos/46440167@N02/albums'>taking photos</a>.</p>",
+    summary: "<p>Hi, I'm a software engineer and mathematician interested in machine learning, computer graphics, web application development, and applied mathematics.</p>"
+    + "<p>In addition to taking two university courses, this past semester I was a TA for <a target=\"_blank\" href=\"http://www1.cs.columbia.edu/~allen/F15/\">Computational Aspects of Robotics</a> and I researched on using Convolutional Neural Networks for robotic grasp planning based on a single-viewpoint depth image.</p>"
+    + "<p>When not programming or playing with <a target=\"_blank\" href=\"https://www.desmos.com/calculator/hqgi7zssfd\">graphing calculators</a>, I am generally found bicycling or taking <a target='_blank' href='https://www.flickr.com/photos/46440167@N02/albums'>photos</a>.</p>",
     //+ "<p>My name is pronounced haw-ah-KEEN RWA-less (IPA: /xo.aˈkin ˈrwa.les/).</p>"
     phone: "",
     website: "",
