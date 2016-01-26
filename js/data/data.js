@@ -355,6 +355,7 @@ contests = [
 // - SVM CVN professor autozoom
 // - 3D Renders from Graphics (raytra) and Adv. Computer Graphics (Kajiya)
 // - Blog post about Animation and Geometry Processing Seminar hacker demos
+// - BounceLoader with manual (see 'flashden' Dropbox folder)
 programmingExperiments = [
   {
     name: "Recurrent Neural Networks for Sentiment Analysis",
