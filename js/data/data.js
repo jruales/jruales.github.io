@@ -59,12 +59,17 @@ basics = {
 
 timeEvents = [
   {
+    timeframe: "Spring 2016",
+    title: "💼 Microsoft Software Engineer",
+    description: null
+  },
+  {
     timeframe: "Summer 2015",
     title: "💼 Google Software Engineering Intern",
     description: null
   },
   {
-    timeframe: "Fall 2014 - Fall 2015",
+    timeframe: "Fall 2014 - Winter 2016",
     title: "🎓 Columbia University Computer Science M.S.",
     description: "<em>Machine Learning</em> and <em>Vision and Graphics</em> Tracks. See <a target=\"_blank\" href=\"http://jruales.github.io/#coursework\">coursework</a>."
   },
