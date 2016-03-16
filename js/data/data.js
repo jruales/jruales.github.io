@@ -8,7 +8,7 @@ function makeUrl(text, url) {
 
 basics = {
     name: "Joaquín Ruales",
-    label: "Columbia University Computer Science M.S. student",
+    label: "Microsoft Software Engineer",
     picture: "square_me6.jpg",
     email: "jar2262 [at] columbia [dot] edu",
     summary: "<p>Hi, I'm a software engineer and mathematician interested in machine learning, computer graphics, web application development, and applied mathematics.</p>"
