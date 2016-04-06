@@ -411,7 +411,7 @@ programmingExperiments = [
     image:"curve_bounce.png",
     mobileFriendly: true,
     mobileFirst: true,
-    description: "A tutorial on how to program a circle bouncing on a mathematically-defined curve."
+    description: "A tutorial on how to program a circle bouncing on a mathematically-defined curve. Uses the numerical derivative of the curve to calculate the bounce angle."
   },
   {
     name: "Fractal Flame Generator",
