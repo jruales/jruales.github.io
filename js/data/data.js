@@ -435,7 +435,7 @@ programmingExperiments = [
     // TODO(jruales): Hide Flash experiments from mobile users
     mobileFriendly: true,
     mobileFirst: false,
-    description: "My design won Oberlin's annual t-shirt design contest, so every incoming first year student of the class of 2015 received a t-shirt with my design. The design features an albino squirrel in a ball chair atop a tree in Tappan Square. Next to the tree is a painted rock with the words \"Oberlin Class of 2015.\" I wrote Euler's Formula in a tiny font on one of the branches as an 'Easter egg'."
+    description: "My design won Oberlin's annual t-shirt design contest, so it was printed on the t-shirts that were sent out to every incoming first-year student of the class of 2015. The design features an albino squirrel in a ball chair atop a tree in Tappan Square. Next to the tree is a painted rock with the words \"Oberlin Class of 2015.\" I wrote Euler's Formula in a tiny font on one of the branches as an 'Easter egg'."
   },
   {
     name: "AP Spanish Literature Magazine Layout Design",
