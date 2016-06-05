@@ -816,7 +816,7 @@ degrees = [
     collegeSubtitle: "School of Engineering and Applied Science",
     title: "M.S.",
     major: "Computer Science",
-    track: "Vision and Graphics",
+    track: "Machine Learning, and Vision and Graphics",
     // gpa: "4.08/4.33",
     relevantCourses: columbiaMSRelevantCourses,
     otherCourses: columbiaMSOtherCourses
