@@ -102,11 +102,11 @@ timeEvents = [
 preprints = [
   {
     title: "On left-orderability and double branched covers of Kanenobu's knots",
-    notes:"<p>Now accepted into the Journal of Knot Theory and its Ramifications.</p> <p>For this paper, I created and optimized a Lemma-proving program that used facts we derived by hand about an infinite mathematical group to derive properties of other elements in the group and eventually reach a contradiction, this way proving our main theorem.</p><p>Even though it was not clear that it would work (since the program had an infinite search space, and no one had proven before that a contradiction would ever be reached), deciding to create such a program allowed us to find the contradiction, prove our main theorem, and write the paper on time before the end of the REU.</p>",
+    notes:"<p>Most of the proofs in this paper where produced by a Theorem-proving program I made and optimized.</p>", //"<p>For this paper, I created and optimized a Theorem-proving program that used facts we derived by hand about an infinite mathematical group to derive properties of other elements in the group and eventually reach a contradiction, this way proving our main theorem.</p><p>Even though it was not clear that it would work (since the program had an infinite search space, and no one had proven before that a contradiction would ever be reached), deciding to create such a program allowed us to find the contradiction, prove our main theorem, and write the paper on time before the end of the REU.</p>",
     authors: "F. Doria Medina, M. Jackson, J. Ruales, and H. Zeilberger",
     image:"kanenobu.jpg",
     abstract: "We show that the fundamental group of the double branched cover of an infinite family of homologically thin, non-quasi-alternating knots is not left-orderable, giving further support for a conjecture of Boyer, Gordon, and Watson that an irreducible rational homology 3-sphere is an L-space if and only if its fundamental group is not left-orderable.",
-    journal: "ArXiv",
+    journal: "Journal of Knot Theory and its Ramifications (JKTR)",
     //link: "http://arxiv.org/abs/1310.1877",
     links: [
       {
@@ -121,6 +121,10 @@ preprints = [
         name: "PDF",
         url: "http://arxiv.org/pdf/1310.1877.pdf"
       },
+      {
+        name: "JKTR Abstract Page",
+        url: "http://www.worldscientific.com/doi/abs/10.1142/S0218216515500716"
+      }
     ]
   }
 ];
