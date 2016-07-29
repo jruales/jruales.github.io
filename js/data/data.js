@@ -110,20 +110,20 @@ preprints = [
     //link: "http://arxiv.org/abs/1310.1877",
     links: [
       {
+        name: "JKTR Abstract Page",
+        url: "http://www.worldscientific.com/doi/abs/10.1142/S0218216515500716"
+      },
+      {
         name: "ArXiv Page",
         url: "http://arxiv.org/abs/1310.1877"
       },
       {
-        name: "Bibtex Entry",
+        name: "Bibtex Entry (ArXiv)",
         url: "http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2013arXiv1310.1877D&data_type=BIBTEX&db_key=PRE&nocookieset=1"
       },
       {
         name: "PDF",
         url: "http://arxiv.org/pdf/1310.1877.pdf"
-      },
-      {
-        name: "JKTR Abstract Page",
-        url: "http://www.worldscientific.com/doi/abs/10.1142/S0218216515500716"
       }
     ]
   }
