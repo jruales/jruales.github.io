@@ -114,16 +114,16 @@ preprints = [
         url: "http://www.worldscientific.com/doi/abs/10.1142/S0218216515500716"
       },
       {
-        name: "ArXiv Page",
+        name: "ArXiv Abstract Page",
         url: "http://arxiv.org/abs/1310.1877"
       },
       {
-        name: "Bibtex Entry (ArXiv)",
-        url: "http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2013arXiv1310.1877D&data_type=BIBTEX&db_key=PRE&nocookieset=1"
+        name: "Preprint PDF",
+        url: "http://arxiv.org/pdf/1310.1877.pdf"
       },
       {
-        name: "PDF",
-        url: "http://arxiv.org/pdf/1310.1877.pdf"
+        name: "Code",
+        url: "https://github.com/jruales/On-left-orderability-and-double-branched-covers-of-Kanenobu-s-knots"
       }
     ]
   }
