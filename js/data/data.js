@@ -101,6 +101,28 @@ timeEvents = [
 
 preprints = [
   {
+    title: "Shape Completion Enabled Robotic Grasping",
+    notes:"<p>This work started as a class project for <i>Deep Learning for Computer Vision and Natural Language Processing</i></p>",
+    authors: "J. Varley, C. DeChant, A. Richardson, J. Ruales, and P. Allen",
+    image:"kanenobu.jpg",
+    abstract: "This work provides an architecture to enable robotic grasp planning via shape completion. Shape completion is accomplished through the use of a 3D convolutional neural network (CNN). The network is trained on our own new open source dataset of over 440,000 3D exemplars captured from varying viewpoints. At runtime, a 2.5D pointcloud captured from a single point of view is fed into the CNN, which fills in the occluded regions of the scene, allowing grasps to be planned and executed on the completed object. Runtime shape completion is very rapid because most of the computational costs of shape completion are borne during offline training. We explore how the quality of completions vary based on several factors. These include whether or not the object being completed existed in the training data and how many object models were used to train the network. We also look at the ability of the network to generalize to novel objects allowing the system to complete previously unseen objects at runtime. Finally, experimentation is done both in simulation and on actual robotic hardware to explore the relationship between completion quality and the utility of the completed mesh model for grasping.",
+    journal: "Accepted to the IROS 2017 conference",
+    links: [
+      {
+        name: "ArXiv Abstract Page",
+        url: "https://arxiv.org/abs/1609.08546"
+      },
+      {
+        name: "Preprint PDF",
+        url: "https://arxiv.org/pdf/1609.08546.pdf"
+      },
+      {
+        name: "Project Website",
+        url: "http://shapecompletiongrasping.cs.columbia.edu/"
+      }
+    ]
+  },
+  {
     title: "On left-orderability and double branched covers of Kanenobu's knots",
     notes:"<p>Most of the proofs in this paper where produced by a theorem-proving program I made and optimized during the 2013 Columbia Math Undergraduate Summer Research Program.</p>", //"<p>For this paper, I created and optimized a Theorem-proving program that used facts we derived by hand about an infinite mathematical group to derive properties of other elements in the group and eventually reach a contradiction, this way proving our main theorem.</p><p>Even though it was not clear that it would work (since the program had an infinite search space, and no one had proven before that a contradiction would ever be reached), deciding to create such a program allowed us to find the contradiction, prove our main theorem, and write the paper on time before the end of the REU.</p>",
     authors: "F. Doria Medina, M. Jackson, J. Ruales, and H. Zeilberger",
