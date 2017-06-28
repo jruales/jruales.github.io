@@ -109,16 +109,20 @@ preprints = [
     conference: "IROS 2017",
     links: [
       {
+        name: "Project Website",
+        url: "http://shapecompletiongrasping.cs.columbia.edu/"
+      },
+      {
+        name: "Video",
+        url: "https://www.youtube.com/watch?v=Dxd0ItPhh7c"
+      },
+      {
         name: "ArXiv Abstract Page",
         url: "https://arxiv.org/abs/1609.08546"
       },
       {
         name: "Preprint PDF",
         url: "https://arxiv.org/pdf/1609.08546.pdf"
-      },
-      {
-        name: "Project Website",
-        url: "http://shapecompletiongrasping.cs.columbia.edu/"
       }
     ]
   },
