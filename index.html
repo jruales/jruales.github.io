@@ -233,7 +233,12 @@
                                     <div class="col-md-9">
                                         <div>{{{preprint.notes}}}</div>
                                         <div><strong>Authors:</strong> {{preprint.authors}}</div>
+                                        {{#if preprint.journal}}
                                         <div><strong>Journal:</strong> {{preprint.journal}}</div>
+                                        {{/if}}
+                                        {{#if preprint.conference}}
+                                        <div><strong>Conference:</strong> {{preprint.conference}}</div>
+                                        {{/if}}
                                         <div><strong>Abstract:</strong> {{preprint.abstract}}</div>
                                         {{#each preprint.links as |link linkId|}}
                                         <a class="no-hover-underline" target="_blank" href="{{link.url}}">
