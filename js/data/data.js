@@ -109,12 +109,12 @@ preprints = [
     conference: "IROS 2017",
     links: [
       {
-        name: "Project Website",
-        url: "http://shapecompletiongrasping.cs.columbia.edu/"
-      },
-      {
         name: "Video",
         url: "https://www.youtube.com/watch?v=Dxd0ItPhh7c"
+      },
+      {
+        name: "Project Website",
+        url: "http://shapecompletiongrasping.cs.columbia.edu/"
       },
       {
         name: "ArXiv Abstract Page",
@@ -136,7 +136,11 @@ preprints = [
     //link: "http://arxiv.org/abs/1310.1877",
     links: [
       {
-        name: "JKTR Abstract Page",
+        name: "Video",
+        url: "https://youtu.be/R5EC1s-YqYE?t=31m59s"
+      },
+      {
+        name: "Journal Abstract Page",
         url: "http://www.worldscientific.com/doi/abs/10.1142/S0218216515500716"
       },
       {
