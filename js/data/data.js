@@ -121,8 +121,8 @@ preprints = [
         url: "https://arxiv.org/abs/1609.08546"
       },
       {
-        name: "Preprint PDF",
-        url: "https://arxiv.org/pdf/1609.08546.pdf"
+        name: "Code",
+        url: "https://github.com/CRLab/shape_completion_experiments"
       }
     ]
   },
@@ -146,10 +146,6 @@ preprints = [
       {
         name: "ArXiv Abstract Page",
         url: "http://arxiv.org/abs/1310.1877"
-      },
-      {
-        name: "Preprint PDF",
-        url: "http://arxiv.org/pdf/1310.1877.pdf"
       },
       {
         name: "Code",
