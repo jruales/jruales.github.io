@@ -310,7 +310,7 @@ websites = [];
 
 contests = [
   {
-    name: "Deis3D Printathon",
+    name: "Deis3D 3D Printathon",
     venue: "Brandeis University",
     location: "Waltham, MA",
     dateMonth: 3,
@@ -318,7 +318,7 @@ contests = [
     honor: "2nd Place",
     image:"acm.png",
     //link: "http://printathon.org/",
-    description: "Our team of two built a prototype for a bluetooth braille keyboard in the form of a phone case. I soldered and programmed the Arduino electronics, while my teammate precisely designed and 3D-printed the casing and keycaps to fit the phone and electronics.",
+    description: "Our team of two built a prototype for a bluetooth braille keyboard in the form of a phone case. I soldered and programmed the Arduino electronics, while my teammate designed and 3D-printed the casing and keycaps to fit the phone and electronics.",
     links: [
       {
         name: "Contest Information",
