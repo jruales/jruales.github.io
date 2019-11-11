@@ -310,23 +310,6 @@ websites = [];
 
 contests = [
   {
-    name: "Deis3D 3D Printathon",
-    venue: "Brandeis University",
-    location: "Waltham, MA",
-    dateMonth: 3,
-    dateYear: 2015,
-    honor: "2nd Place",
-    image:"deis3d.png",
-    //link: "http://printathon.org/",
-    description: "Our team of two built a prototype for a bluetooth braille keyboard in the form of a phone case. I soldered and programmed the Arduino electronics, while my teammate designed and 3D-printed the casing and keycaps to fit the phone and electronics.",
-    links: [
-      {
-        name: "Contest Information",
-        url: "https://kb.brandeis.edu/pages/viewpage.action?pageId=9044848"
-      },
-    ]
-  },
-  {
     name: "ACM-ICPC Regional Programming Contest, Greater New York Region",
     venue: "St. Joseph's College",
     location: "Patchogue, NY",
@@ -392,6 +375,23 @@ contests = [
       {
         name: "Standings",
         url: "http://personal.denison.edu/~lalla/DSPC/scoreboard_2010.html"
+      },
+    ]
+  },
+  {
+    name: "Deis3D 3D Printathon",
+    venue: "Brandeis University",
+    location: "Waltham, MA",
+    dateMonth: 3,
+    dateYear: 2015,
+    honor: "2nd Place",
+    image:"deis3d.png",
+    //link: "http://printathon.org/",
+    description: "Our team of two built a prototype for a bluetooth braille keyboard in the form of a phone case. I soldered and programmed the Arduino electronics, while my teammate designed and 3D-printed the casing and keycaps to fit the phone and electronics.",
+    links: [
+      {
+        name: "Contest Information",
+        url: "https://kb.brandeis.edu/pages/viewpage.action?pageId=9044848"
       },
     ]
   }
