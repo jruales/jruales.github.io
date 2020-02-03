@@ -59,7 +59,7 @@ basics = {
 
 timeEvents = [
   {
-    timeframe: "Spring 2016",
+    timeframe: "Spring 2016 – Present",
     title: "💼 Microsoft Software Engineer",
     description: null
   },
