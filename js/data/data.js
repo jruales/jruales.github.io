@@ -12,7 +12,7 @@ basics = {
     picture: "square_me6.jpg",
     email: "jar2262 [at] columbia [dot] edu",
     summary: "<p>Hi, I'm a software engineer and mathematician interested in machine learning, computer graphics, web application development, and applied mathematics.</p>"
-    + "<p>My last semester in university, I was a TA for <a target=\"_blank\" href=\"http://www1.cs.columbia.edu/~allen/F15/\">Computational Aspects of Robotics</a> and I did research on <a target='_blank' href='https://www.youtube.com/watch?v=Dxd0ItPhh7c'>Convolutional Neural Networks for robotic grasp planning</a>.</p>"
+    + "<p>During my last semester in university, I was a TA for <a target=\"_blank\" href=\"http://www1.cs.columbia.edu/~allen/F15/\">Computational Aspects of Robotics</a> and I did research on <a target='_blank' href='https://www.youtube.com/watch?v=Dxd0ItPhh7c'>Shape Completion Enabled Robotic Grasping</a> using convolutional neural networks.</p>"
     + "<p>When not programming or playing with <a target=\"_blank\" href=\"https://www.desmos.com/calculator/hqgi7zssfd\">graphing calculators</a>, I am generally found taking <a target='_blank' href='https://www.flickr.com/photos/46440167@N02/albums'>photos</a>, hiking, or <a target='_blank' href='https://github.com/jruales/Reading-List/blob/master/README.md'>reading</a>.</p>",
     phone: "",
     website: "",
