@@ -12,8 +12,8 @@ basics = {
     picture: "square_me6.jpg",
     email: "jar2262 [at] columbia [dot] edu",
     summary: "<p>Hi, I'm a software engineer and mathematician interested in machine learning, computer graphics, web application development, and applied mathematics.</p>"
-    + "<p>During my last semester in university, I was a TA for <a target=\"_blank\" href=\"http://www1.cs.columbia.edu/~allen/F15/\">Computational Aspects of Robotics</a> and I did research on <a target='_blank' href='https://www.youtube.com/watch?v=Dxd0ItPhh7c'>Shape Completion Enabled Robotic Grasping</a> using convolutional neural networks.</p>"
-    + "<p>When not programming or playing with <a target=\"_blank\" href=\"https://www.desmos.com/calculator/hqgi7zssfd\">graphing calculators</a>, I am generally found taking <a target='_blank' href='https://www.flickr.com/photos/46440167@N02/albums'>photos</a>, hiking, or <a target='_blank' href='https://github.com/jruales/Reading-List/blob/master/README.md'>reading</a>.</p>",
+    + "<p>During my last university semester, I was a TA for <a target=\"_blank\" href=\"http://www1.cs.columbia.edu/~allen/F15/\">Computational Aspects of Robotics</a> and I did research on <a target='_blank' href='https://www.youtube.com/watch?v=Dxd0ItPhh7c'>Shape Completion Enabled Robotic Grasping</a> using convolutional neural networks, which was accepted into <a target=\"_blank\" href=\"https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros\">IROS</a>.</p>"
+    + "<p>When not programming or playing with <a target='_blank' href='https://www.desmos.com/calculator/hqgi7zssfd\'>graphing calculators</a>, I am generally found taking <a target='_blank' href='https://www.flickr.com/photos/46440167@N02/'>photos</a>, hiking, or <a target='_blank' href='https://github.com/jruales/Reading-List/blob/master/README.md'>reading</a>.</p>",
     phone: "",
     website: "",
     location: {
@@ -70,7 +70,7 @@ timeEvents = [
   {
     timeframe: "Fall 2014 - Winter 2016",
     title: "🎓 Columbia University Computer Science M.S.",
-    description: "<em>Machine Learning</em> and <em>Vision and Graphics</em> Tracks. See <a target=\"_blank\" href=\"http://jruales.github.io/#coursework\">coursework</a>."
+    description: "«Machine Learning» and «Vision and Graphics» Tracks. See <a target=\"_blank\" href=\"http://jruales.github.io/#coursework\">coursework</a>."
   },
   {
     timeframe: "Summer 2014",
@@ -80,7 +80,7 @@ timeEvents = [
   {
     timeframe: "Fall 2012 - Spring 2014",
     title: "🎓 Columbia University Computer Science B.S. (<em>magna cum laude</em>)",
-    description: "<em>Artificial Intelligence</em> Track. See <a target=\"_blank\" href=\"http://jruales.github.io/#coursework\">coursework</a>."
+    description: "«Artificial Intelligence» Track. See <a target=\"_blank\" href=\"http://jruales.github.io/#coursework\">coursework</a>."
   },
   {
     timeframe: "Summer 2010",
@@ -309,6 +309,24 @@ websites = [];
 
 contests = [
   {
+    name: "HackMIT Hackathon",
+    venue: "Massachusetts Institute of Technology",
+    location: "Cambridge, MA",
+    dateMonth: 2,
+    dateYear: 2013,
+    honor: "1st Place and \"Most likely to become a real product\"",
+    image: "hackmit.png",
+    //link: "https://www.facebook.com/events/295683690535160/",
+    //link2: "https://twitter.com/dff/status/298218271117803520",
+    description: "Our team of four programmed a head-movement-controlled web-messaging interface. I implemented the head tracking and integrated the real-time head position data with the UI and back-end that my teammates created.",
+    links: [
+      {
+        name: "Contest Information",
+        url: "https://web.archive.org/web/20130126114515/http://hackmit.eventbrite.com/"
+      },
+    ]
+  },
+  {
     name: "ACM-ICPC Regional Programming Contest, Greater New York Region",
     venue: "St. Joseph's College",
     location: "Patchogue, NY",
@@ -334,24 +352,6 @@ contests = [
     ]
   },
   {
-    name: "HackMIT Hackathon",
-    venue: "Massachusetts Institute of Technology",
-    location: "Cambridge, MA",
-    dateMonth: 2,
-    dateYear: 2013,
-    honor: "1st Place and \"Most likely to become a real product\"",
-    image: "hackmit.png",
-    //link: "https://www.facebook.com/events/295683690535160/",
-    //link2: "https://twitter.com/dff/status/298218271117803520",
-    description: "Our team of four programmed a head-movement-controlled web-messaging interface. I implemented the head tracking (in Flash) and integrated the real-time head position data with the user interface and database (HTML, JS, PHP, MySQL) that my teammates created. The user interface is now being used and improved upon by the SpeakYourMind Foundation.",
-    links: [
-      {
-        name: "Contest Information",
-        url: "https://web.archive.org/web/20130126114515/http://hackmit.eventbrite.com/"
-      },
-    ]
-  },
-  {
     name: "Denison Programming Contest",
     venue: "Denison University",
     location: "Granville, OH",
@@ -361,7 +361,7 @@ contests = [
     honor: "2nd Place",
     image: "denison.png",
     //link: "http://personal.denison.edu/~lalla/DSPC/results10.html",
-    description: "Represented Oberlin College on a team of three that solved 4 out of 6 ACM-ICPC-style problems in Java.",
+    description: "Represented Oberlin College on a team of three that solved 4 out of 6 ACM-ICPC-style algorithmic problems in Java.",
     links: [
       {
         name: "Contest Information",
