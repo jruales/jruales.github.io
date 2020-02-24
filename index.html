@@ -122,6 +122,47 @@
                                 </div>
                             {{/each}}
                         </div>
+                        <div id="preprints" class="">
+                            <h2>📃 Publications</h2>
+                            {{#each preprints as |preprint preprintId|}}
+                                {{#if preprint.link}}
+                                <h3><a target="_blank" href="{{preprint.link}}">{{preprint.title}}</a></h3>
+                                {{else}}
+                                <h3>{{preprint.title}}</h3>
+                                {{/if}}
+                                <div class="row">
+                                    <div class="col-md-3">
+                                    {{#if preprint.image}}
+                                        {{#if preprint.link}}
+                                        <a target="_blank" href="{{preprint.link}}"><img src="img/preprints/{{preprint.image}}" /></a>
+                                        {{else}}
+                                        <img src="img/preprints/{{preprint.image}}" />
+                                        {{/if}}
+                                    {{else}}
+                                        <img src="img/placeholder/square.png" />
+                                    {{/if}}
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div>{{{preprint.notes}}}</div>
+                                        <div><strong>Authors:</strong> {{preprint.authors}}</div>
+                                        {{#if preprint.journal}}
+                                        <div><strong>Journal:</strong> {{preprint.journal}}</div>
+                                        {{/if}}
+                                        {{#if preprint.conference}}
+                                        <div><strong>Conference:</strong> {{preprint.conference}}</div>
+                                        {{/if}}
+                                        <div><strong>Abstract:</strong> {{preprint.abstract}}</div>
+                                        {{#each preprint.links as |link linkId|}}
+                                        <a class="no-hover-underline" target="_blank" href="{{link.url}}">
+                                            <button type="button" class="btn btn-default" aria-label="{{link.name}}">
+                                              {{link.name}}
+                                            </button>
+                                        </a>
+                                        {{/each}}
+                                    </div>
+                                </div> <!--#row-->
+                            {{/each}}
+                        </div><!--#preprints-->
                         <div id="petProjects" class="">
                             <h2>💡 Pet Projects</h2>
                             {{#each petProjects as |petProject petProjectId|}}
@@ -210,47 +251,6 @@
                                 </div>
                             {{/each}}
                         </div>
-                        <div id="preprints" class="">
-                            <h2>📃 Publications</h2>
-                            {{#each preprints as |preprint preprintId|}}
-                                {{#if preprint.link}}
-                                <h3><a target="_blank" href="{{preprint.link}}">{{preprint.title}}</a></h3>
-                                {{else}}
-                                <h3>{{preprint.title}}</h3>
-                                {{/if}}
-                                <div class="row">
-                                    <div class="col-md-3">
-                                    {{#if preprint.image}}
-                                        {{#if preprint.link}}
-                                        <a target="_blank" href="{{preprint.link}}"><img src="img/preprints/{{preprint.image}}" /></a>
-                                        {{else}}
-                                        <img src="img/preprints/{{preprint.image}}" />
-                                        {{/if}}
-                                    {{else}}
-                                        <img src="img/placeholder/square.png" />
-                                    {{/if}}
-                                    </div>
-                                    <div class="col-md-9">
-                                        <div>{{{preprint.notes}}}</div>
-                                        <div><strong>Authors:</strong> {{preprint.authors}}</div>
-                                        {{#if preprint.journal}}
-                                        <div><strong>Journal:</strong> {{preprint.journal}}</div>
-                                        {{/if}}
-                                        {{#if preprint.conference}}
-                                        <div><strong>Conference:</strong> {{preprint.conference}}</div>
-                                        {{/if}}
-                                        <div><strong>Abstract:</strong> {{preprint.abstract}}</div>
-                                        {{#each preprint.links as |link linkId|}}
-                                        <a class="no-hover-underline" target="_blank" href="{{link.url}}">
-                                            <button type="button" class="btn btn-default" aria-label="{{link.name}}">
-                                              {{link.name}}
-                                            </button>
-                                        </a>
-                                        {{/each}}
-                                    </div>
-                                </div> <!--#row-->
-                            {{/each}}
-                        </div><!--#preprints-->
                         <div id="coursework" class="">
                             <h2>📚 Coursework</h2>
                             <div>
@@ -354,10 +354,10 @@
             <ul>
                 <li><a href="#summary">😃 About Me</a></li>
                 <li><a href="#contests">🏆 Programming Contests</a></li>
+                <li><a href="#preprints">📃 Publications</a></li>
                 <li><a href="#petProjects">💡 Pet Projects</a></li>
                 <li><a href="#builtWebsites">💻 Other Websites</a></li>
                 <li><a href="#programmingExperiments">👾 Other Projects and Experiments</a></li>
-                <li><a href="#preprints">📃 Publications</a></li>
                 <li><a href="#coursework">📚 Coursework</a></li>
                 <li><a href="#misc">🎁 Misc.</a></li>
             </ul>
