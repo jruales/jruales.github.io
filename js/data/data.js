@@ -161,7 +161,7 @@ preprints = [
 petProjects = [
   {
     title: "EcuaCines",
-    link: "http://ecuacines.com/",
+    link: null, // "http://ecuacines.com/",
     image: "ecuacines.png",
     mobileFriendly: true,
     mobileFirst: true,
@@ -169,19 +169,21 @@ petProjects = [
     dateYear: 2012,
     technologies: "HTML + CSS + JS + PHP (Laravel) + MySQL",
     links: [
+      /*
       {
         name: "Project",
         url: "http://ecuacines.com/"
       },
+      */
       {
-        name: "Blog Post",
+        name: "Project Overview",
         url: "http://blog.400pixels.net/?p=210"
       },
     ]
   },
   {
     title: "400 pixels",
-    link: null, //"http://400pixels.net/",
+    link: null, // "http://400pixels.net/",
     image: "400pixels.png",
     mobileFriendly: false,
     mobileFirst: false, 
@@ -208,22 +210,10 @@ builtWebsites = [
     image: "this_website.png",
     mobileFriendly: true,
     mobileFirst: true,
-    description: "My CV/portfolio website. I used Handlebars templating to make it simple to modify and add information to the page.",
+    description: "This website. I used Handlebars templating to make it simple to modify and add information to the page.",
     dateYear: 2015,
     technologies: "HTML + CSS + JS (w/ Handlebars)"
   },
-  /*
-  {
-    title: "Hostal Vista Amazonas",
-    link: "http://vistaamazonas.com/",
-    image: "vista_amazonas.png",
-    mobileFriendly: true,
-    mobileFirst: false,
-    description: "Multilingual website for a hostal in Ecuador.",
-    dateYear: 2012,
-    technologies: "HTML + CSS + JS + PHP"
-  },
-  */
   {
     title: "Oberlin College Library Website",
     link: "http://www.oberlin.edu/library/",
@@ -233,6 +223,16 @@ builtWebsites = [
     description: "Rebuilt the library website's main pages as part of the library's web team. Replaced outdated code libraries and coding standards and focused on making the site user-friendly and visually clean.", //A snapshot of the old website before the remake is available on the <a target=\"_blank\" href=\"https://web.archive.org/web/20110519182042/http://www.oberlin.edu/library/\">Internet Archive</a>.
     dateYear: 2011,
     technologies: null
+  },
+  {
+    title: "Hostal Vista Amazonas",
+    link: "https://web.archive.org/web/20180829171436/http://vistaamazonas.com/",
+    image: "vista_amazonas.png",
+    mobileFriendly: true,
+    mobileFirst: false,
+    description: "Website for a hostal in Ecuador.",
+    dateYear: 2012,
+    technologies: "HTML + CSS + JS + PHP"
   },
   {
     title: "Andrew J. Churchill's Portfolio Website",
@@ -391,6 +391,22 @@ contests = [
       {
         name: "Contest Information",
         url: "https://kb.brandeis.edu/pages/viewpage.action?pageId=9044848"
+      },
+    ]
+  },
+  {
+    name: "\"Just Another Kusto Hacker\" Contest",
+    venue: "Microsoft-internal",
+    location: "Redmond, WA",
+    dateMonth: 5,
+    dateYear: 2017,
+    honor: "3nd Place",
+    image:"adx.png",
+    description: "The contest consisted of writing a query in the Kusto Query Language (KQL), which would output the words \"Just another Kusto hacker\" in a creative way. My query represented the message using steganography on the base64 encoding of emoji characters.",
+    links: [
+      {
+        name: "Contest Information",
+        url: "https://yonileibowitz.github.io/kusto.blog/blog-posts/jakh.html"
       },
     ]
   }
