@@ -401,7 +401,7 @@ contests = [
     dateMonth: 5,
     dateYear: 2017,
     honor: "3nd Place",
-    image:"adx.png",
+    image:"adx2.png",
     description: "The contest consisted of writing a query in the Kusto Query Language (KQL), which would output the words \"Just another Kusto hacker\" in a creative way. My query represented the message using steganography on the base64 encoding of emoji characters.",
     links: [
       {
