@@ -122,37 +122,37 @@
                                 </div>
                             {{/each}}
                         </div>
-                        <div id="preprints" class="">
+                        <div id="publications" class="">
                             <h2>📃 Publications</h2>
-                            {{#each preprints as |preprint preprintId|}}
-                                {{#if preprint.link}}
-                                <h3><a target="_blank" href="{{preprint.link}}">{{preprint.title}}</a></h3>
+                            {{#each publications as |publication publicationId|}}
+                                {{#if publication.link}}
+                                <h3><a target="_blank" href="{{publication.link}}">{{publication.title}}</a></h3>
                                 {{else}}
-                                <h3>{{preprint.title}}</h3>
+                                <h3>{{publication.title}}</h3>
                                 {{/if}}
                                 <div class="row">
                                     <div class="col-md-3">
-                                    {{#if preprint.image}}
-                                        {{#if preprint.link}}
-                                        <a target="_blank" href="{{preprint.link}}"><img src="img/preprints/{{preprint.image}}" /></a>
+                                    {{#if publication.image}}
+                                        {{#if publication.link}}
+                                        <a target="_blank" href="{{publication.link}}"><img src="img/publications/{{publication.image}}" /></a>
                                         {{else}}
-                                        <img src="img/preprints/{{preprint.image}}" />
+                                        <img src="img/publications/{{publication.image}}" />
                                         {{/if}}
                                     {{else}}
                                         <img src="img/placeholder/square.png" />
                                     {{/if}}
                                     </div>
                                     <div class="col-md-9">
-                                        <div>{{{preprint.notes}}}</div>
-                                        <div><strong>Authors:</strong> {{preprint.authors}}</div>
-                                        {{#if preprint.journal}}
-                                        <div><strong>Journal:</strong> {{preprint.journal}}</div>
+                                        <div>{{{publication.notes}}}</div>
+                                        <div><strong>Authors:</strong> {{publication.authors}}</div>
+                                        {{#if publication.journal}}
+                                        <div><strong>Journal:</strong> {{publication.journal}}</div>
                                         {{/if}}
-                                        {{#if preprint.conference}}
-                                        <div><strong>Conference:</strong> {{preprint.conference}}</div>
+                                        {{#if publication.conference}}
+                                        <div><strong>Conference:</strong> {{publication.conference}}</div>
                                         {{/if}}
-                                        <div><strong>Abstract:</strong> {{preprint.abstract}}</div>
-                                        {{#each preprint.links as |link linkId|}}
+                                        <!--div><strong>Abstract:</strong> {{publication.abstract}}</div-->
+                                        {{#each publication.links as |link linkId|}}
                                         <a class="no-hover-underline" target="_blank" href="{{link.url}}">
                                             <button type="button" class="btn btn-default" aria-label="{{link.name}}">
                                               {{link.name}}
@@ -162,30 +162,30 @@
                                     </div>
                                 </div> <!--#row-->
                             {{/each}}
-                        </div><!--#preprints-->
-                        <div id="petProjects" class="">
-                            <h2>💡 Pet Projects</h2>
-                            {{#each petProjects as |petProject petProjectId|}}
-                                <h3>{{petProject.title}}</h3>
+                        </div><!--#publications-->
+                        <div id="webApps" class="">
+                            <h2>💡 Web Apps</h2>
+                            {{#each webApps as |webApp webAppId|}}
+                                <h3>{{webApp.title}}</h3>
                                 <div class="row">
                                     <div class="col-md-3">
-                                    {{#if petProject.image}}
-                                        {{#if petProject.link}}
-                                        <a target="_blank" href="{{petProject.link}}">
-                                            <img src="img/pet_projects/{{petProject.image}}" />
+                                    {{#if webApp.image}}
+                                        {{#if webApp.link}}
+                                        <a target="_blank" href="{{webApp.link}}">
+                                            <img src="img/pet_projects/{{webApp.image}}" />
                                         </a>
                                         {{else}}
-                                        <img src="img/pet_projects/{{petProject.image}}" />
+                                        <img src="img/pet_projects/{{webApp.image}}" />
                                         {{/if}}
                                     {{else}}
                                         <img src="img/placeholder/square.png" />
                                     {{/if}}
                                     </div>
                                     <div class="col-md-9">
-                                        <div><em>{{petProject.dateYear}}.</em></div>
-                                        <div>{{petProject.description}}</div>
-                                        <div>Uses {{petProject.technologies}}</div>
-                                        {{#each petProject.links as |link linkId|}}
+                                        <div><em>{{webApp.dateYear}}.</em></div>
+                                        <div>{{webApp.description}}</div>
+                                        <div>Uses {{webApp.technologies}}</div>
+                                        {{#each webApp.links as |link linkId|}}
                                         <a class="no-hover-underline" target="_blank" href="{{link.url}}">
                                             <button type="button" class="btn btn-default" aria-label="{{link.name}}">
                                               {{link.name}}
@@ -354,8 +354,8 @@
             <ul>
                 <li><a href="#summary">😃 About Me</a></li>
                 <li><a href="#contests">🏆 Programming Contests</a></li>
-                <li><a href="#preprints">📃 Publications</a></li>
-                <li><a href="#petProjects">💡 Pet Projects</a></li>
+                <li><a href="#publications">📃 Publications</a></li>
+                <li><a href="#webApps">💡 Web Apps</a></li>
                 <li><a href="#builtWebsites">💻 Other Websites</a></li>
                 <li><a href="#programmingExperiments">👾 Other Projects and Experiments</a></li>
                 <li><a href="#coursework">📚 Coursework</a></li>
@@ -364,36 +364,36 @@
         </nav>
     </div>
 
-        <script type="text/javascript" src="https://hammerjs.github.io/dist/hammer.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-        <script src="js/vendor/jquery-ui.min.js"></script>
-        <script src="js/vendor/handlebars-v3.0.3.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+    <script src="js/vendor/jquery-ui.min.js"></script>
+    <script src="js/vendor/handlebars-v3.0.3.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
 
-        <script type="text/javascript" src="js/vendor/jquery.mmenu.min.js"></script>
-        <script type="text/javascript" src="js/vendor/addons/jquery.mmenu.dragopen.min.js"></script>
-        <script type="text/javascript" src="js/vendor/addons/jquery.mmenu.fixedelements.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery.mmenu.min.js"></script>
+    <script type="text/javascript" src="js/vendor/addons/jquery.mmenu.dragopen.min.js"></script>
+    <script type="text/javascript" src="js/vendor/addons/jquery.mmenu.fixedelements.min.js"></script>
 
-        <script type='text/javascript' src='js/vendor/fastclick.js'></script>
+    <script type='text/javascript' src='js/vendor/fastclick.js'></script>
 
-        <!--script src="js/vendor/three.min.js"></script>
-        <script src="js/vendor/threejs/renderers/Projector.js"></script>
-        <script src="js/vendor/threejs/renderers/CanvasRenderer.js"></script>
-        <script src="js/vendor/threejs/libs/stats.min.js"></script-->
+    <!--script src="js/vendor/three.min.js"></script>
+    <script src="js/vendor/threejs/renderers/Projector.js"></script>
+    <script src="js/vendor/threejs/renderers/CanvasRenderer.js"></script>
+    <script src="js/vendor/threejs/libs/stats.min.js"></script-->
 
-        <script src="js/data/data.js"></script>
-        <script src="js/main.js"></script>
-        
-        <!-- Google Analytics -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-65559710-1','auto');ga('send','pageview');
-        </script>
+    <script src="js/data/data.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- Google Analytics -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-65559710-1','auto');ga('send','pageview');
+    </script>
     </body>
 </html>

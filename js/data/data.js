@@ -95,13 +95,13 @@ timeEvents = [
 ]
 
 //
-// PREPRINTS
+// publicationS
 //
 
-preprints = [
+publications = [
   {
     title: "Shape Completion Enabled Robotic Grasping",
-    notes:"<p>This work started as a class project for <i>Deep Learning for Computer Vision and Natural Language Processing</i>.</p>",
+    notes:"Based on a single frontal depth image of an object, the algorithm uses a 3D ConvNet to infer what the whole object looks like, including the unseen portions. This allows it to plan more stable robotic grasps on it.</p><p><p>This work started as a class project for our <i>\"Deep Learning for Computer Vision and Natural Language Processing\"</i> class.</p>",
     authors: "J. Varley, C. DeChant, A. Richardson, J. Ruales, and P. Allen",
     image:"shape_completion_grasping.png",
     abstract: "This work provides an architecture to enable robotic grasp planning via shape completion. Shape completion is accomplished through the use of a 3D convolutional neural network (CNN). The network is trained on our own new open source dataset of over 440,000 3D exemplars captured from varying viewpoints. At runtime, a 2.5D pointcloud captured from a single point of view is fed into the CNN, which fills in the occluded regions of the scene, allowing grasps to be planned and executed on the completed object. Runtime shape completion is very rapid because most of the computational costs of shape completion are borne during offline training. We explore how the quality of completions vary based on several factors. These include whether or not the object being completed existed in the training data and how many object models were used to train the network. We also look at the ability of the network to generalize to novel objects allowing the system to complete previously unseen objects at runtime. Finally, experimentation is done both in simulation and on actual robotic hardware to explore the relationship between completion quality and the utility of the completed mesh model for grasping.",
@@ -158,7 +158,7 @@ preprints = [
 // PET PROJECTS
 //
 
-petProjects = [
+webApps = [
   {
     title: "EcuaCines",
     link: null, // "http://ecuacines.com/",
@@ -179,6 +179,10 @@ petProjects = [
         name: "Project Overview",
         url: "http://blog.400pixels.net/?p=210"
       },
+      {
+        name: "Website (Archive)",
+        url: "https://web.archive.org/web/20130831161557/http://ecuacines.com:80/"
+      },
     ]
   },
   {
@@ -187,9 +191,9 @@ petProjects = [
     image: "400pixels.png",
     mobileFriendly: false,
     mobileFirst: false, 
-    description: "A web app for making and sharing pixel art online. As a challenge, I avoided using any third-party libraries for the front-end, so I implemented my own color picker, undo-redo feature, Breshenham's line drawing algorithm, isometric cube tool, and so on.",
+    description: "A web app for making and sharing pixel art online. As a challenge, I avoided using any third-party libraries for the front-end, so I implemented my own color picker, undo-redo feature, Breshenham's line and ellipse drawing algorithms, flood fill, and isometric cube tool.",
     dateYear: 2010,
-    technologies: "AS 3.0 + PHP + MySQL",
+    technologies: "PHP + MySQL + ActionScript 3.0",
     links: [
       {
         name: "Video Demo",
@@ -242,7 +246,7 @@ builtWebsites = [
     mobileFirst: false,
     description: "Website for a music composer.",
     dateYear: 2010,
-    technologies: "AS 3.0 + PHP"
+    technologies: "PHP + ActionScript 3.0"
   },
   {
     title: "Movimiento Verde Estudiantil",
@@ -252,7 +256,7 @@ builtWebsites = [
     mobileFirst: false,
     description: "Website for a student recycling group organized by members of my high school.<br/>I used the Five3D 3D engine to program the carousel transition. Since that library could not handle 3d transformations of text, I converted the heading text into spline curves so that they could be rotated, and I hid the body text before each transition. I also designed the logo for the student group.",
     dateYear: 2009,
-    technologies: "AS 3.0"
+    technologies: "ActionScript 3.0"
   },
   {
     title: "Joaquín Ruales's Art Portfolio",
@@ -262,7 +266,7 @@ builtWebsites = [
     mobileFirst: false,
     description: "My photography and design portfolio up until 2008.<br/>I programmed a simple parallax effect on the front page, and used a 3rd party image viewer for the other pages.",
     dateYear: 2008,
-    technologies: "AS 3.0"
+    technologies: "ActionScript 3.0"
   }
 ]
 
@@ -314,7 +318,7 @@ contests = [
     location: "Cambridge, MA",
     dateMonth: 2,
     dateYear: 2013,
-    honor: "1st Place and \"Most likely to become a real product\"",
+    honor: "1st Place", // "and \"Most likely to become a real product\" prize",
     image: "hackmit.png",
     //link: "https://www.facebook.com/events/295683690535160/",
     //link2: "https://twitter.com/dff/status/298218271117803520",
@@ -323,6 +327,10 @@ contests = [
       {
         name: "Contest Information",
         url: "https://web.archive.org/web/20130126114515/http://hackmit.eventbrite.com/"
+      },
+      {
+        name: "Contest Homepage",
+        url: "https://web.archive.org/web/20130530001913/http://techfair.mit.edu:80/events/hackathon"
       },
     ]
   },
@@ -922,9 +930,9 @@ degrees = [
 context = {
   basics: basics,
   timeEvents: timeEvents,
-  petProjects: petProjects,
+  webApps: webApps,
   builtWebsites: builtWebsites,
-  preprints: preprints,
+  publications: publications,
   contests: contests,
   programmingExperiments: programmingExperiments,
   degrees: degrees
