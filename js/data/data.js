@@ -408,7 +408,7 @@ contests = [
     location: "Redmond, WA",
     dateMonth: 5,
     dateYear: 2017,
-    honor: "3nd Place",
+    honor: "3rd Place",
     image:"azure_data_explorer.png",
     description: "The contest consisted of writing a query in the Kusto Query Language (KQL), which would output the words \"Just another Kusto hacker\" in a creative way. My query represented the message using steganography on the base64 encoding of emoji characters.",
     links: [
