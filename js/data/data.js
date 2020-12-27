@@ -240,7 +240,8 @@ builtWebsites = [
   },
   {
     title: "Andrew J. Churchill's Portfolio Website",
-    link: "http://400pixels.net/churchill/",
+    link: "https://www.youtube.com/watch?v=7_qnYaxnreA",
+    // link: "http://400pixels.net/churchill/",
     image: "churchill.png",
     mobileFriendly: false,
     mobileFirst: false,
@@ -250,7 +251,8 @@ builtWebsites = [
   },
   {
     title: "Movimiento Verde Estudiantil",
-    link: "http://movimiento-verde.50webs.com/",
+    link: "https://www.youtube.com/watch?v=frWodscsScg",
+    // link: "http://movimiento-verde.50webs.com/",
     image: "movimiento_verde.png",
     mobileFriendly: false,
     mobileFirst: false,
@@ -260,7 +262,8 @@ builtWebsites = [
   },
   {
     title: "Joaquín Ruales's Art Portfolio",
-    link: "http://joaquin-ruales.50webs.com/",
+    link: "https://www.youtube.com/watch?v=7kCzTTaU6Vw",
+    // link: "http://joaquin-ruales.50webs.com/",
     image: "art_portfolio.png",
     mobileFriendly: false,
     mobileFirst: false,
@@ -522,8 +525,9 @@ programmingExperiments = [
   {
     name: "3D Fractal Tree",
     dateYear: "2009",
+    link: "https://www.youtube.com/watch?v=MTUHRrbjivs",
     // TODO(jruales): Make an HTML container for each SWF file
-    link:"http://joaqo182.50webs.com/fullPageFlash.html?swf=3DFractalTree&title=3D%20Fractal%20Tree",
+    // link:"http://joaqo182.50webs.com/fullPageFlash.html?swf=3DFractalTree&title=3D%20Fractal%20Tree",
     image:"fractal_tree.png",
     // TODO(jruales): Hide Flash experiments from mobile users
     mobileFriendly: false,
@@ -533,7 +537,8 @@ programmingExperiments = [
   {
     name: "3D Space Invader Ball Bounce",
     dateYear: "2008",
-    link:"http://joaqo182.50webs.com/fullPageFlash.html?swf=3D_y_Fisica&title=3D%20y%20Fisica",
+    link: "https://www.youtube.com/watch?v=8KamjZC-jww",
+    // link: "http://joaqo182.50webs.com/fullPageFlash.html?swf=3D_y_Fisica&title=3D%20y%20Fisica",
     image:"space_invader.png",
     // TODO(jruales): Hide Flash experiments from mobile users
     mobileFriendly: false,
