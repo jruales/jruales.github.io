@@ -548,7 +548,8 @@ programmingExperiments = [
   {
     name: "Vector Hollow Prism",
     dateYear: "2008",
-    link:"http://joaqo182.50webs.com/fullPageFlash.html?swf=VectorHollowPrism",
+    link: "https://www.youtube.com/watch?v=YfIUSW3hFy0",
+    // link:"http://joaqo182.50webs.com/fullPageFlash.html?swf=VectorHollowPrism",
     image:"vector_hollow_prism.png",
     // TODO(jruales): Hide Flash experiments from mobile users
     mobileFriendly: false,
