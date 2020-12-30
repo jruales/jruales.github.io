@@ -559,7 +559,8 @@ programmingExperiments = [
   {
     name: "Maze",
     dateYear: "2006",
-    link:"http://joaqo182.50webs.com/maze.html",
+    link: "https://www.youtube.com/watch?v=mUCyqCwNBY4",
+    // link: "http://joaqo182.50webs.com/maze.html",
     image:"maze.png",
     // TODO(jruales): Hide Flash experiments from mobile users
     mobileFriendly: false,
