@@ -220,7 +220,7 @@ builtWebsites = [
   },
   {
     title: "Oberlin College Library Website",
-    link: "http://www.oberlin.edu/library/",
+    link: "http://web.archive.org/web/20120902155124/http://www.oberlin.edu/library/",
     image: "oberlin_library.png",
     mobileFriendly: true,
     mobileFirst: false,
