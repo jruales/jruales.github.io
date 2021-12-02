@@ -12,7 +12,7 @@ basics = {
     picture: "square_me6.jpg",
     email: "",
     summary: "<p>Hi, I'm a software engineer and mathematician interested in machine learning, computer graphics, web application development, and applied mathematics.</p>"
-    + "<p>During my last university semester, I was a TA for <a target=\"_blank\" href=\"http://www1.cs.columbia.edu/~allen/F15/\">Computational Aspects of Robotics</a> and I did research on <a target='_blank' href='https://www.youtube.com/watch?v=Dxd0ItPhh7c'>Shape Completion Enabled Robotic Grasping</a> using convolutional neural networks, which was accepted into <a target=\"_blank\" href=\"https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros\">IROS</a>.</p>"
+    + "<p>During my last university semester, I was a TA for <a target=\"_blank\" href=\"https://www1.cs.columbia.edu/~allen/F15/\">Computational Aspects of Robotics</a> and I did research on <a target='_blank' href='https://www.youtube.com/watch?v=Dxd0ItPhh7c'>Shape Completion Enabled Robotic Grasping</a> using convolutional neural networks, which was accepted into <a target=\"_blank\" href=\"https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros\">IROS</a>.</p>"
     + "<p>When not programming or playing with <a target='_blank' href='https://www.desmos.com/calculator/hqgi7zssfd\'>graphing calculators</a>, I am generally found taking <a target='_blank' href='https://www.flickr.com/photos/46440167@N02/'>photos</a>, hiking, or <a target='_blank' href='https://github.com/jruales/Reading-List/blob/master/README.md'>reading</a>.</p>",
     phone: "",
     website: "",
@@ -70,7 +70,7 @@ timeEvents = [
   {
     timeframe: "Fall 2014 - Winter 2016",
     title: "🎓 Columbia University Computer Science M.S.",
-    description: "«Machine Learning» and «Vision and Graphics» Tracks. See <a target=\"_blank\" href=\"http://jruales.github.io/#coursework\">coursework</a>."
+    description: "«Machine Learning» and «Vision and Graphics» Tracks. See <a target=\"_blank\" href=\"https://jruales.github.io/#coursework\">coursework</a>."
   },
   {
     timeframe: "Summer 2014",
@@ -80,17 +80,17 @@ timeEvents = [
   {
     timeframe: "Fall 2012 - Spring 2014",
     title: "🎓 Columbia University Computer Science B.S. (<em>magna cum laude</em>)",
-    description: "«Artificial Intelligence» Track. See <a target=\"_blank\" href=\"http://jruales.github.io/#coursework\">coursework</a>."
+    description: "«Artificial Intelligence» Track. See <a target=\"_blank\" href=\"https://jruales.github.io/#coursework\">coursework</a>."
   },
   {
     timeframe: "Summer 2010",
     title: "🎓 Stanford University Summer Session",
-    description: "See <a target=\"_blank\" href=\"http://jruales.github.io/#coursework\">coursework</a>."
+    description: "See <a target=\"_blank\" href=\"https://jruales.github.io/#coursework\">coursework</a>."
   },
   {
     timeframe: "Fall 2009 - Spring 2012",
     title: "🎓 Oberlin College Mathematics B.A. (Phi Beta Kappa)",
-    description: "3-2 Engineering Combined Program with Columbia University. See <a target=\"_blank\" href=\"http://jruales.github.io/#coursework\">coursework</a>."
+    description: "3-2 Engineering Combined Program with Columbia University. See <a target=\"_blank\" href=\"https://jruales.github.io/#coursework\">coursework</a>."
   }
 ]
 
@@ -113,7 +113,7 @@ publications = [
       },
       {
         name: "Project Website",
-        url: "http://shapecompletiongrasping.cs.columbia.edu/"
+        url: "https://shapecompletiongrasping.cs.columbia.edu/"
       },
       {
         name: "ArXiv Abstract Page",
@@ -132,7 +132,7 @@ publications = [
     image:"kanenobu.jpg",
     abstract: "We show that the fundamental group of the double branched cover of an infinite family of homologically thin, non-quasi-alternating knots is not left-orderable, giving further support for a conjecture of Boyer, Gordon, and Watson that an irreducible rational homology 3-sphere is an L-space if and only if its fundamental group is not left-orderable.",
     journal: "Journal of Knot Theory and its Ramifications (JKTR)",
-    //link: "http://arxiv.org/abs/1310.1877",
+    //link: "https://arxiv.org/abs/1310.1877",
     links: [
       {
         name: "Video",
@@ -140,11 +140,11 @@ publications = [
       },
       {
         name: "Journal Abstract Page",
-        url: "http://www.worldscientific.com/doi/abs/10.1142/S0218216515500716"
+        url: "https://www.worldscientific.com/doi/abs/10.1142/S0218216515500716"
       },
       {
         name: "ArXiv Abstract Page",
-        url: "http://arxiv.org/abs/1310.1877"
+        url: "https://arxiv.org/abs/1310.1877"
       },
       {
         name: "Code",
@@ -177,7 +177,7 @@ webApps = [
       */
       {
         name: "Project Overview",
-        url: "http://blog.400pixels.net/?p=210"
+        url: "https://blog.400pixels.net/?p=210"
       },
       {
         name: "Website (Archive)",
@@ -220,17 +220,17 @@ builtWebsites = [
   },
   {
     title: "Oberlin College Library Website",
-    link: "http://web.archive.org/web/20120902155124/http://www.oberlin.edu/library/",
+    link: "https://web.archive.org/web/20120902155124/https://www.oberlin.edu/library/",
     image: "oberlin_library.png",
     mobileFriendly: true,
     mobileFirst: false,
-    description: "Rebuilt the library website's main pages as part of the library's web team. Replaced outdated code libraries and coding standards and focused on making the site user-friendly and visually clean.", //A snapshot of the old website before the remake is available on the <a target=\"_blank\" href=\"https://web.archive.org/web/20110519182042/http://www.oberlin.edu/library/\">Internet Archive</a>.
+    description: "Rebuilt the library website's main pages as part of the library's web team. Replaced outdated code libraries and coding standards and focused on making the site user-friendly and visually clean.", //A snapshot of the old website before the remake is available on the <a target=\"_blank\" href=\"https://web.archive.org/web/20110519182042/https://www.oberlin.edu/library/\">Internet Archive</a>.
     dateYear: 2011,
     technologies: null
   },
   {
     title: "Hostal Vista Amazonas",
-    link: "https://web.archive.org/web/20180829171436/http://vistaamazonas.com/",
+    link: "https://web.archive.org/web/20180829171436/https://vistaamazonas.com/",
     image: "vista_amazonas.png",
     mobileFriendly: true,
     mobileFirst: false,
@@ -295,14 +295,14 @@ work: [
   {
     company: "Columbia University in the City of New York",
     position: "Research Assistant",
-    website: "http://www.columbia.edu/",
+    website: "https://www.columbia.edu/",
     startDate: "2014-06",
     endData: "2014-08"
   },
   {
     company: "Columbia University in the City of New York",
     position: "Library Website Developer/Designer",
-    website: "http://www.columbia.edu/",
+    website: "https://www.columbia.edu/",
     startDate: "2014-06",
     endData: "2014-08"
   }
@@ -371,20 +371,20 @@ contests = [
     dateYear: 2010,
     honor: "2nd Place",
     image: "denison.png",
-    //link: "http://personal.denison.edu/~lalla/DSPC/results10.html",
+    //link: "https://personal.denison.edu/~lalla/DSPC/results10.html",
     description: "Represented Oberlin College on a team of three that solved 4 out of 6 ACM-ICPC-style algorithmic problems in Java.",
     links: [
       {
         name: "Contest Information",
-        url: "http://personal.denison.edu/~lalla/DSPC/results10.html"
+        url: "https://personal.denison.edu/~lalla/DSPC/results10.html"
       },
       {
         name: "Problems",
-        url: "http://personal.denison.edu/~lalla/DSPC/pastproblems/probs10.pdf"
+        url: "https://personal.denison.edu/~lalla/DSPC/pastproblems/probs10.pdf"
       },
       {
         name: "Standings",
-        url: "http://personal.denison.edu/~lalla/DSPC/scoreboard_2010.html"
+        url: "https://personal.denison.edu/~lalla/DSPC/scoreboard_2010.html"
       },
     ]
   },
@@ -480,7 +480,7 @@ programmingExperiments = [
   {
     name: "Tutorial: Curve Bounce in HTML5",
     dateYear: "2013",
-    link:"http://blog.400pixels.net/?p=7",
+    link:"https://blog.400pixels.net/?p=7",
     image:"curve_bounce.png",
     mobileFriendly: true,
     mobileFirst: true,
@@ -490,12 +490,12 @@ programmingExperiments = [
     name: "Fractal Flame Generator",
     dateYear: "2012",
     // TODO(jruales): Make an HTML container for each SWF file
-    link:"http://400pixels.net/isometric/flame.swf",
+    link:"https://400pixels.net/isometric/flame.swf",
     image:"sierpinski1.png",
     // TODO(jruales): Hide Flash experiments from mobile users
     mobileFriendly: false,
     mobileFirst: false,
-    description: "Individual project for Seminar in Mathematical Modeling. This program uses <a target=\"_blank\" href=\"http://flam3.com/flame_draves.pdf\">Iterated function systems</a> to create a variety of fractals ranging from Sierpinski triangles to flame-like paintings, depending on the selected settings. Fractals are generated directly by your web browser."
+    description: "Individual project for Seminar in Mathematical Modeling. This program uses <a target=\"_blank\" href=\"https://flam3.com/flame_draves.pdf\">Iterated function systems</a> to create a variety of fractals ranging from Sierpinski triangles to flame-like paintings, depending on the selected settings. Fractals are generated directly by your web browser."
   },
   {
     name: "Oberlin Class of 2015 T-shirt Design",
