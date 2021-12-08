@@ -231,7 +231,13 @@
                         <div id="programmingExperiments" class="">
                             <h2>👾 Other Projects and Experiments</h2>
                             {{#each programmingExperiments as |programmingExperiment programmingExperimentId|}}
-                                <h3><a href="{{programmingExperiment.link}}" target="_blank">{{programmingExperiment.name}}</a></h3>
+                                <h3>
+                                    {{#if programmingExperiment.link}}
+                                    <a href="{{programmingExperiment.link}}" target="_blank">{{programmingExperiment.name}}</a>
+                                    {{else}}
+                                    programmingExperiment.name
+                                    {{/if}}
+                                </h3>
                                 <div class="row">
                                     <div class="col-md-3">
                                         {{#if programmingExperiment.image}}
