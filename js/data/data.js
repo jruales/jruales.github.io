@@ -489,8 +489,8 @@ programmingExperiments = [
   {
     name: "Fractal Flame Generator",
     dateYear: "2012",
-    // TODO(jruales): Make an HTML container for each SWF file
-    link:"https://400pixels.net/isometric/flame.swf",
+    // TODO(jruales): Make a video demo of this one
+    link: null, // "https://400pixels.net/isometric/flame.swf",
     image:"sierpinski1.png",
     // TODO(jruales): Hide Flash experiments from mobile users
     mobileFriendly: false,
