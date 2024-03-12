@@ -417,7 +417,7 @@ contests = [
     links: [
       {
         name: "Contest Information",
-        url: "https://yonileibowitz.github.io/blog-posts/jakh.html"
+        url: "https://y0nil.github.io/kusto.blog/blog-posts/jakh.html"
       },
     ]
   }
