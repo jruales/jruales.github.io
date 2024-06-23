@@ -1,0 +1,748 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cinema",
+				"cinematica"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"relevan",
+				"relevantCourseCompare"
+			],
+			[
+				"colubiaMS",
+				"columbiaMSOtherCourses"
+			],
+			[
+				"columbiaBS",
+				"columbiaBSOtherCourses"
+			],
+			[
+				"stan",
+				"stanfordSummerOtherCourses"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"mobile",
+				"mobileFriendly"
+			],
+			[
+				"dep",
+				"department_code"
+			],
+			[
+				"pro",
+				"programmingExperiments"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"border-lef",
+				"border-left"
+			],
+			[
+				"a",
+				"a"
+			],
+			[
+				"N",
+				"NUM_OBJECTS"
+			],
+			[
+				"one_",
+				"one_hot_returnable"
+			],
+			[
+				"Ge",
+				"Geometric3DDataGenerator"
+			],
+			[
+				"batch",
+				"batch_size"
+			],
+			[
+				"Di",
+				"DIAMOND_TYPE"
+			],
+			[
+				"di",
+				"DIAMOND_TYPE"
+			],
+			[
+				"groun",
+				"groundTruthScannerA"
+			],
+			[
+				"songFile",
+				"songFilenameA"
+			],
+			[
+				"songName",
+				"songNameB"
+			],
+			[
+				"filenameSca",
+				"filenameScannerA"
+			],
+			[
+				"songNum",
+				"songNumberA"
+			],
+			[
+				"fileNA",
+				"filenameScannerA"
+			],
+			[
+				"down",
+				"downscale"
+			],
+			[
+				"poss",
+				"possibleExperiments"
+			],
+			[
+				"possi",
+				"possibleCValues"
+			],
+			[
+				"svm",
+				"svm_hmm_classify"
+			],
+			[
+				"chor",
+				"chordData"
+			],
+			[
+				"parti",
+				"partitionType"
+			],
+			[
+				"experimen",
+				"experimentType"
+			],
+			[
+				"par",
+				"partitionTypes"
+			],
+			[
+				"frame",
+				"frameNumber"
+			],
+			[
+				"retur",
+				"returnable"
+			],
+			[
+				"Array",
+				"ArrayList"
+			],
+			[
+				"experi",
+				"experimentType"
+			],
+			[
+				"expe",
+				"experimentType"
+			],
+			[
+				"chro",
+				"chordFileNames"
+			],
+			[
+				"background",
+				"background-image"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 23833,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/data/data.js",
+			"settings":
+			{
+				"buffer_size": 22566,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Java/Ant.sublime-build",
+					""
+				],
+				[
+					"Packages/Java/JavaC.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/Java/JavaC.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 67.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 120.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Joaqo/CP/websites/jruales",
+		"/Users/Joaqo/CP/websites/jruales/js",
+		"/Users/Joaqo/CP/websites/jruales/js/data"
+	],
+	"file_history":
+	[
+		"/Users/Joaqo/Downloads/CreateRobot.m",
+		"/Users/Joaqo/CP/websites/jruales/css/main.css",
+		"/Users/Joaqo/Downloads/jQuery.mmenu-master/demo/css/demo.css",
+		"/Volumes/Santoro/ecuacines.com/lib/up1029384756.php",
+		"/Users/Joaqo/CP/threejs/canvas_cube/index.html",
+		"/Users/Joaqo/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/Joaqo/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Joaqo/CP/websites/www.cs.columbia.edu/robotics/js/main.js",
+		"/Users/Joaqo/CP/websites/www.cs.columbia.edu/robotics/index.html",
+		"/Users/Joaqo/CP/websites/www.cs.columbia.edu/robotics/css/main.css",
+		"/Users/Joaqo/CP/websites/www.cs.columbia.edu/robotics/js/publications.js",
+		"/Users/Joaqo/CP/CS 4167 Animation/Theme1Milestone1/jar2262/FOSSSim/Force.h",
+		"/Users/Joaqo/CP/CS 4167 Animation/Theme1Milestone1/jar2262/FOSSSim/MathDefs.h",
+		"/Users/Joaqo/CP/CS 4167 Animation/Theme1Milestone1/jar2262/CMakeCache.txt",
+		"/Users/Joaqo/Downloads/1406.5670v3.5670v3/cvpr_v018.tex",
+		"/Users/Joaqo/CP/iBrailler/liblouis/HACKING",
+		"/private/var/folders/1m/gv2lq37j29x3lfch53j0y9gc0000gn/T/7d94a368-9cf3-4dbf-b498-cbae92f5837f/home/jruales/keras/examples/3d_reconstruction_shrec50_no_op.py",
+		"/private/var/folders/1m/gv2lq37j29x3lfch53j0y9gc0000gn/T/7d94a368-9cf3-4dbf-b498-cbae92f5837f/home/jruales/keras/examples/3d_reconstruction_shrec.py",
+		"/private/var/folders/1m/gv2lq37j29x3lfch53j0y9gc0000gn/T/7d94a368-9cf3-4dbf-b498-cbae92f5837f/home/jruales/keras/examples/3d_reconstruction_shrec_novel_objects.py",
+		"/private/var/folders/1m/gv2lq37j29x3lfch53j0y9gc0000gn/T/7d94a368-9cf3-4dbf-b498-cbae92f5837f/home/jruales/keras/examples/3d_reconstruction_toilets_no_op.py",
+		"/Users/Joaqo/.ssh/config",
+		"/Users/Joaqo/.ssh/known_hosts",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/Final Project/Geoff Hinton AMA.txt",
+		"/Users/Joaqo/Desktop/asdf_utils",
+		"/Users/Joaqo/Documents/MATLAB/MatlabStan-2.6.0.0/+mstan/stan_home.m",
+		"/Volumes/Long 2/3d_conv/3d_conv/layers/logistic_regression_layer.py",
+		"/Volumes/Long 2/3d_conv/3d_conv/layers/layer_utils.py",
+		"/Volumes/Long 2/3d_conv/3d_conv/logistic_sgd.py",
+		"/Volumes/Long 2/3d_conv/3d_conv/3dclassifyShapesExperimental.py",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Bayesian Statistics/hw/hw4/problem6_7_a.m",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Bayesian Statistics/hw/hw4/problem5_14.m",
+		"/Users/Joaqo/Downloads/copy.mdl",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Bayesian Statistics/hw/hw4/data/beta_blockers.csv",
+		"/private/var/folders/1m/gv2lq37j29x3lfch53j0y9gc0000gn/T/7d94a368-9cf3-4dbf-b498-cbae92f5837f/home/jruales/3d_conv/3d_conv/3dclassifyShapes.py",
+		"/private/var/folders/1m/gv2lq37j29x3lfch53j0y9gc0000gn/T/7d94a368-9cf3-4dbf-b498-cbae92f5837f/home/jruales/3d_conv/3d_conv/visualization/weight_viz_2d.py",
+		"/Users/Joaqo/Library/Caches/TemporaryItems/3dclassifyShapes.py",
+		"/Volumes/Long/3d_conv/3d_conv/3dclassifyShapes.py",
+		"/Volumes/Long/3d_conv/3d_conv/layers/layer_utils.py",
+		"/Users/Joaqo/Desktop/layer_utils_1.py",
+		"/Volumes/Long/3d_conv/3d_conv/layers/logistic_regression_layer.py",
+		"/Volumes/Long/3d_conv/3d_conv/datasets/geometric_3d_dataset.py",
+		"/Users/Joaqo/.profile",
+		"/Volumes/Long/3d_conv/3d_conv/layers/max_pool_layer_3d.py",
+		"/Users/Joaqo/Google Drive/12 Columbia/iBrailler/Keyboard.ino",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/5B.out",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/5A.out",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/5B.csv",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/5A.csv",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/songFilenames",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/testAPermutations.csv",
+		"/Users/Joaqo/Desktop/blah.py",
+		"/Users/Joaqo/CP/python_downsample/test.py",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/trial10/svm_hmm_output/+0-0_C1E-1_B.tags",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/trial10/svm_hmm_input/+0-0_testB.dat",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/testBPermutations.csv",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/running_jobs.txt",
+		"/Users/Joaqo/Desktop/asdf.csv",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/Makefile",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/trial1/svm_hmm_output/+0-0_C1E-1_A.log",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/trial1/svm_hmm_output/+0-0_C1E3_B.log",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/trial1/svm_hmm_output/+0-0_C1E3_A.log",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/trial1/svm_hmm_output/+0-0_C1E2_A.log",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/trial1/svm_hmm_output/+0-0_C1E2_B.log",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/trial2/svm_hmm_output/+0-0_C1E3_B.log",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/trial2/svm_hmm_output/+0-0_C1E3_B.tags",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/trial1/svm_hmm_output/+0-0_C1E3_B.tags",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/+0-0.in",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/terminal.glue",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/CHORDS_CSV/01-Two_Of_Us.mini.mat_labels.csv",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/CHORDS_CSV/02-All_I_ve_Got_To_Do.mini.mat_data.csv",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/CHORDS_CSV/03-Across_The_Universe.mini.mat_labels.csv",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/CHORDS_CSV/03-Across_The_Universe.mini.mat_data.csv",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/CHORDS_CSV/08-Act_Naturally.mini.mat_data.csv",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/CHORDS/09-And_Your_Bird_Can_Sing.mini.mat",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/CHORDS/04-I_m_Happy_Just_To_Dance_With_You.mini.mat",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/CHORDS_CSV/04-I_m_Happy_Just_To_Dance_With_You.mini.mat_data.csv",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/CHORDS_CSV/04-I_m_Happy_Just_To_Dance_With_You.mini.mat_labels.csv",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/CHORDS_CSV/12-I_ve_Just_Seen_A_Face.mini.mat_data.csv",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/CHORDS_CSV/17-Julia.mini.mat_data.csv",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/CHORDS/17-Julia.mini.mat",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/Test.java",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Adv. Machine Learning/HW2/turnin/code/CHORDS_CSV/01-A_Hard_Day_s_Night.mini.mat",
+		"/Volumes/long.cs.columbia.edu/3d_conv/3d_conv/datasets/point_cloud_hdf5_dataset.py",
+		"/Volumes/long.cs.columbia.edu/3d_conv/3d_conv/datasets/rgbd_hdf5_dataset.py",
+		"/Volumes/long.cs.columbia.edu/3d_conv/test/datasets/test_point_cloud_hdf5_dataset.py",
+		"/Users/Joaqo/Downloads/Calculator_v1_1/Calculator_v1_1.ino",
+		"/Users/Joaqo/.bashrc",
+		"/Users/Joaqo/CP/pylearn/pylearn2/MANIFEST.in",
+		"/Users/Joaqo/CP/pylearn/pylearn2/pylearn2/models/independent_multiclass_logistic.py",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Bayesian Statistics/hw/hw2/problem3.3.jl",
+		"/Users/Joaqo/CP/theano/youtube_tutorial/main.py",
+		"/Users/Joaqo/Downloads/Human_Level_Control_through_Deep_Reinforcement_Learning/dqn/NeuralQLearner.lua",
+		"/Users/Joaqo/Downloads/Human_Level_Control_through_Deep_Reinforcement_Learning/dqn/train_agent.lua",
+		"/Users/Joaqo/Downloads/Human_Level_Control_through_Deep_Reinforcement_Learning/dqn/Rectifier.lua",
+		"/Users/Joaqo/Downloads/csdp6.0.1maccore 2/README",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Deep Learning/lenet/code/convolutional_mlp.py",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Bayesian Statistics/hw/hw1/pew_research_center_june_elect_wknd_data.dta",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Bayesian Statistics/hw/hw1/2008ElectionResult.csv",
+		"/Users/Joaqo/Downloads/SuiteSparse 4/UFconfig/UFconfig.mk",
+		"/Users/Joaqo/Downloads/SuiteSparse 4/README.txt",
+		"/Users/Joaqo/Downloads/SuiteSparse/README.txt",
+		"/Users/Joaqo/Downloads/spark-1.2.0-bin-hadoop2.4/README.md",
+		"/Users/Joaqo/PycharmProjects/untitled/hello.py",
+		"/Users/Joaqo/Dropbox/Graphics Seminar/archeo_good_vibrations.txt",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Deep Learning/hw1/code/logistic_sgd_28x28.py",
+		"/Users/Joaqo/Dropbox/_12 Columbia/Deep Learning/hw1/code/logistic_sgd_32x32.py",
+		"/Users/Joaqo/Downloads/spot/theme/about.html",
+		"/Users/Joaqo/Downloads/spot/theme/works.html",
+		"/Users/Joaqo/Downloads/spot/theme/services.html",
+		"/Users/Joaqo/Downloads/spot/theme/index.html",
+		"/Users/Joaqo/Downloads/Adobe CS6 Master Collection With Crack - Mac OSX/Adobe CS6 Master Collection for Mac OSX (with crack).nfo",
+		"/Users/Joaqo/Desktop/virtualbox_output.txt",
+		"/Users/Joaqo/Desktop/2015.01.03_23-35-57-EST.wcap",
+		"/Users/Joaqo/CP/Probando.java",
+		"/Users/Joaqo/Documents/MATLAB/graphcut_textures/video_results/README.txt"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+			"SVMHmm"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\\)",
+			"http.*?\\)",
+			"mmenu",
+			"z-index",
+			"Fixed",
+			"slideright",
+			"header",
+			"background-color",
+			"backgrou",
+			"1.6rem",
+			"color",
+			"header",
+			"aria",
+			"cinemark",
+			"cinematica",
+			"cinemark",
+			" style=\"max-width:150px\"",
+			"math",
+			"computer vision",
+			"twitter",
+			"electri",
+			"oberlin colleg",
+			"bootstrap",
+			"technologies",
+			"machine learn",
+			"website:",
+			"link:",
+			"website:",
+			"website",
+			"publication.",
+			"/img",
+			"img",
+			"400pixels",
+			"ecuacines",
+			"flash",
+			"petProjects",
+			"petprojects",
+			"6998",
+			"-0",
+			"-00",
+			"experiments",
+			"_",
+			"department_code",
+			"college_subtitle",
+			"college_nickname",
+			"college_name",
+			"date_month",
+			"date_year",
+			"datewhendat",
+			"date",
+			"basics",
+			" \\{",
+			",\\n\\n\\{",
+			" \\\",",
+			"(.*)\\((.*) (.*)\\)",
+			"oberlin",
+			"targetRotation",
+			"stats",
+			"fps",
+			"60",
+			"lambert",
+			"mesh",
+			"pet",
+			"ruales",
+			"placeholder.png",
+			"makeurl",
+			"wrap",
+			"large",
+			"interested",
+			"projects",
+			"publications",
+			"youtube",
+			"\"/",
+			"http://www1.cs.columbia.edu/",
+			"http://www.cs.columbia.edu/",
+			"curly",
+			"<ul>",
+			"init_wei",
+			"get_model",
+			"H5_TRAIN_DATASET_FILE",
+			"test_real_world",
+			"numpy_jaccard_similarity",
+			"LogisticRegression",
+			"layer2",
+			"regularized_errors",
+			"errors",
+			"layer2",
+			"validate_model",
+			"loss",
+			"validate_model",
+			"loss",
+			" +",
+			" *",
+			"\\n\\n",
+			" ",
+			" , ",
+			"\\t",
+			"evaluate",
+			"downscale_3d",
+			"down",
+			"downsample",
+			"recon",
+			"rng",
+			"melanoma",
+			"downsample_factor",
+			"bitWrite",
+			"bool_",
+			"random",
+			"centered",
+			"self.",
+			"centered",
+			"solid_shapes",
+			" ",
+			", 2",
+			", 1",
+			"0, ",
+			", 0",
+			", 1",
+			", 0",
+			" ",
+			"tensor",
+			"self",
+			"np",
+			"\\n",
+			"([0-9]*) .*",
+			",6,",
+			"1",
+			" "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"",
+			"departmentCode",
+			"collegeSubtitle",
+			"collegeNickname",
+			"collegeName",
+			"dateMonth",
+			"dateYear",
+			"\\n{",
+			", {",
+			"\",",
+			"{\\n  name: \\\"$1\\\",\\n  department_code: \\\"$2\\\",\\n  number: $3\\n},\\n",
+			"{\\nname: \\\"$1\\\",\\ndepartment_code: \\\"$2\\\",number: $3\\n},\\n",
+			"placeholder/square.png",
+			"small",
+			"\"http://www.cs.columbia.edu/",
+			"/",
+			"",
+			", ",
+			" , ",
+			"bool",
+			"solid_figures",
+			", ",
+			"",
+			", ",
+			"$1",
+			"\", \"",
+			"))",
+			"$${cvalue}",
+			"$${trialnum}",
+			"trial$(trialnum)",
+			"SVMHmm",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23833,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								428,
+								428
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 10.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/data/data.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22566,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4960,
+								4960
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3146.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 195.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "jruales.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"util",
+				"layers/layer_utils.py"
+			],
+			[
+				"across",
+				"CHORDS_CSV/03-Across_The_Universe.mini.mat_labels.csv"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 400.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 400.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 214.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

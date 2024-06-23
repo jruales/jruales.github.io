@@ -1,0 +1,405 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Joaquín Ruales</title>
+        <meta name="description" content="Hi, I'm a software engineer and mathematician interested in machine learning, computer graphics, web application development, and applied mathematics.">
+        <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/webicons.css">
+        <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css" />
+        <link type="text/css" rel="stylesheet" href="css/addons/jquery.mmenu.dragopen.css" />
+
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div>
+        <div id="main">
+<script id="page-template" type="text/x-handlebars-template">
+            <!--div class="header Fixed" style="height:50px; background-color:#fff; box-shadow: 0px 1px 10px #000; font-size:2em;">
+                <a href="#menu">🍔☰</a>
+            </div-->
+            <div class="header Fixed">
+                <a href="#menu"></a>
+                <!--Joaquín Ruales-->
+            </div>
+            {{!-- Add your site or application content here --}}
+            <div id="actual-header" style="margin-top:0">
+                <div class="container" id="basics">
+                    <img src="img/basics/{{basics.picture}}" style="float:left" id="picture"/>
+                    <div id="name-label-email-links" style="float:left">
+                        <div id="name"><h1>{{basics.name}}</h1></div>
+                        <div id="label">{{basics.label}}</div>
+                        <div id="email">{{basics.email}}</div>
+                        <div>
+                        {{#each basics.profiles as |profile profileId|}}
+                            <a target="_blank" class="webicon {{profile.iconClass}}" href="{{profile.link}}">{{profile.name}}</a>&nbsp;
+                        {{/each}}
+                        </div>
+                    </div>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div id="summary" class="">
+                            <!--h2>Hi,</h2-->
+                            <div style="height:20px"></div>
+                            {{{basics.summary}}}
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top:40px;" class="row">
+                    <div class="col-md-12">
+                        <div id="time-events" class="">
+                            <!--h2>Timeline</h2-->
+                            <ul>
+                            {{#each timeEvents as |timeEvent timeEventId|}}
+                                <li class="time-event">
+                                    <div class="timeframe">{{timeEvent.timeframe}}</div>
+                                    <div class="title">{{{timeEvent.title}}}</div>
+                                    {{#if timeEvent.description}}
+                                        <div class="description">{{{timeEvent.description}}}</div>
+                                    {{/if}}
+                                </li>
+                            {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9">
+                        <div id="contests" class="">
+                            <h2>🏆 Programming Contests</h2>
+                            {{#each contests as |contest contestId|}}
+                                {{#if contest.link}}
+                                    <h3><a target="_blank" href="{{contest.link}}">{{contest.honor}}, {{contest.name}}</a></h3>
+                                {{else}}
+                                    <h3>{{contest.honor}}, {{contest.name}}</h3>
+                                {{/if}}
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        {{#if contest.image}}
+                                            {{#if contest.link}}
+                                            <a target="_blank" href="{{contest.link}}">
+                                                <img src="img/contests/{{contest.image}}" />
+                                            </a>
+                                            {{else}}
+                                            <img src="img/contests/{{contest.image}}" />
+                                            {{/if}}
+                                        {{else}}
+                                            <img src="img/placeholder/square.png" />
+                                        {{/if}}
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div><em>{{contest.dateYear}}.</em></div>
+                                        <div><em>{{contest.venue}}. {{contest.location}}.</em></div>
+                                        <div>{{contest.description}}</div>
+                                        {{#each contest.links as |link linkId|}}
+                                        <a class="no-hover-underline" target="_blank" href="{{link.url}}">
+                                            <button type="button" class="btn btn-default" aria-label="{{link.name}}">
+                                              {{link.name}}
+                                            </button>
+                                        </a>
+                                        {{/each}}
+                                    </div>
+                                </div>
+                            {{/each}}
+                        </div>
+                        <div id="publications" class="">
+                            <h2>📃 Publications</h2>
+                            {{#each publications as |publication publicationId|}}
+                                {{#if publication.link}}
+                                <h3><a target="_blank" href="{{publication.link}}">{{publication.title}}</a></h3>
+                                {{else}}
+                                <h3>{{publication.title}}</h3>
+                                {{/if}}
+                                <div class="row">
+                                    <div class="col-md-3">
+                                    {{#if publication.image}}
+                                        {{#if publication.link}}
+                                        <a target="_blank" href="{{publication.link}}"><img src="img/publications/{{publication.image}}" /></a>
+                                        {{else}}
+                                        <img src="img/publications/{{publication.image}}" />
+                                        {{/if}}
+                                    {{else}}
+                                        <img src="img/placeholder/square.png" />
+                                    {{/if}}
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div>{{{publication.notes}}}</div>
+                                        <div><strong>Authors:</strong> {{publication.authors}}</div>
+                                        {{#if publication.journal}}
+                                        <div><strong>Journal:</strong> {{publication.journal}}</div>
+                                        {{/if}}
+                                        {{#if publication.conference}}
+                                        <div><strong>Conference:</strong> {{publication.conference}}</div>
+                                        {{/if}}
+                                        <!--div><strong>Abstract:</strong> {{publication.abstract}}</div-->
+                                        {{#each publication.links as |link linkId|}}
+                                        <a class="no-hover-underline" target="_blank" href="{{link.url}}">
+                                            <button type="button" class="btn btn-default" aria-label="{{link.name}}">
+                                              {{link.name}}
+                                            </button>
+                                        </a>
+                                        {{/each}}
+                                    </div>
+                                </div> <!--#row-->
+                            {{/each}}
+                        </div><!--#publications-->
+                        <div id="webApps" class="">
+                            <h2>💡 Web Apps</h2>
+                            {{#each webApps as |webApp webAppId|}}
+                                <h3>{{webApp.title}}</h3>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                    {{#if webApp.image}}
+                                        {{#if webApp.link}}
+                                        <a target="_blank" href="{{webApp.link}}">
+                                            <img src="img/pet_projects/{{webApp.image}}" />
+                                        </a>
+                                        {{else}}
+                                        <img src="img/pet_projects/{{webApp.image}}" />
+                                        {{/if}}
+                                    {{else}}
+                                        <img src="img/placeholder/square.png" />
+                                    {{/if}}
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div><em>{{webApp.dateYear}}.</em></div>
+                                        <div>{{webApp.description}}</div>
+                                        <div>Uses {{webApp.technologies}}</div>
+                                        {{#each webApp.links as |link linkId|}}
+                                        <a class="no-hover-underline" target="_blank" href="{{link.url}}">
+                                            <button type="button" class="btn btn-default" aria-label="{{link.name}}">
+                                              {{link.name}}
+                                            </button>
+                                        </a>
+                                        {{/each}}
+                                    </div>
+                                </div>
+                            {{/each}}
+                        </div>
+                        <div id="builtWebsites" class="">
+                            <h2>💻 Other Websites</h2>
+                            {{#each builtWebsites as |builtWebsite builtWebsiteId|}}
+                                {{#if builtWebsite.link}}
+                                    <h3><a target="_blank" href="{{builtWebsite.link}}">{{builtWebsite.title}}</a></h3>
+                                {{else}}
+                                    <h3>{{builtWebsite.title}}</h3>
+                                {{/if}}
+                                <div class="row">
+                                    <div class="col-md-3">
+                                    {{#if builtWebsite.image}}
+                                        {{#if builtWebsite.link}}
+                                        <a target="_blank" href="{{builtWebsite.link}}">
+                                            <img src="img/websites/{{builtWebsite.image}}" />
+                                        </a>
+                                        {{else}}
+                                        <img src="img/websites/{{builtWebsite.image}}" />
+                                        {{/if}}
+                                    {{else}}
+                                        <img src="img/placeholder/square.png" />
+                                    {{/if}}
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div><em>{{builtWebsite.dateYear}}.</em></div>
+                                        <div>{{{builtWebsite.description}}}</div>
+                                        {{#if builtWebsite.technologies}}
+                                        <div>Uses {{builtWebsite.technologies}}</div>
+                                        {{/if}}
+                                    </div>
+                                </div>
+                            {{/each}}
+                        </div>
+                        <div id="programmingExperiments" class="">
+                            <h2>👾 Other Projects and Experiments</h2>
+                            {{#each programmingExperiments as |programmingExperiment programmingExperimentId|}}
+                                <h3>
+                                    {{#if programmingExperiment.link}}
+                                    <a href="{{programmingExperiment.link}}" target="_blank">{{programmingExperiment.name}}</a>
+                                    {{else}}
+                                    {{programmingExperiment.name}}
+                                    {{/if}}
+                                </h3>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        {{#if programmingExperiment.image}}
+                                            {{#if programmingExperiment.link}}
+                                            <a href="{{programmingExperiment.link}}" target="_blank"><img src="img/programming_experiments/{{programmingExperiment.image}}" /></a>
+                                            {{else}}
+                                            <img src="img/programming_experiments/{{programmingExperiment.image}}" />
+                                            {{/if}}
+                                        {{else}}
+                                            <img src="img/placeholder/square.png" />
+                                        {{/if}}
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div><em>{{programmingExperiment.dateYear}}.</em></div>
+                                        <div>{{{programmingExperiment.description}}}</div>
+                                    </div>
+                                </div>
+                            {{/each}}
+                        </div>
+                        <div id="coursework" class="">
+                            <h2>📚 Coursework</h2>
+                            <div>
+                                <ul>
+                                {{#each degrees as |degree degreeId|}}
+                                    <li>
+                                        <strong>{{degree.collegeName}} {{degree.title}}{{#if degree.major}} in {{degree.major}}{{/if}}{{#if degree.gpa}} (GPA {{degree.gpa}}){{/if}}</strong>
+                                        <ul>
+                                        {{#each degree.relevantCourses as |relevantCourse relevantCourseId|}}
+                                        <li>
+                                         {{relevantCourse.name}} ({{relevantCourse.departmentCode}} {{relevantCourse.number}})
+                                        </li>
+                                        {{/each}}
+                                        {{#each degree.otherCourses as |otherCourse otherCourseId|}}
+                                        <li>
+                                         {{otherCourse.name}} ({{otherCourse.departmentCode}} {{otherCourse.number}})
+                                        </li>
+                                        {{/each}}
+                                        </ul>
+                                    </li>
+                                {{/each}}
+                                </ul>
+                            </div>
+                        </div><!--#degrees-->
+                        <div id="misc" class="">
+                            <h2>🎁 Misc.</h2>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <strong>Programming Languages:</strong>
+                                        <ul>
+                                            <li>Java</li>
+                                            <li>C++ (incl. Eigen)</li>
+                                            <li>Python (incl. NumPy, SciPy, Theano)</li>
+                                            <li>MATLAB</li>
+                                            <li>JavaScript (incl. jQuery, Angular, Underscore.js, Math.js, Numeric.js)</li>
+                                            <li>ActionScript 3.0</li>
+                                            <li>PHP (incl. Laravel)</li>
+                                            <li>SQL</li>
+                                            <li>KQL (a.k.a. Kusto)</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Tools:</strong>
+                                        <ul>
+                                            <li>Eclipse</li>
+                                            <li>Sublime Text 3</li>
+                                            <li>Visual Studio</li>
+                                            <li>Git</li>
+                                            <li><img src="img/LaTeX_logo.svg" class="latex-logo"/></li>
+                                            <li>/\b(?:Regular Expressions|RegExp?)\b/</li>
+                                            <li>Adobe Photoshop</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Teaching Experience:</strong>
+                                        <ul>
+                                            <li>Teaching Assistant (held office hours, graded assignments and exams) for:
+                                                <ul>
+                                                    <li>Computational Aspects of Robotics (COMS 4733)<br/>Fall 2015 and Fall 2014, Columbia University</li>
+                                                    <li>Parallel Programming (COMS 4130)<br/>Fall 2013, Columbia University</li>
+                                                </ul>
+                                            </li>
+                                            <li>I was a one-on-one tutor in Math and Computer Science while at Columbia University and Oberlin College.</li>
+                                            <li>In High School, I coached a group of four students for an interscholastic Math competition and taught an extracurricular class on ActionScript programming.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Human Languages:</strong>
+                                        <ul>
+                                            <li>English - Fluent</li>
+                                            <li>Spanish - Fluent</li>
+                                            <li>Italian - Intermediate</li>
+                                            <li>German - Beginner</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!--#misc-->
+                        <div style="height:100px"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+          <div class="container">
+            <p class="text-muted">© <span id="CopyrightYear"></span> Joaquín Ruales. Thanks to Krizia Vance for feedback on an earlier version of this website.</p>
+          </div>
+        </footer> 
+
+        
+
+</script> <!-- page-template -->
+        </div>
+
+
+        
+
+
+        <nav id="menu">
+            <ul>
+                <li><a href="#summary">😃 About Me</a></li>
+                <li><a href="#contests">🏆 Programming Contests</a></li>
+                <li><a href="#publications">📃 Publications</a></li>
+                <li><a href="#webApps">💡 Web Apps</a></li>
+                <li><a href="#builtWebsites">💻 Other Websites</a></li>
+                <li><a href="#programmingExperiments">👾 Other Projects and Experiments</a></li>
+                <li><a href="#coursework">📚 Coursework</a></li>
+                <li><a href="#misc">🎁 Misc.</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script type="text/javascript" src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+    <script src="js/vendor/jquery-ui.min.js"></script>
+    <script src="js/vendor/handlebars-v3.0.3.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/vendor/jquery.mmenu.min.js"></script>
+    <script type="text/javascript" src="js/vendor/addons/jquery.mmenu.dragopen.min.js"></script>
+    <script type="text/javascript" src="js/vendor/addons/jquery.mmenu.fixedelements.min.js"></script>
+
+    <script type='text/javascript' src='js/vendor/fastclick.js'></script>
+
+    <!--script src="js/vendor/three.min.js"></script>
+    <script src="js/vendor/threejs/renderers/Projector.js"></script>
+    <script src="js/vendor/threejs/renderers/CanvasRenderer.js"></script>
+    <script src="js/vendor/threejs/libs/stats.min.js"></script-->
+
+    <script src="js/data/data.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- Google Analytics -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-65559710-1','auto');ga('send','pageview');
+    </script>
+    </body>
+</html>
