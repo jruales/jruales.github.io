@@ -48,7 +48,7 @@
                         <div id="email">{{basics.email}}</div>
                         <div>
                         {{#each basics.profiles as |profile profileId|}}
-                            <a target="_blank" class="webicon {{profile.iconClass}}" href="{{profile.link}}">{{profile.name}}</a>&nbsp;
+                            <a target="_blank" rel="noopener noreferrer" class="webicon {{profile.iconClass}}" href="{{profile.link}}">{{profile.name}}</a>&nbsp;
                         {{/each}}
                         </div>
                     </div>
@@ -89,7 +89,7 @@
                             <h2>🏆 Programming Contests</h2>
                             {{#each contests as |contest contestId|}}
                                 {{#if contest.link}}
-                                    <h3><a target="_blank" href="{{contest.link}}">{{contest.honor}}, {{contest.name}}</a></h3>
+                                    <h3><a target="_blank" rel="noopener noreferrer" href="{{contest.link}}">{{contest.honor}}, {{contest.name}}</a></h3>
                                 {{else}}
                                     <h3>{{contest.honor}}, {{contest.name}}</h3>
                                 {{/if}}
@@ -97,7 +97,7 @@
                                     <div class="col-md-3">
                                         {{#if contest.image}}
                                             {{#if contest.link}}
-                                            <a target="_blank" href="{{contest.link}}">
+                                            <a target="_blank" rel="noopener noreferrer" href="{{contest.link}}">
                                                 <img src="img/contests/{{contest.image}}" />
                                             </a>
                                             {{else}}
@@ -112,7 +112,7 @@
                                         <div><em>{{contest.venue}}. {{contest.location}}.</em></div>
                                         <div>{{contest.description}}</div>
                                         {{#each contest.links as |link linkId|}}
-                                        <a class="no-hover-underline" target="_blank" href="{{link.url}}">
+                                        <a class="no-hover-underline" target="_blank" rel="noopener noreferrer" href="{{link.url}}">
                                             <button type="button" class="btn btn-default" aria-label="{{link.name}}">
                                               {{link.name}}
                                             </button>
@@ -126,7 +126,7 @@
                             <h2>📃 Publications</h2>
                             {{#each publications as |publication publicationId|}}
                                 {{#if publication.link}}
-                                <h3><a target="_blank" href="{{publication.link}}">{{publication.title}}</a></h3>
+                                <h3><a target="_blank" rel="noopener noreferrer" href="{{publication.link}}">{{publication.title}}</a></h3>
                                 {{else}}
                                 <h3>{{publication.title}}</h3>
                                 {{/if}}
@@ -134,7 +134,7 @@
                                     <div class="col-md-3">
                                     {{#if publication.image}}
                                         {{#if publication.link}}
-                                        <a target="_blank" href="{{publication.link}}"><img src="img/publications/{{publication.image}}" /></a>
+                                        <a target="_blank" rel="noopener noreferrer" href="{{publication.link}}"><img src="img/publications/{{publication.image}}" /></a>
                                         {{else}}
                                         <img src="img/publications/{{publication.image}}" />
                                         {{/if}}
@@ -153,7 +153,7 @@
                                         {{/if}}
                                         <!--div><strong>Abstract:</strong> {{publication.abstract}}</div-->
                                         {{#each publication.links as |link linkId|}}
-                                        <a class="no-hover-underline" target="_blank" href="{{link.url}}">
+                                        <a class="no-hover-underline" target="_blank" rel="noopener noreferrer" href="{{link.url}}">
                                             <button type="button" class="btn btn-default" aria-label="{{link.name}}">
                                               {{link.name}}
                                             </button>
@@ -171,7 +171,7 @@
                                     <div class="col-md-3">
                                     {{#if webApp.image}}
                                         {{#if webApp.link}}
-                                        <a target="_blank" href="{{webApp.link}}">
+                                        <a target="_blank" rel="noopener noreferrer" href="{{webApp.link}}">
                                             <img src="img/pet_projects/{{webApp.image}}" />
                                         </a>
                                         {{else}}
@@ -186,7 +186,7 @@
                                         <div>{{webApp.description}}</div>
                                         <div>Uses {{webApp.technologies}}</div>
                                         {{#each webApp.links as |link linkId|}}
-                                        <a class="no-hover-underline" target="_blank" href="{{link.url}}">
+                                        <a class="no-hover-underline" target="_blank" rel="noopener noreferrer" href="{{link.url}}">
                                             <button type="button" class="btn btn-default" aria-label="{{link.name}}">
                                               {{link.name}}
                                             </button>
@@ -200,7 +200,7 @@
                             <h2>💻 Other Websites</h2>
                             {{#each builtWebsites as |builtWebsite builtWebsiteId|}}
                                 {{#if builtWebsite.link}}
-                                    <h3><a target="_blank" href="{{builtWebsite.link}}">{{builtWebsite.title}}</a></h3>
+                                    <h3><a target="_blank" rel="noopener noreferrer" href="{{builtWebsite.link}}">{{builtWebsite.title}}</a></h3>
                                 {{else}}
                                     <h3>{{builtWebsite.title}}</h3>
                                 {{/if}}
@@ -208,7 +208,7 @@
                                     <div class="col-md-3">
                                     {{#if builtWebsite.image}}
                                         {{#if builtWebsite.link}}
-                                        <a target="_blank" href="{{builtWebsite.link}}">
+                                        <a target="_blank" rel="noopener noreferrer" href="{{builtWebsite.link}}">
                                             <img src="img/websites/{{builtWebsite.image}}" />
                                         </a>
                                         {{else}}
@@ -233,7 +233,7 @@
                             {{#each programmingExperiments as |programmingExperiment programmingExperimentId|}}
                                 <h3>
                                     {{#if programmingExperiment.link}}
-                                    <a href="{{programmingExperiment.link}}" target="_blank">{{programmingExperiment.name}}</a>
+                                    <a href="{{programmingExperiment.link}}" target="_blank" rel="noopener noreferrer">{{programmingExperiment.name}}</a>
                                     {{else}}
                                     {{programmingExperiment.name}}
                                     {{/if}}
@@ -242,7 +242,7 @@
                                     <div class="col-md-3">
                                         {{#if programmingExperiment.image}}
                                             {{#if programmingExperiment.link}}
-                                            <a href="{{programmingExperiment.link}}" target="_blank"><img src="img/programming_experiments/{{programmingExperiment.image}}" /></a>
+                                            <a href="{{programmingExperiment.link}}" target="_blank" rel="noopener noreferrer"><img src="img/programming_experiments/{{programmingExperiment.image}}" /></a>
                                             {{else}}
                                             <img src="img/programming_experiments/{{programmingExperiment.image}}" />
                                             {{/if}}

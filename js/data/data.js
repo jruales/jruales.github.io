@@ -191,7 +191,7 @@ webApps = [
     image: "400pixels.png",
     mobileFriendly: false,
     mobileFirst: false, 
-    description: "A web app for making and sharing pixel art online. As a challenge, I avoided using any third-party libraries for the front-end, so I implemented my own color picker, undo-redo feature, Breshenham's line and ellipse drawing algorithms, flood fill, and isometric cube tool.",
+    description: "A web app for making and sharing pixel art online. As a challenge, I avoided using any third-party libraries for the front-end, so I implemented my own color picker, undo-redo feature, Bresenham's line and ellipse drawing algorithms, flood fill, and isometric cube tool.",
     dateYear: 2010,
     technologies: "PHP + MySQL + ActionScript 3.0",
     links: [
@@ -475,7 +475,7 @@ programmingExperiments = [
     image:"plato.jpg",
     mobileFriendly: true,
     mobileFirst: false,
-    description: "Group project for Programming Languages and Translators. PLATO (Programing Language for Abstract Transformation Operators) is a programming language inspired by MATLAB, Python, Prolog, Java, and Ocaml, and designed for the direct manipulation of abstract mathematical expressions. In addition to being able to express basic number­-theoretical algorithms, it can also also handle finite sets, groups, rings, and fields."
+    description: "Group project for Programming Languages and Translators. PLATO (Programming Language for Abstract Transformation Operators) is a programming language inspired by MATLAB, Python, Prolog, Java, and Ocaml, and designed for the direct manipulation of abstract mathematical expressions. In addition to being able to express basic number­-theoretical algorithms, it can also handle finite sets, groups, rings, and fields."
   },
   {
     name: "Tutorial: Curve Bounce in HTML5",
@@ -542,7 +542,7 @@ programmingExperiments = [
     // TODO(jruales): Hide Flash experiments from mobile users
     mobileFriendly: false,
     mobileFirst: false,
-    description: "A bouncy ball inside a Space-Invader-shaped container. This was originally meant to work with WiiFlash so that the tilt of the Space Invader was controlled with a Wii remote, back when cell phones didn't commonly have acceleromenters."
+    description: "A bouncy ball inside a Space-Invader-shaped container. This was originally meant to work with WiiFlash so that the tilt of the Space Invader was controlled with a Wii remote, back when cell phones didn't commonly have accelerometers."
   },
   {
     name: "Vector Hollow Prism",
