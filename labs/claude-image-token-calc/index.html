@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Claude Vision Tokens Estimator</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --panel: #181b22;
+    --ink: #e8eaed;
+    --muted: #9aa3b2;
+    --accent: #7ed957;
+    --accent-2: #8ab4f8;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink);
+    font: 14px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  .app { display: grid; grid-template-columns: 1fr 280px; height: 100%; transition: grid-template-columns .18s ease; }
+  .app.collapsed { grid-template-columns: 1fr 36px; }
+  aside { background: var(--panel); border-left: 1px solid #232732; padding: 16px; overflow:auto; position: relative; }
+  .app.collapsed aside { padding: 8px 4px; overflow: hidden; }
+  .app.collapsed aside > *:not(#toggle) { display: none; }
+  .head { margin-bottom: 8px; }
+  .head h1 { margin: 0; font-size: 14px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+  #toggle {
+    position: absolute; top: 10px; right: 10px;
+    width: 24px; height: 24px; border-radius: 6px;
+    background: #0f1218; color: var(--muted); border: 1px solid #232732;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    padding: 0; flex: 0 0 auto;
+  }
+  #toggle:hover { color: var(--ink); }
+  #toggle .pi {
+    display: block;
+    width: 14px; height: 14px;
+    border: 1.5px solid currentColor;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+  }
+  #toggle .pi::after {
+    content: '';
+    position: absolute;
+    right: 0; top: 0;
+    width: 4px; height: 100%;
+    background: currentColor;
+    border-left: 1.5px solid currentColor;
+  }
+  .app.collapsed #toggle { right: 6px; }
+  .app.collapsed #toggle .pi::after {
+    background: transparent;
+    opacity: 0.35;
+  }
+  aside h1 { font-size: 14px; margin: 28px 0 12px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+  .row { display:flex; align-items:center; justify-content:space-between; gap:8px; margin: 8px 0; }
+  .row label { color: var(--muted); }
+  .seg { display:flex; background:#0f1218; border:1px solid #232732; border-radius:8px; padding:2px; margin: 4px 0 14px; }
+  .seg button { flex:1; background:transparent; color:var(--muted); border:0; padding:8px 10px; border-radius:6px; cursor:pointer; font: inherit; }
+  .seg button.on { background: var(--accent); color:#0b1220; font-weight:600; }
+  .seg.disabled { opacity: 0.45; pointer-events: none; }
+  input[type="number"] {
+    width: 90px; background:#0f1218; color:var(--ink);
+    border:1px solid #232732; border-radius:6px; padding:6px 8px; font: inherit;
+  }
+  .stat { background:#0f1218; border:1px solid #232732; border-radius:8px; padding:10px 12px; margin-top:10px; }
+  .stat .k { color: var(--muted); font-size: 12px; }
+  .stat .v { font-size: 18px; font-variant-numeric: tabular-nums; }
+  .hint { color: var(--muted); font-size: 12px; margin-top: 12px; }
+  main { position: relative; overflow:auto; }
+  canvas { display:block; cursor: default; }
+  .badge { display:inline-block; padding:2px 6px; border-radius:4px; background:#262a35; color:var(--muted); font-size:11px; }
+</style>
+</head>
+<body>
+<div class="app">
+  <main>
+    <canvas id="cv"></canvas>
+  </main>
+  <aside>
+    <button id="toggle" title="Collapse sidebar" aria-label="Collapse sidebar"><span class="pi"></span></button>
+    <div class="head">
+      <h1>Claude Vision Tokens Estimator</h1>
+    </div>
+
+    <div class="row"><label>Model</label></div>
+    <div class="seg" id="model">
+      <button data-model="other" class="on">Other</button>
+      <button data-model="opus">Opus 4.7</button>
+    </div>
+
+    <div class="row"><label>Screenshot display scale</label></div>
+    <div class="seg" id="pxmode">
+      <button data-pxmode="screen" class="on">Screen px</button>
+      <button data-pxmode="css">CSS px</button>
+    </div>
+
+    <div class="row"><label>Width (px)</label>
+      <input id="wIn" type="number" min="1" step="1" />
+    </div>
+    <div class="row"><label>Height (px)</label>
+      <input id="hIn" type="number" min="1" step="1" />
+    </div>
+
+    <div class="stat"><div class="k">Long edge limit</div><div class="v"><span id="edgeLimit"></span> px</div></div>
+    <div class="stat"><div class="k">Token limit (native)</div><div class="v"><span id="tokLimit"></span></div></div>
+    <div class="stat"><div class="k">Scale factor</div><div class="v" id="scaleStat"></div></div>
+    <div class="stat"><div class="k">Resized size</div><div class="v" id="resizedStat"></div></div>
+    <div class="stat"><div class="k">Padded (multiple of 28)</div><div class="v" id="paddedStat"></div></div>
+    <div class="stat"><div class="k">Tokens</div><div class="v" id="tokenStat"></div></div>
+
+    <p class="hint">Drag the rectangle's bottom-right corner to resize. <span style="color:#7ed957">Green</span>: original size. <span style="color:#a78bfa">Purple dashed</span>: resized (only when downscaling). <span style="color:rgba(255,255,255,0.85)">White dotted</span>: padded to ×28. <span style="color:#4dd0ff">Cyan dashed</span>: model's long-edge boundary.</p>
+    <p class="hint"><span class="badge">formula</span> tokens ≈ w·h / 750, capped by long-edge and token limits; padded to ×28.</p>
+    <p class="hint">All values are <em>approximate</em> estimates, not exact billing figures. Based on Anthropic's <a href="https://platform.claude.com/docs/en/build-with-claude/vision" target="_blank" rel="noopener" style="color:var(--accent-2)">Vision docs</a>, retrieved May 14, 2026.</p>
+  </aside>
+</div>
+
+<script>
+const MODELS = {
+  opus:  { name: "Claude Opus 4.7", edge: 2576, tokens: 4784 },
+  other: { name: "Other Claude",    edge: 1568, tokens: 1568 },
+};
+
+const state = {
+  model: "other",
+  pxMode: "screen", // 1 image px == 1 device pixel; "css" => 1 image px == 1 CSS pixel
+  w: 600,
+  h: 400,
+};
+
+const cv = document.getElementById("cv");
+const ctx = cv.getContext("2d");
+const wIn = document.getElementById("wIn");
+const hIn = document.getElementById("hIn");
+
+function setModel(m) {
+  state.model = m;
+  for (const b of document.querySelectorAll("#model button")) {
+    b.classList.toggle("on", b.dataset.model === m);
+  }
+  render();
+}
+document.querySelectorAll("#model button").forEach(b => b.onclick = () => setModel(b.dataset.model));
+
+function setPxMode(mode) {
+  state.pxMode = mode;
+  for (const b of document.querySelectorAll("#pxmode button")) {
+    b.classList.toggle("on", b.dataset.pxmode === mode);
+  }
+  render();
+}
+document.querySelectorAll("#pxmode button").forEach(b => b.onclick = () => setPxMode(b.dataset.pxmode));
+
+function updatePxModeAvailability() {
+  const seg = document.getElementById("pxmode");
+  const same = (window.devicePixelRatio || 1) === 1;
+  seg.classList.toggle("disabled", same);
+  seg.title = same ? "Screen px and CSS px are identical at devicePixelRatio = 1" : "";
+}
+updatePxModeAvailability();
+window.addEventListener("resize", updatePxModeAvailability);
+
+const app = document.querySelector(".app");
+const toggle = document.getElementById("toggle");
+toggle.addEventListener("click", () => {
+  app.classList.toggle("collapsed");
+  const collapsed = app.classList.contains("collapsed");
+  toggle.title = collapsed ? "Expand sidebar" : "Collapse sidebar";
+  toggle.setAttribute("aria-label", collapsed ? "Expand sidebar" : "Collapse sidebar");
+});
+
+wIn.addEventListener("input", () => { state.w = Math.max(1, +wIn.value|0); render(); });
+hIn.addEventListener("input", () => { state.h = Math.max(1, +hIn.value|0); render(); });
+
+function compute() {
+  const m = MODELS[state.model];
+  const w = state.w, h = state.h;
+  const longEdge = Math.max(w, h);
+
+  // initial scale from edge cap only (token cap is enforced below via padding)
+  const sEdge = longEdge > m.edge ? m.edge / longEdge : 1;
+  let scale = Math.min(1, sEdge);
+
+  const padTokens = (s) => {
+    const rw = Math.round(w * s);
+    const rh = Math.round(h * s);
+    const pw = Math.ceil(rw / 28) * 28;
+    const ph = Math.ceil(rh / 28) * 28;
+    return { rw, rh, pw, ph, tokens: (pw * ph) / 750 };
+  };
+
+  // if padded tokens exceed the limit, binary-search the largest scale that fits
+  if (padTokens(scale).tokens > m.tokens) {
+    let lo = 0, hi = scale;
+    for (let i = 0; i < 40; i++) {
+      const mid = (lo + hi) / 2;
+      if (padTokens(mid).tokens <= m.tokens) lo = mid; else hi = mid;
+    }
+    scale = lo;
+  }
+
+  const { rw, rh, pw, ph } = padTokens(scale);
+  const tokens = Math.round((pw * ph) / 750);
+  return { m, w, h, scale, rw, rh, pw, ph, tokens };
+}
+
+let dpr = window.devicePixelRatio || 1;
+// stroke/font sizes are expressed in CSS-pixel equivalents and multiplied by K:
+//   - screen mode: 1 image px == 1 device pixel, so a "1 CSS px" stroke = dpr image px
+//   - css mode:    1 image px == 1 CSS pixel,  so a "1 CSS px" stroke = 1 image px
+let K = 1;
+function sizeCanvas() {
+  const m = MODELS[state.model];
+  dpr = window.devicePixelRatio || 1;
+  K = state.pxMode === "screen" ? dpr : 1;
+  const pw = Math.ceil(state.w / 28) * 28;
+  const ph = Math.ceil(state.h / 28) * 28;
+  const marginImg = 60 * K; // image-pixel margin for labels
+  const imgW = Math.max(pw, m.edge) + marginImg;
+  const imgH = Math.max(ph, m.edge) + marginImg;
+  if (state.pxMode === "screen") {
+    // 1 image px == 1 device px
+    cv.style.width = (imgW / dpr) + "px";
+    cv.style.height = (imgH / dpr) + "px";
+    cv.width = imgW;
+    cv.height = imgH;
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+  } else {
+    // 1 image px == 1 CSS px; backing scaled by dpr for sharpness
+    cv.style.width = imgW + "px";
+    cv.style.height = imgH + "px";
+    cv.width = imgW * dpr;
+    cv.height = imgH * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+}
+window.addEventListener("resize", () => { sizeCanvas(); render(); });
+
+function viewState() {
+  const m = MODELS[state.model];
+  // rectangles anchored at canvas origin
+  return { ppu: 1, ox: 0, oy: 0, m };
+}
+
+function render() {
+  wIn.value = state.w;
+  hIn.value = state.h;
+  sizeCanvas();
+  const c = compute();
+  document.getElementById("edgeLimit").textContent = c.m.edge.toLocaleString();
+  document.getElementById("tokLimit").textContent = c.m.tokens.toLocaleString();
+  document.getElementById("scaleStat").textContent = c.scale === 1 ? "1.000× (no scaling)" : c.scale.toFixed(3) + "×";
+  document.getElementById("resizedStat").textContent = `${c.rw} × ${c.rh}`;
+  document.getElementById("paddedStat").textContent = `${c.pw} × ${c.ph}`;
+  document.getElementById("tokenStat").textContent = "~" + c.tokens.toLocaleString() + " tokens";
+
+  draw(c);
+}
+
+function draw(c) {
+  const v = viewState();
+  const m = MODELS[state.model];
+  // clear in image-pixel coords (after current transform applied)
+  const pw = Math.ceil(state.w / 28) * 28;
+  const ph = Math.ceil(state.h / 28) * 28;
+  const marginImg = 60 * K;
+  const W = Math.max(pw, m.edge) + marginImg;
+  const H = Math.max(ph, m.edge) + marginImg;
+  ctx.clearRect(0, 0, W, H);
+
+  const edgePx = v.m.edge * v.ppu;
+  ctx.save();
+  ctx.fillStyle = "rgba(77,208,255,0.10)";
+  ctx.strokeStyle = "rgba(77,208,255,0.95)";
+  ctx.lineWidth = 2 * K;
+  ctx.setLineDash([8*K, 6*K]);
+  ctx.fillRect(v.ox, v.oy, edgePx, edgePx);
+  ctx.strokeRect(v.ox, v.oy, edgePx, edgePx);
+  ctx.setLineDash([]);
+  ctx.fillStyle = "rgba(77,208,255,1)";
+  ctx.font = "600 " + (12*K) + "px -apple-system, sans-serif";
+  ctx.fillText(`long-edge boundary · ${v.m.edge}px`, v.ox + 8*K, v.oy + edgePx + 14*K);
+  ctx.restore();
+
+  const ow = c.w * v.ppu, oh = c.h * v.ppu;
+  const rwp = c.rw * v.ppu, rhp = c.rh * v.ppu;
+  ctx.save();
+  ctx.fillStyle = "rgba(126,217,87,0.18)";
+  ctx.strokeStyle = "rgba(126,217,87,1)";
+  ctx.lineWidth = 2 * K;
+  ctx.fillRect(v.ox, v.oy, ow, oh);
+  ctx.strokeRect(v.ox, v.oy, ow, oh);
+  ctx.restore();
+
+  if (c.scale < 1) {
+    ctx.save();
+    ctx.fillStyle = "rgba(167,139,250,0.18)";
+    ctx.strokeStyle = "rgba(167,139,250,1)";
+    ctx.lineWidth = 2 * K;
+    ctx.setLineDash([4*K,3*K]);
+    ctx.fillRect(v.ox, v.oy, rwp, rhp);
+    ctx.strokeRect(v.ox, v.oy, rwp, rhp);
+    ctx.setLineDash([]);
+    ctx.fillStyle = "rgba(167,139,250,1)";
+    ctx.font = (12*K) + "px -apple-system, sans-serif";
+    ctx.fillText(`resized ${c.rw}×${c.rh}`, v.ox + rwp - 130*K, v.oy + rhp - 8*K);
+    ctx.restore();
+  }
+
+  // padded rect (always — ×28 rounding always applies)
+  {
+    const pwp = c.pw * v.ppu, php = c.ph * v.ppu;
+    ctx.save();
+    ctx.strokeStyle = "rgba(255,255,255,0.55)";
+    ctx.fillStyle = "rgba(255,255,255,0.05)";
+    ctx.lineWidth = 1 * K;
+    ctx.setLineDash([2*K, 3*K]);
+    ctx.fillRect(v.ox, v.oy, pwp, php);
+    ctx.strokeRect(v.ox, v.oy, pwp, php);
+    ctx.setLineDash([]);
+    ctx.fillStyle = "rgba(255,255,255,0.7)";
+    ctx.font = (11*K) + "px -apple-system, sans-serif";
+    ctx.fillText(`padded ${c.pw}×${c.ph}`, v.ox + pwp + 6*K, v.oy + php - 2*K);
+    ctx.restore();
+  }
+
+  const cx = c.scale < 1 ? v.ox + rwp/2 : v.ox + ow/2;
+  const cy = c.scale < 1 ? v.oy + rhp/2 : v.oy + oh/2;
+  ctx.save();
+  ctx.textAlign = "center";
+  ctx.fillStyle = "rgba(0,0,0,0.55)";
+  const pad = 10 * K;
+  const line1 = `~${c.tokens.toLocaleString()} tokens`;
+  const line2 = c.scale === 1 ? "no scaling" : `scale ${c.scale.toFixed(3)}×`;
+  ctx.font = "600 " + (22*K) + "px -apple-system, sans-serif";
+  const w1 = ctx.measureText(line1).width;
+  ctx.font = (13*K) + "px -apple-system, sans-serif";
+  const w2 = ctx.measureText(line2).width;
+  const boxW = Math.max(w1, w2) + pad*2;
+  const boxH = (22 + 16)*K + pad*2;
+  ctx.fillRect(cx - boxW/2, cy - boxH/2, boxW, boxH);
+
+  ctx.fillStyle = "#fff";
+  ctx.font = "600 " + (22*K) + "px -apple-system, sans-serif";
+  ctx.fillText(line1, cx, cy - 2*K);
+  ctx.fillStyle = c.scale === 1 ? "rgba(126,217,87,0.95)" : "rgba(167,139,250,0.95)";
+  ctx.font = (13*K) + "px -apple-system, sans-serif";
+  ctx.fillText(line2, cx, cy + 18*K);
+  ctx.restore();
+
+  ctx.save();
+  ctx.fillStyle = "rgba(126,217,87,1)";
+  ctx.font = (12*K) + "px -apple-system, sans-serif";
+  ctx.fillText(`original ${c.w} × ${c.h}`, v.ox, v.oy + oh + 16*K);
+  ctx.restore();
+
+  const hx = v.ox + ow, hy = v.oy + oh;
+  ctx.save();
+  ctx.fillStyle = "#fff";
+  ctx.strokeStyle = "rgba(126,217,87,1)";
+  ctx.lineWidth = 2 * K;
+  ctx.beginPath(); ctx.arc(hx, hy, 7*K, 0, Math.PI*2); ctx.fill(); ctx.stroke();
+  ctx.restore();
+
+  state._handle = { x: hx, y: hy, ox: v.ox, oy: v.oy, ppu: v.ppu };
+}
+
+let dragging = false;
+let dragPointerId = null;
+function toImgCoords(e) {
+  const rect = cv.getBoundingClientRect();
+  // image-pixel coords are (CSS coords) * K
+  //   screen mode: K=dpr; css mode: K=1
+  return { x: (e.clientX - rect.left) * K, y: (e.clientY - rect.top) * K };
+}
+function nearHandle(p) {
+  const h = state._handle;
+  if (!h) return false;
+  const dx = p.x - h.x, dy = p.y - h.y;
+  const hit = 14 * K;
+  return dx*dx + dy*dy <= hit*hit;
+}
+cv.addEventListener("pointerdown", (e) => {
+  const p = toImgCoords(e);
+  if (!nearHandle(p)) return;
+  dragging = true;
+  dragPointerId = e.pointerId;
+  cv.setPointerCapture(e.pointerId);
+  cv.style.cursor = "nwse-resize";
+  e.preventDefault();
+});
+cv.addEventListener("pointermove", (e) => {
+  const p = toImgCoords(e);
+  const h = state._handle;
+  if (!dragging) {
+    cv.style.cursor = nearHandle(p) ? "nwse-resize" : "default";
+    return;
+  }
+  if (!h) return;
+  const wPx = Math.max(8, p.x - h.ox);
+  const hPx = Math.max(8, p.y - h.oy);
+  state.w = Math.max(1, Math.round(wPx / h.ppu));
+  state.h = Math.max(1, Math.round(hPx / h.ppu));
+  render();
+});
+function endDrag(e) {
+  if (!dragging) return;
+  dragging = false;
+  cv.style.cursor = "default";
+  if (dragPointerId != null && cv.hasPointerCapture?.(dragPointerId)) {
+    try { cv.releasePointerCapture(dragPointerId); } catch {}
+  }
+  dragPointerId = null;
+}
+cv.addEventListener("pointerup", endDrag);
+cv.addEventListener("pointercancel", endDrag);
+cv.addEventListener("lostpointercapture", endDrag);
+
+sizeCanvas();
+render();
+</script>
+</body>
+</html>
