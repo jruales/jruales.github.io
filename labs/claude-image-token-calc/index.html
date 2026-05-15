@@ -59,6 +59,7 @@
   .seg button { flex:1; background:transparent; color:var(--muted); border:0; padding:8px 10px; border-radius:6px; cursor:pointer; font: inherit; }
   .seg button.on { background: var(--accent); color:#0b1220; font-weight:600; }
   .seg.disabled { opacity: 0.45; pointer-events: none; }
+  .seg.disabled button { background: var(--accent); color:#0b1220; font-weight:600; }
   input[type="number"] {
     width: 90px; background:#0f1218; color:var(--ink);
     border:1px solid #232732; border-radius:6px; padding:6px 8px; font: inherit;
@@ -66,6 +67,7 @@
   .stat { background:#0f1218; border:1px solid #232732; border-radius:8px; padding:10px 12px; margin-top:10px; }
   .stat .k { color: var(--muted); font-size: 12px; }
   .stat .v { font-size: 18px; font-variant-numeric: tabular-nums; }
+  .stat .calc { color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; margin-top: 2px; }
   .hint { color: var(--muted); font-size: 12px; margin-top: 12px; }
   main { position: relative; overflow:auto; }
   canvas { display:block; cursor: default; }
@@ -105,11 +107,11 @@
     <div class="stat"><div class="k">Long edge limit</div><div class="v"><span id="edgeLimit"></span> px</div></div>
     <div class="stat"><div class="k">Token limit (native)</div><div class="v"><span id="tokLimit"></span></div></div>
     <div class="stat"><div class="k">Scale factor</div><div class="v" id="scaleStat"></div></div>
-    <div class="stat"><div class="k">Resized size</div><div class="v" id="resizedStat"></div></div>
+    <div class="stat"><div class="k">Scaled</div><div class="v" id="resizedStat"></div></div>
     <div class="stat"><div class="k">Padded (multiple of 28)</div><div class="v" id="paddedStat"></div></div>
-    <div class="stat"><div class="k">Tokens</div><div class="v" id="tokenStat"></div></div>
+    <div class="stat"><div class="k">Tokens</div><div class="v" id="tokenStat"></div><div class="calc" id="tokenCalc"></div></div>
 
-    <p class="hint">Drag the rectangle's bottom-right corner to resize. <span style="color:#7ed957">Green</span>: original size. <span style="color:#a78bfa">Purple dashed</span>: resized (only when downscaling). <span style="color:rgba(255,255,255,0.85)">White dotted</span>: padded to ×28. <span style="color:#4dd0ff">Cyan dashed</span>: model's long-edge boundary.</p>
+    <p class="hint">Drag the rectangle's bottom-right corner to resize. <span style="color:#7ed957">Green</span>: original size. <span style="color:#a78bfa">Purple dashed</span>: scaled (only when downscaling). <span style="color:rgba(255,255,255,0.85)">White dotted</span>: padded to ×28. <span style="color:#4dd0ff">Cyan dashed</span>: model's long-edge boundary.</p>
     <p class="hint"><span class="badge">formula</span> tokens ≈ w·h / 750, capped by long-edge and token limits; padded to ×28.</p>
     <p class="hint">All values are <em>approximate</em> estimates, not exact billing figures. Based on Anthropic's <a href="https://platform.claude.com/docs/en/build-with-claude/vision" target="_blank" rel="noopener" style="color:var(--accent-2)">Vision docs</a>, retrieved May 14, 2026.</p>
   </aside>
@@ -253,6 +255,7 @@ function render() {
   document.getElementById("resizedStat").textContent = `${c.rw} × ${c.rh}`;
   document.getElementById("paddedStat").textContent = `${c.pw} × ${c.ph}`;
   document.getElementById("tokenStat").textContent = "~" + c.tokens.toLocaleString() + " tokens";
+  document.getElementById("tokenCalc").textContent = `= ${c.pw.toLocaleString()} × ${c.ph.toLocaleString()} / 750`;
 
   draw(c);
 }
@@ -279,7 +282,9 @@ function draw(c) {
   ctx.setLineDash([]);
   ctx.fillStyle = "rgba(77,208,255,1)";
   ctx.font = "600 " + (12*K) + "px -apple-system, sans-serif";
-  ctx.fillText(`long-edge boundary · ${v.m.edge}px`, v.ox + 8*K, v.oy + edgePx + 14*K);
+  ctx.textAlign = "right";
+  ctx.fillText(`long-edge boundary · ${v.m.edge}px`, v.ox + edgePx - 8*K, v.oy + 16*K);
+  ctx.textAlign = "left";
   ctx.restore();
 
   const ow = c.w * v.ppu, oh = c.h * v.ppu;
@@ -303,7 +308,7 @@ function draw(c) {
     ctx.setLineDash([]);
     ctx.fillStyle = "rgba(167,139,250,1)";
     ctx.font = (12*K) + "px -apple-system, sans-serif";
-    ctx.fillText(`resized ${c.rw}×${c.rh}`, v.ox + rwp - 130*K, v.oy + rhp - 8*K);
+    ctx.fillText(`scaled ${c.rw}×${c.rh}`, v.ox + rwp - 130*K, v.oy + rhp - 8*K);
     ctx.restore();
   }
 
